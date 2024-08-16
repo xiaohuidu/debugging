@@ -27,15 +27,15 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 1.  在调用另一个函数之前， caller 需要把一些保存着caller 使用data的寄存器的内容push到栈上。 这些寄存器包括 r10, r11 和其他的一些保存参数的寄存器。这些内容往往是在调用另一个函数后还需要保持不变的。
 2.  把被调用函数需要的参数放到6个寄存器中。如果函数参数超过了6个， 把其他的参数以相反的顺序压到栈上。
 > 六个寄存器依次是:
-> rdi: 第一个参数
-> rsi: 第二个参数
-> rdx: 第三个参数
-> rcx: 第四个参数
-> r8: 第五个参数
-> r9: 第六个参数
+> **rdi**: 第一个参数
+> **rsi**: 第二个参数
+> **rdx**: 第三个参数
+> **rcx**: 第四个参数
+> **r8**: 第五个参数
+> **r9**: 第六个参数
 4. xx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODg2NDE1NjgsLTU3NTk2NzkzMCwxNj
-g0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5
-MjgxNiwtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
+eyJoaXN0b3J5IjpbMTIxMTU4NTgyNCwtNTc1OTY3OTMwLDE2OD
+QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
+ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
