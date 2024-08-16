@@ -23,11 +23,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > 例如：ret  ; 从栈顶取出返回地址， 从这个地址继续执行。
 
 
-# 调用函数的rule
-1. 
+# 调用函数Caller 的rule
+1.  在调用另一个函数之前， caller 
 2.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzc2NTUzNDIsMTY4NDIzNjgxMCwxMz
-Y3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2
-OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTU3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNj
+c2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNiwtNTYyNTY5
+MTIwLDIxMTY2Njk5ODJdfQ==
 -->
