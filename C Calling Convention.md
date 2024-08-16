@@ -11,8 +11,12 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 
 调用约定分为两组规则。第一组规则由子程序的调用者使用，第二组规则由子程序的编写者（即“被调用者”）遵循。需要强调的是，未能遵守这些规则会迅速导致致命的程序错误；因此，在自己的子程序中实现这些调用约定时，应当非常谨慎。
 > **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。
+> 例如： push eax  ; RSPand stores the value of EAX at the new top of the stack.
+
+> pop: 
 > xx
 > 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbMzE3MjMwNTksLTU2MjU2OTEyMCwyMTE2Nj
+Y5OTgyXX0=
 -->
