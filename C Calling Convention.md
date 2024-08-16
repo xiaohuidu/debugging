@@ -24,10 +24,10 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 
 
 # 调用函数Caller 的rule
-1.  在调用另一个函数之前， caller 
+1.  在调用另一个函数之前， caller 需要把一些
 2.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNj
-c2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNiwtNTYyNTY5
-MTIwLDIxMTY2Njk5ODJdfQ==
+eyJoaXN0b3J5IjpbNTM3NTY5NjQ2LC01NzU5Njc5MzAsMTY4ND
+IzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4
+MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
 -->
