@@ -35,9 +35,10 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> **r9**: 第六个参数
 
 3.  **用 call 指令去调用被调用函数**。 返回地址（下一条指令地址）会被push到栈上， 然后跳到被调用函数的地址去执行。
-4. 在从被调用函数返回后（紧跟着）
+4. 在从被调用函数返回后（紧跟着call指令的指令）， 需要把超过6个的参数部分从栈上删除。这样栈就恢复到了调用函数之前。
+5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NjE5NzY5NiwtNTc1OTY3OTMwLDE2OD
+eyJoaXN0b3J5IjpbMTE1NTIyODIyNCwtNTc1OTY3OTMwLDE2OD
 QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
 ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
