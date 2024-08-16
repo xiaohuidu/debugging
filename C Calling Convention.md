@@ -19,8 +19,8 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > **call**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。
 > 例如: **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 
-> pop: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。
+> ret: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwNzA5MzUwLC0xMzI3NzkyODE2LC01Nj
-I1NjkxMjAsMjExNjY2OTk4Ml19
+eyJoaXN0b3J5IjpbLTQyODY5NTA5OSwtMTMyNzc5MjgxNiwtNT
+YyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
