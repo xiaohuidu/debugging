@@ -22,8 +22,12 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。
 > 例如：ret  ; 从栈顶取出返回地址， 从这个地址继续执行。
 
+
+# 调用函数的rule
+1. 
+2.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNj
-cyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5
-OTgyXX0=
+eyJoaXN0b3J5IjpbLTE5Nzc2NTUzNDIsMTY4NDIzNjgxMCwxMz
+Y3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2
+OTEyMCwyMTE2NjY5OTgyXX0=
 -->
