@@ -39,10 +39,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 5. 被调用函数的返回值放在了**rax** 寄存器， caller 可以从这个寄存器或得返回值。
 	> rax 寄存器用途:
 	> 1. 通用寄存器
-	> 2. 
+	> 2. 用在一些64-bit 指令中存储操作数。例如 mul, div 隐式的使用rax 存储数据。
+	> 3. 存储
 6. xx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTQwMDk4MSwtNTc1OTY3OTMwLDE2OD
-QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
-ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
+eyJoaXN0b3J5IjpbODQxNjUyMTkxLC01NzU5Njc5MzAsMTY4ND
+IzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4
+MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
 -->
