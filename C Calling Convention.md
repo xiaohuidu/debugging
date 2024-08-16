@@ -43,8 +43,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> 3. 存储函数调用后的返回值。比如返回值是 指针 或者整形数。
 	> 4. 
 6. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
+
+# 被调用函数的rule
+1. xx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTUzNDU3NCwtNTc1OTY3OTMwLDE2OD
+eyJoaXN0b3J5IjpbLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2OD
 QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
 ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
