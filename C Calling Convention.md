@@ -24,10 +24,10 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 
 
 # 调用函数Caller 的rule
-1.  在调用另一个函数之前， caller 需要把一些保存着caller 使用data的寄存器的内容push到栈上。 这些寄存器包括 r10, r11 和其他的一些保存参数的寄存器。
-2.  
+1.  在调用另一个函数之前， caller 需要把一些保存着caller 使用data的寄存器的内容push到栈上。 这些寄存器包括 r10, r11 和其他的一些保存参数的寄存器。这些内容往往是在调用另一个函数后还需要保持不变的。
+2.  把被调用函数需要的参数放到6个寄存器中。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDM0OTIwMTMsLTU3NTk2NzkzMCwxNj
-g0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5
-MjgxNiwtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
+eyJoaXN0b3J5IjpbLTg3MjUwODQ2MSwtNTc1OTY3OTMwLDE2OD
+QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
+ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
