@@ -20,9 +20,9 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > 例如: **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 
 > **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。
-> 例如：ret  ; Pops the return address from the stack and jumps back to it.
+> 例如：ret  ; 从栈顶取出返回地址， 从这个地址继续执行。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NjI0OTI4OSwtMTMyNzc5MjgxNiwtNT
+eyJoaXN0b3J5IjpbLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNiwtNT
 YyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
