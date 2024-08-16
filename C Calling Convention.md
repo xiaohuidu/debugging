@@ -19,10 +19,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > **call**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。
 > 例如: **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 
-> **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。
+> **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。
 > 例如：ret  ; 从栈顶取出返回地址， 从这个地址继续执行。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMz
-I3NzkyODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
+eyJoaXN0b3J5IjpbMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNj
+cyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5
+OTgyXX0=
 -->
