@@ -42,9 +42,9 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> 2. 用在一些64-bit 指令中存储操作数。例如 mul, div 隐式的使用rax 存储数据。mul 中， rax 和另一个数进行乘法计算， 结果存在rax（低64 位） 和rdx（高64 位）
 	> 3. 存储函数调用后的返回值。比如返回值是 指针 或者整形数。
 	> 4. 
-6. xx
+6. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDc2ODIwOCwtNTc1OTY3OTMwLDE2OD
+eyJoaXN0b3J5IjpbMTk1OTUzNDU3NCwtNTc1OTY3OTMwLDE2OD
 QyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3Nzky
 ODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
