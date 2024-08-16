@@ -16,9 +16,9 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。
 > 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
 
-> xx
+> call: 用来调用一个函数。
 > 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDc0NzQ4OSwtMTMyNzc5MjgxNiwtNT
+eyJoaXN0b3J5IjpbMTI4MTAwODc0OCwtMTMyNzc5MjgxNiwtNT
 YyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
