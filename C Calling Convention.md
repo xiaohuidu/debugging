@@ -13,12 +13,12 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。
 > 例如： **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
 
-> pop: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。
+> **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。
 > 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
 
 > xx
 > 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDg1NzUxOTksLTEzMjc3OTI4MTYsLT
-U2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbMTUxMDc0NzQ4OSwtMTMyNzc5MjgxNiwtNT
+YyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
