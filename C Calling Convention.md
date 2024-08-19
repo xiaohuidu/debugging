@@ -73,12 +73,12 @@ move rbp, rsp
 pop rbp
 ```
 其实这些code 不是必须得。 这是从32 bit calling convention 继承来的。 我们可以通过添加 **-fomit-frame-pointer** 告诉GCC 编译器不要生成这些执行。
-> 打开这个flag之后， RBP(EBP) 将会被作为通用寄存器使用。 RSP/ESP 将会被
+> 打开这个flag之后， RBP(EBP) 将会被作为通用寄存器使用。 RSP/ESP 将会被用来访问局部变量， 访问函数参数。因为RBP/EBP 被sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTA3MzMwMCwtMjkwODQ5Nzk3LC0yNz
-c3NDQwNzcsNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNTg5NTY4
-LC05MzE3MzczMjAsLTE5MzM2MDQwMDAsLTIzNDk1NzEwMSwtNT
-c1OTY3OTMwLDE2ODQyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0
-NDUwLC0xMzI3NzkyODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml
-19
+eyJoaXN0b3J5IjpbODIzNzQ2MTczLC0yOTA4NDk3OTcsLTI3Nz
+c0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1Njgs
+LTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01Nz
+U5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0
+NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX
+0=
 -->
