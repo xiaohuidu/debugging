@@ -32,9 +32,9 @@
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
 	```
-4. 
+4. retq(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（在）
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2Nj
-A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
-MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTc1NTg1NzM1MSwxNzYzNDQ0OTE1LDk1Mz
+UxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkw
+LC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
