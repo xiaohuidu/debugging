@@ -10,6 +10,7 @@
 		在**LOOP， LOOPZ**等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
 		在**位操作指令**SHL, SHR中， 用来指定移动的位数。
 
+	4. RBX
 	5. 
 2. xxx
 
@@ -26,7 +27,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNTI0NDk1LDk4NjYwOTM5NSwtOTM2MT
-MxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMTc3Njk5MjQ0Myw5ODY2MDkzOTUsLTkzNj
+EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
+Nl19
 -->
