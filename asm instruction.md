@@ -14,7 +14,7 @@
 2. xxx
 
 # 汇编指令
-1. **mov**: 从源从组数拷贝数据到目的操作数.
+1. **mov**: 从源从组数拷贝数据到目的操作数。如果目的操作数是栈， RSP会被自动修改。
 	```asm
 	mov $0x12501f00,%edx
 	// $ 开头表示这是一个立即数。
@@ -26,7 +26,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzAyMzU4NzAsOTg2NjA5Mzk1LC05Mz
-YxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbMTIyNTI0NDk1LDk4NjYwOTM5NSwtOTM2MT
+MxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2
+XX0=
 -->
