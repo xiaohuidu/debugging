@@ -10,8 +10,11 @@
 		在**LOOP， LOOPZ**等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
 		在**位操作指令**SHL, SHR中， 用来指定移动的位数。
 
-	4. RBX
-	5. 
+	4. RBX/EBX。EBX是32 bit， RBX是64 bit。 在64 位系统中， EBX是RBX的低32位。
+		用作base pointer
+		保存跨函数调用不变的数据
+		
+	6. xx
 2. xxx
 
 # 汇编指令
@@ -27,7 +30,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Njk5MjQ0Myw5ODY2MDkzOTUsLTkzNj
+eyJoaXN0b3J5IjpbLTg2MjUxMTkwMiw5ODY2MDkzOTUsLTkzNj
 EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
 Nl19
 -->
