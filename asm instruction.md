@@ -15,11 +15,11 @@
 		- 用作base pointer
 		- 保存跨函数调用不变的数据
 		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
-	6. R12, R13, R14, R15。
+	6. **R12, R13, R14, R15**。
 		- 和RBX一样用来保存跨函数调用不变的数据。
 		- 和RBX一样， 在函数调用时， 这些寄存器是需要被调用函数保存的寄存器。意思是如果一个函数要是用这些寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	7. 
-2. RIP(EIP) 指令寄存器。保存下一条CPU要执行的指令的内存地址。
+2. **RIP(EIP) 指令寄存器**。保存下一条CPU要执行的指令的内存地址。
 	RIP的内容会被自动指向下一条或者跳转(call, jump, return)。
 4. RSP
 5. RBP
@@ -37,7 +37,7 @@
 	```
 4. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQ0NTM0ODgsNTMwNjU2MTgsMTc2Mz
-Q0NDkxNSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYs
-LTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTU5NjE4ODExMiw1MzA2NTYxOCwxNzYzND
+Q0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1Niwt
+MjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
