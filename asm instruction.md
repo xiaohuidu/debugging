@@ -14,7 +14,9 @@
 		- 用作base pointer
 		- 保存跨函数调用不变的数据
 		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
-	6. xx
+	5. R12, R13, R14, R15。
+		- 和RBX一样用来保存kua
+	7. 
 2. xxx
 
 # 汇编指令
@@ -30,7 +32,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDAyMzM0MCw5NTM1MTgzNjcsOTg2Nj
-A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
-MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTIwMTY4MDIxMDcsOTUzNTE4MzY3LDk4Nj
+YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
+OTEsNzMwOTk4MTE2XX0=
 -->
