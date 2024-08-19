@@ -46,9 +46,13 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 7. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
 
 # 被调用函数的rule
-1. 为局部变量分配寄存器或者栈空间。栈是从大地址向小地址增长， 所以RSP/ESP 会减小, 减小的数量有局部变量总共的空间决定。比如: 一个floa
+1. 为局部变量分配寄存器或者栈空间。栈是从大地址向小地址增长， 所以RSP/ESP 会减小, 减小的数量有局部变量总共的空间决定。比如: 一个float 变量和一个long 变量 一共需要12 bytes， 所以汇编代码类似于:
+	```asm
+		sub rsp 12
+	```
+3. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTE0ODQ5NywtMTkzMzYwNDAwMCwtMj
+eyJoaXN0b3J5IjpbLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMj
 M0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4
 NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMC
 wyMTE2NjY5OTgyXX0=
