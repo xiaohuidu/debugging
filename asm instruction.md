@@ -20,8 +20,9 @@
 		- 和RBX一样， 在函数调用时， 这些寄存器是需要被调用函数保存的寄存器。意思是如果一个函数要是用这些寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	7. 
 2. RIP(EIP) 指令寄存器。保存下一条CPU要执行的指令的内存地址。
-3. RSP
-4. RBP
+	RIP的内容会被自动指向下一条或者跳转(call, jump, return)。
+4. RSP
+5. RBP
 
 # 汇编指令
 1. **mov**: 从源从组数拷贝数据到目的操作数。如果目的操作数是栈， RSP会被自动修改。
@@ -36,7 +37,7 @@
 	```
 4. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQwODk1MTk5LDUzMDY1NjE4LDE3NjM0ND
-Q5MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MTMxNzU2LC0y
-NzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE4ODQ0NTM0ODgsNTMwNjU2MTgsMTc2Mz
+Q0NDkxNSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYs
+LTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
 -->
