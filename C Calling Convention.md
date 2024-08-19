@@ -58,10 +58,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 		sub rsp 12 // 在汇编代码里，有可能没有这一步， 隐式包含了这一步。
 	```
 2. 把**RBP/EBP** 入栈。同时把**RBX, R12~R15** 这些可能用来保存调用函数可能继续会用的数据的寄存器入栈(如果它们在被调用函数中被用到)。
-3.  被调用函数结束后， 把**返回值放到RAX寄存器**中。
-4. xxx
+3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
+4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 chu
+5. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzI5MTAxMiw3MDc1MjU1MSwtNDk3NT
+eyJoaXN0b3J5IjpbMTIyNzE1OTI4OCw3MDc1MjU1MSwtNDk3NT
 QxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAw
 MCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMz
 Y3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2
