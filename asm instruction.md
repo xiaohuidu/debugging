@@ -4,7 +4,8 @@
 1. 通用寄存器。
 	1. **RDX/EDX**。EDX 是32 bit，RDX是64 bit。 在64位系统里， EDX是RDX的低32位。
 	    在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
-	3. 
+	2. RAX/EAX。 EAX是32 bit， RAX是64 bit。 在64 位系统中， EAX是RAX的低32位。
+	4. 
 2. xxx
 
 # 汇编指令
@@ -20,6 +21,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MD
-QzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMzY1Njg5OTc0LDk4NjYwOTM5NSwtOTM2MT
+MxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2
+XX0=
 -->
