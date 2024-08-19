@@ -5,16 +5,17 @@
 	1. **RDX/EDX**。EDX 是32 bit，RDX是64 bit。 在64位系统里， EDX是RDX的低32位。
 	    - 在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
 	2. **RAX/EAX**。 EAX是32 bit， RAX是64 bit。 在64 位系统中， EAX是RAX的低32位。
-	3. **RCX/ECX**。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
+		- RAX/EAX 用来保存函数调用后的返回值。
+	4. **RCX/ECX**。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
 		- 在**函数调用**中， RDX 在调用函数前，用来存储被调用函数的**第四个参数**。
 		- 在**LOOP， LOOPZ**等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
 		- 在**位操作指令**SHL, SHR中， 用来指定移动的位数。
 
-	4. **RBX/EBX**。EBX是32 bit， RBX是64 bit。 在64 位系统中， EBX是RBX的低32位。
+	5. **RBX/EBX**。EBX是32 bit， RBX是64 bit。 在64 位系统中， EBX是RBX的低32位。
 		- 用作base pointer
 		- 保存跨函数调用不变的数据
 		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
-	5. R12, R13, R14, R15。
+	6. R12, R13, R14, R15。
 		- 和RBX一样用来保存跨函数调用不变的数据。
 		- 和RBX一样， 在函数调用时， 这些寄存器是需要被调用函数保存的寄存器。意思是如果一个函数要是用这些寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	7. 
@@ -33,7 +34,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE5ODc1MTEsOTUzNTE4MzY3LDk4Nj
-YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
-OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2Nj
+A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
+MSw3MzA5OTgxMTZdfQ==
 -->
