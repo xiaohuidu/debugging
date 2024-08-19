@@ -28,13 +28,13 @@
 	// $ 开头表示这是一个立即数。
 	
 	```
-2. xor: 位异或。 当两位相等时，结果是0， 否则是1。
+2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
 	```
 4. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUwMzY5ODksMTc2MzQ0NDkxNSw5NT
-M1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5
-MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTAyNTYxNTQ5MSwxNzYzNDQ0OTE1LDk1Mz
+UxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkw
+LC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
