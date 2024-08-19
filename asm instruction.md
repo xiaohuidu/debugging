@@ -3,7 +3,7 @@
 
 1. 通用寄存器。
 	1. **RDX/EDX**。EDX 是32位的， 在64位系统里， EDX是RDX的低32位。
-	    在函数调用中， RDX 在调用函数前，用来存储被调用函数的第三个参数。
+	    在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
 	3. 
 2. xxx
 
@@ -16,6 +16,6 @@
 	```
 3. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwNzc0MjM0LC0xNTgxNDk4NzkxLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3Mz
+A5OTgxMTZdfQ==
 -->
