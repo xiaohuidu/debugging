@@ -15,9 +15,11 @@
 	
 	```
 2. xor: 位异或。 当两位相等时，结果是0， 否则是1。
-	``a
+	```asm
+	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 一会被清零。
+	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTMzMjg2NiwtOTM2MTMxNzU2LC0yNz
-A0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MD
+QzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
 -->
