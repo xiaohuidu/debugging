@@ -8,6 +8,7 @@
 	3. **RCX/ECX**。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
 		在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第四个参数**。
 		在LOOP， LOOPZ等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
+		在位操作指令SHL, SHR中， 用来指定
 
 	5. 
 2. xxx
@@ -25,7 +26,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzczMTEwMjAsOTg2NjA5Mzk1LC05Mz
-YxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbMTg3MzUwNTM1NCw5ODY2MDkzOTUsLTkzNj
+EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
+Nl19
 -->
