@@ -55,13 +55,13 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 # 被调用函数的rule
 1. 为局部变量分配寄存器或者栈空间。栈是从大地址向小地址增长， 所以RSP/ESP 会减小, 减小的数量有局部变量总共的空间决定。比如: 一个float 变量和一个long 变量 一共需要12 bytes， 所以汇编代码类似于:
 	```asm
-		sub rsp 12 // 在汇编代码里，有可能没有这一步， 隐式包含了zhey
+		sub rsp 12 // 在汇编代码里，有可能没有这一步， 隐式包含了这一步。
 	```
 3. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTAwNTc2NSwtNDk3NTQxMjA2LC02Nz
-A1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3
-MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC
-0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2
-NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNT
+g5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQwMDAsLTIzNDk1NzEw
+MSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMTM2NzYzODQ3MywtMj
+Y3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1NjkxMjAsMjExNjY2
+OTk4Ml19
 -->
