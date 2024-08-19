@@ -13,7 +13,7 @@
 	4. **RBX/EBX**。EBX是32 bit， RBX是64 bit。 在64 位系统中， EBX是RBX的低32位。
 		- 用作base pointer
 		- 保存跨函数调用不变的数据
-		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前
+		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	6. xx
 2. xxx
 
@@ -30,7 +30,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTYzNTM4OSw5NTM1MTgzNjcsOTg2Nj
+eyJoaXN0b3J5IjpbMjAxNDAyMzM0MCw5NTM1MTgzNjcsOTg2Nj
 A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
 MSw3MzA5OTgxMTZdfQ==
 -->
