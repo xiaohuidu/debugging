@@ -21,8 +21,8 @@
 	7. 
 2. **RIP(EIP) 指令寄存器**。保存下一条CPU要执行的指令的内存地址。
 	RIP的内容会被自动指向下一条或者跳转(call, jump, return)。
-4. RSP
-5. RBP
+4. RSP(stack pointer register)
+5. RBP(frame pointer register)
 
 # 汇编指令
 1. **mov**: 从源从组数拷贝数据到目的操作数。如果目的操作数是栈， RSP会被自动修改。
@@ -37,7 +37,7 @@
 	```
 4. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjE4ODExMiw1MzA2NTYxOCwxNzYzND
+eyJoaXN0b3J5IjpbMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzND
 Q0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1Niwt
 MjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
