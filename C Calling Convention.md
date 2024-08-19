@@ -46,10 +46,10 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 7. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
 
 # 被调用函数的rule
-1. xx
+1. 为局部变量分配寄存器或者栈空间。栈是从大地址
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM2MDQwMDAsLTIzNDk1NzEwMSwtNT
-c1OTY3OTMwLDE2ODQyMzY4MTAsMTM2NzYzODQ3MywtMjY3MjA0
-NDUwLC0xMzI3NzkyODE2LC01NjI1NjkxMjAsMjExNjY2OTk4Ml
-19
+eyJoaXN0b3J5IjpbNDcxOTE4NjA1LC0xOTMzNjA0MDAwLC0yMz
+Q5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNjc2Mzg0
+NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNiwtNTYyNTY5MTIwLD
+IxMTY2Njk5ODJdfQ==
 -->
