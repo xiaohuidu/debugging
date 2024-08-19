@@ -5,7 +5,7 @@
 	1. **RDX/EDX**。EDX 是32 bit，RDX是64 bit。 在64位系统里， EDX是RDX的低32位。
 	    在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
 	2. **RAX/EAX**。 EAX是32 bit， RAX是64 bit。 在64 位系统中， EAX是RAX的低32位。
-	3. RCX/ECX。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
+	3. **RCX/ECX**。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
 		在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第四个参数**。
 
 	5. 
@@ -24,7 +24,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ3NDQ4OTMsOTg2NjA5Mzk1LC05Mz
-YxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbMTU1MjM2MjY5MSw5ODY2MDkzOTUsLTkzNj
+EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
+Nl19
 -->
