@@ -14,8 +14,10 @@
 	// $ 开头表示这是一个立即数。
 	
 	```
-3. xxx
+2. xor: 位异或。 当两位相等时，结果是0， 否则是1。
+	``a
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNT
-gxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTQ1NTMzMjg2NiwtOTM2MTMxNzU2LC0yNz
+A0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
 -->
