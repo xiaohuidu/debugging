@@ -59,12 +59,12 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	```
 2. 把**RBP/EBP** 入栈。同时把**RBX, R12~R15** 这些可能用来保存调用函数可能继续会用的数据的寄存器入栈(如果它们在被调用函数中被用到)。
 3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
-4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 chu
+4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
 5. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzE1OTI4OCw3MDc1MjU1MSwtNDk3NT
-QxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAw
-MCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMz
-Y3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2
-OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTEzMzQ5Njk0OTksNzA3NTI1NTEsLTQ5Nz
+U0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQw
+MDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMT
+M2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1
+NjkxMjAsMjExNjY2OTk4Ml19
 -->
