@@ -15,7 +15,8 @@
 		- 保存跨函数调用不变的数据
 		- 在函数调用时， RBX是一个被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	5. R12, R13, R14, R15。
-		- 和RBX一样用来保存kua
+		- 和RBX一样用来保存跨函数调用不变的数据。
+		- 和RBX一样， 在函数调用时， 这些寄存器是需要被调用函数保存的寄存器。意思是如果一个函数要是用RBX寄存器， 它必须要把原来的值存到栈上， 然后在退出前恢复。
 	7. 
 2. xxx
 
@@ -32,7 +33,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY4MDIxMDcsOTUzNTE4MzY3LDk4Nj
+eyJoaXN0b3J5IjpbLTIwODI0MzYzMjcsOTUzNTE4MzY3LDk4Nj
 YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
 OTEsNzMwOTk4MTE2XX0=
 -->
