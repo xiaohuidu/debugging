@@ -62,10 +62,22 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
 5. 把**局部变量**出栈， RSP 会被加上局部变量总共的空间大小。
 6. 被调用函数中最后一条指令是**retq**（ret in 32 bit）。这条指令会把返回地址从栈上取出， 然后跳到那条指令继续执行。
+
+
+几乎每个函数的汇编代码里都会有这种代码:
+
+```asm
+push rbp
+move rbp, rsp
+...
+pop rbp
+```
+其实这些code 不是必须得。 这是
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNz
-UyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIw
-LC0xOTMzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNj
-g0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5
-MjgxNiwtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
+eyJoaXN0b3J5IjpbMjc2ODc4MzI4LC0yOTA4NDk3OTcsLTI3Nz
+c0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1Njgs
+LTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01Nz
+U5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0
+NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX
+0=
 -->
