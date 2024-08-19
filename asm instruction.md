@@ -3,17 +3,17 @@
 
 1. **通用寄存器**
 	1. **RDX/EDX**。EDX 是32 bit，RDX是64 bit。 在64位系统里， EDX是RDX的低32位。
-	    在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
+	    - 在函数调用中， RDX 在调用函数前，用来存储被调用函数的**第三个参数**。
 	2. **RAX/EAX**。 EAX是32 bit， RAX是64 bit。 在64 位系统中， EAX是RAX的低32位。
 	3. **RCX/ECX**。ECX是32 bit， RCX是64 bit。 在64 位系统中， ECX是RCX的低32位。
-		在**函数调用**中， RDX 在调用函数前，用来存储被调用函数的**第四个参数**。
-		在**LOOP， LOOPZ**等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
-		在**位操作指令**SHL, SHR中， 用来指定移动的位数。
+		- 在**函数调用**中， RDX 在调用函数前，用来存储被调用函数的**第四个参数**。
+		- 在**LOOP， LOOPZ**等指令中， 作为loop 计数器。这些指令会使寄存器中的计数器每次减一， 直到减到零。
+		- 在**位操作指令**SHL, SHR中， 用来指定移动的位数。
 
 	4. RBX/EBX。EBX是32 bit， RBX是64 bit。 在64 位系统中， EBX是RBX的低32位。
-		用作base pointer
-		保存跨函数调用不变的数据
-		
+		- 用作base pointer
+		- 保存跨函数调用不变的数据
+		- 在函数调用时， 
 	6. xx
 2. xxx
 
@@ -30,7 +30,7 @@
 	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjUxMTkwMiw5ODY2MDkzOTUsLTkzNj
-EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MT
+MxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2
+XX0=
 -->
