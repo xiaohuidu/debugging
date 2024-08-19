@@ -28,11 +28,17 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 2.  把被调用函数需要的**参数放到6个寄存器中**。如果函数参数超过了6个， 把其他的参数以相反的顺序压到栈上。
 	> 六个寄存器依次是:
 	> **rdi**: 第一个参数
+	
 	> **rsi**: 第二个参数
+	
 	> **rdx**: 第三个参数
+	
 	> **rcx**: 第四个参数
+	
 	> **r8**: 第五个参数
+	
 	> **r9**: 第六个参数
+	
 
 3.  **用 call 指令去调用被调用函数**。 返回地址（下一条指令地址）会被push到栈上， 然后跳到被调用函数的地址去执行。
 4. 在从被调用函数返回后（紧跟着call指令的指令）， 需要**把超过6个的参数部分从栈上删除**。这样栈就恢复到了调用函数之前。
@@ -52,8 +58,8 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	```
 3. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMj
-M0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4
-NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMC
-wyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTY3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOT
+MzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2
+ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNi
+wtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
