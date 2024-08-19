@@ -61,11 +61,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
 4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
 5. 把**局部变量**出栈， RSP 会被加上局部变量总共的空间大小。
-6. 被调用函数中最后一条指令是retq（ret in 32 bit）。这条指令会
+6. 被调用函数中最后一条指令是**retq**（ret in 32 bit）。这条指令会把返回地址从栈上取出， 然后跳到那条指令继续执行。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjU3NTU1MzAsLTI3Nzc0NDA3Nyw3MD
-c1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMy
-MCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMT
-Y4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3
-OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNz
+UyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIw
+LC0xOTMzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNj
+g0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5
+MjgxNiwtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
