@@ -1,6 +1,11 @@
 
 # 寄存器
 
+1. 通用寄存器。
+	1. RDX/EDX, RDX 
+	2. 
+2. xxx
+
 # 汇编指令
 1. **mov**: 从源从组数拷贝数据到目的操作数.
 	```asm
@@ -10,5 +15,5 @@
 	```
 3. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTIzOTcxOTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
 -->
