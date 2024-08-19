@@ -41,7 +41,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> **r9**: 第六个参数
 	
 
-3.  **用 call 指令去调用被调用函数**。 返回地址（下一条指令地址）会被push到栈上， 然后跳到被调用函数的地址去执行。
+3.  **用 call 指令去调用被调用函数**。 **返回地址**（下一条指令地址）会被push到栈上， 然后跳到被调用函数的地址去执行。
 4. 在从被调用函数返回后（紧跟着call指令的指令）， 需要**把超过6个的参数部分从栈上删除**。这样栈就恢复到了调用函数之前。
 5. 被调用函数的返回值放在了**rax** 寄存器， caller 可以从这个寄存器或得返回值。
 
@@ -61,11 +61,11 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
 4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
 5. 把**局部变量**出栈， RSP 会被加上局部变量总共的空间大小。
-6. xxx
+6. 被调用函数中最后一条指令是retq（ret in 32 bit）。这条指令会
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtNDk3NT
-QxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAw
-MCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMz
-Y3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2
-OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTE4NjU3NTU1MzAsLTI3Nzc0NDA3Nyw3MD
+c1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMy
+MCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMT
+Y4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3
+OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
 -->
