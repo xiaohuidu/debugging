@@ -133,9 +133,9 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555// 第七个参数入栈
 0x0000000000400926 <+39>:       41 b9 44 04 00 00       mov    $0x444,%r9d // 第六个参数放到r9（低32 bit）
 0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d // 第五个参数放到r8（低32 bit）
-0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx // 
-0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx
-0x000000000040093c <+61>:       89 c7   mov    %eax,%edi
+0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx // 第四个参数放到ecx
+0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx // 第三个参数放到edx
+0x000000000040093c <+61>:       89 c7   mov    %eax,%edi // 第二个参数放到edi
 0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)>
 0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp
 
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODE0NjI1MSwtMTk2MDI2NTI1Myw4OD
-U1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4LC0xOTM1MzY1
-Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LD
-cwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3
-MzIwLC0xOTMzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMC
-wxNjg0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMy
-Nzc5MjgxNl19
+eyJoaXN0b3J5IjpbLTE4ODUyMzgxODYsMTEzODE0NjI1MSwtMT
+k2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUy
+NDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5Ny
+wtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4
+OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5NTcxMD
+EsLTU3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2
+NzIwNDQ1MF19
 -->
