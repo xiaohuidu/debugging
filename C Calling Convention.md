@@ -166,7 +166,7 @@ main() （调用函数）函数的汇编代码:
 0x000000000040095e      main    25      /home/kennyd/tmp/test.cpp
 0x0000000000400963      main    26      /home/kennyd/tmp/test.cpp
 ===================================
-0x0000000000400968 <+105>:      c9      leaveq
+0x0000000000400968 <+105>:      c9      leaveq //
 0x0000000000400969 <+106>:      c3      retq
 
 0x0000000000400968      main    27      /home/kennyd/tmp/test.cpp
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzE0NTEzOCwtMjA3NTk0NzI3NCwtND
-Q2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1
-MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNz
-Y2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0
-OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLT
-Y3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5
-NTcxMDFdfQ==
+eyJoaXN0b3J5IjpbMTIxMTM1OTQyLC0yMDc1OTQ3Mjc0LC00ND
+Y1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUx
+LC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3Nj
+YyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5
+Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNj
+cwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQwMDAsLTIzNDk1
+NzEwMV19
 -->
