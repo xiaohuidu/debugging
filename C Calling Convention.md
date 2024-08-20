@@ -112,7 +112,9 @@ main() （调用函数）函数的汇编代码:
 >>>>>>>> Disassembling function: main()
 0x00000000004008ff <+0>:        55      push   %rbp //1. 保存调用函数的栈底寄存器（Frame Pointer）
 0x0000000000400900 <+1>:        48 89 e5        mov    %rsp,%rbp //2. 设置新的栈底寄存器
-0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp // 移动栈顶寄存器(Stack Pointer)用来放局部变量(int a, char*str). 为什么是16 而不是12? 原因是stack alignment： stack 应该以16 byte 对齐。
+0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp // 移动栈顶寄存器(Stack Pointer)用来放局部变量(int a, char*str). 
+// 为什么是16 而不是12? 原因是stack alignment： stack 应该以
+// 16 byte 对齐。
 0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp)
 0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp)
 0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi
@@ -244,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2Nj
-I1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3
-OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02Nz
-A1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3
-MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC
-0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2
-NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbMTQ1ODU1ODQxLDg4NTUzOTM0NywtMzYyNz
+Y2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2
+MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5Nz
+U0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQw
+MDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMT
+M2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1
+NjkxMjBdfQ==
 -->
