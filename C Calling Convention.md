@@ -149,7 +149,7 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400943      main    24      /home/kennyd/tmp/test.cpp
 ===================================
 0x0000000000400947 <+72>:       8b 45 fc        mov    -0x4(%rbp),%eax //把a 放到eax寄存器中
-0x000000000040094a <+75>:       89 c6   mov    %eax,%esi // 把a的值放到 esi 为调用 cout << a << endl做准备。
+0x000000000040094a <+75>:       89 c6   mov    %eax,%esi // 把a的值放到 esi（第二个参数） 为调用 cout << a << endl做准备。
 0x000000000040094c <+77>:       bf 60 10 60 00  mov    $0x601060,%edi
 0x0000000000400951 <+82>:       e8 1a fe ff ff  callq  0x400770 <_ZNSolsEi@plt>
 0x0000000000400956 <+87>:       be 20 07 40 00  mov    $0x400720,%esi
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ4ODk0NzQsMTEzODE0NjI1MSwtMTk2MD
-I2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4
-LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMj
-c3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2
-OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5NTcxMDEsLT
-U3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIw
-NDQ1MF19
+eyJoaXN0b3J5IjpbOTQ1ODMwOTA5LDk0ODg5NDc0LDExMzgxND
+YyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIs
+MTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOT
+A4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2
+LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMj
+M0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4
+NDczXX0=
 -->
