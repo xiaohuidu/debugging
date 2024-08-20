@@ -332,16 +332,16 @@ k7             0x0                 0
 0x7fffffffdc30: 0xffffdc80      0x00007fff      0x004008f8      0x00000000 //1. 当前RBP is here(0x7fffffffdc30), 
 // 调用函数(func2)RBP is 0x7fffffffdc80. 返回地址(0x004008f8)
 0x7fffffffdc40: 0x00000444      0x00000000      0x00000333      0x00000000
-0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000 // 第三个参数0x111,第四个参数0x222...
-0x7fffffffdc60: 0x00400a59      0x00000000      0x004009bb      0x00000003 // func2 函数中, -0x14(%rbp) 存的是第一个参数 a(3).
+0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000 // 6. 第三个参数0x111,第四个参数0x222...
+0x7fffffffdc60: 0x00400a59      0x00000000      0x004009bb      0x00000003 // 5. func2 函数中, -0x14(%rbp) 存的是第一个参数 a(3).
 // -0x20(%rbp) 存的是第二个参数 *str(0x00400a59)
 0x7fffffffdc70: 0x00000002      0x00000006      0x00400a59      0x00000000
-0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000 // func2的RBP(0x7fffffffdc80),
+0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000 // 2. func2的RBP(0x7fffffffdc80),
 // func2的调用函数main的RBP(0x7fffffffdcb0), 返回地址(0x00400943)
 0x7fffffffdc90: 0x00000555      0x00000000      0x00400790      0x00000000
-0x7fffffffdca0: 0x00400a59      0x00000000      0x00000000      0x00000003 // main 函数中 -0x4(%rbp）存的是a的值（3）
+0x7fffffffdca0: 0x00400a59      0x00000000      0x00000000      0x00000003 // 4. main 函数中 -0x4(%rbp）存的是a的值（3）
 // main 函数中-0x10(%rbp)存的是*str(0x00400a59)
-0x7fffffffdcb0: 0x004009c0      0x00000000      0xf7114d85      0x00007fff // main函数的RBP(0x7fffffffdcb0) 
+0x7fffffffdcb0: 0x004009c0      0x00000000      0xf7114d85      0x00007fff // 3. main函数的RBP(0x7fffffffdcb0) 
 0x7fffffffdcc0: 0xf7afb9a0      0x00007fff      0xffffdd88      0x00007fff
 0x7fffffffdcd0: 0xf7afb960      0x00000001      0x004008ff      0x00000000
 0x7fffffffdce0: 0x00000000      0x00000000      0x693f8295      0x3d190cbe
@@ -362,11 +362,11 @@ k7             0x0                 0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMT
-YyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OTcsMTI3ODAy
-MjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMT
-YsLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01ODA5MTg5NjEsLTIw
-NzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0ODg5ND
-c0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3LC0z
-NjI3NjY4NTJdfQ==
+eyJoaXN0b3J5IjpbLTE4NDkxNjE1MDUsLTEyNDM5NTYxNDUsMT
+Q0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAy
+MDE3OTcsMTI3ODAyMjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMT
+IsLTE5MzQwMTUwMTYsLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01
+ODA5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MT
+MxNjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMs
+ODg1NTM5MzQ3XX0=
 -->
