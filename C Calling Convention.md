@@ -137,7 +137,7 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx // 第三个参数放到edx
 0x000000000040093c <+61>:       89 c7   mov    %eax,%edi // 第一个参数放到edi
 0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)> //调用func2
-0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp //调用func2结束返回，把局部变量出栈。
+0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp //调用func2结束返回，把第七个参数和 char *b出栈(int a在后面还要用)。
 
 0x0000000000400921      main    24      /home/kennyd/tmp/test.cpp
 0x0000000000400926      main    24      /home/kennyd/tmp/test.cpp
@@ -148,7 +148,7 @@ main() （调用函数）函数的汇编代码:
 0x000000000040093e      main    24      /home/kennyd/tmp/test.cpp
 0x0000000000400943      main    24      /home/kennyd/tmp/test.cpp
 ===================================
-0x0000000000400947 <+72>:       8b 45 fc        mov    -0x4(%rbp),%eax
+0x0000000000400947 <+72>:       8b 45 fc        mov    -0x4(%rbp),%eax //把a 放到eax寄存器中
 0x000000000040094a <+75>:       89 c6   mov    %eax,%esi
 0x000000000040094c <+77>:       bf 60 10 60 00  mov    $0x601060,%edi
 0x0000000000400951 <+82>:       e8 1a fe ff ff  callq  0x400770 <_ZNSolsEi@plt>
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njg5ODcxNDUsMTEzODE0NjI1MSwtMT
-k2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUy
-NDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5Ny
-wtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4
-OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5NTcxMD
-EsLTU3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2
-NzIwNDQ1MF19
+eyJoaXN0b3J5IjpbOTg5NjkyNzQ3LDExMzgxNDYyNTEsLTE5Nj
+AyNjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0
+OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLT
+I3Nzc0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1
+NjgsLTkzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC
+01NzU5Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcy
+MDQ0NTBdfQ==
 -->
