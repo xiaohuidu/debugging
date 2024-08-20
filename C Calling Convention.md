@@ -110,8 +110,8 @@ pop rbp
 main() （调用函数）函数的汇编代码: 
 ```asm
 >>>>>>>> Disassembling function: main()
-0x00000000004008ff <+0>:        55      push   %rbp
-0x0000000000400900 <+1>:        48 89 e5        mov    %rsp,%rbp
+0x00000000004008ff <+0>:        55      push   %rbp //保存调用函数的栈底寄存器（Frame Pointer）
+0x0000000000400900 <+1>:        48 89 e5        mov    %rsp,%rbp //设置新的栈底寄存器
 0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp
 0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp)
 0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp)
@@ -244,10 +244,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMT
-MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
-MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
-kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
-NjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MT
-YsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbLTIwNTk1MzExNDgsMTc2NjI1MjQ0OCwtMT
+kzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0
+NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLT
+kzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5
+Njc5MzAsMTY4NDIzNjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NT
+AsLTEzMjc3OTI4MTYsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+
 -->
