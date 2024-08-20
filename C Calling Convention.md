@@ -203,7 +203,7 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008c7 <+46>:       bf 60 10 60 00  mov    $0x601060,%edi // 把第一个参数（cout object）放到rdi 寄存器
 0x00000000004008cc <+51>:       e8 6f fe ff ff  callq  0x400740 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
 //调用cout << int*
-0x00000000004008d1 <+56>:       be 20 07 40 00  mov    $0x400720,%esi
+0x00000000004008d1 <+56>:       be 20 07 40 00  mov    $0x400720,%esi //把第二个参数放到 rsi
 
 0x00000000004008b4      func2   12      /home/kennyd/tmp/test.cpp
 0x00000000004008b8      func2   13      /home/kennyd/tmp/test.cpp
@@ -214,8 +214,8 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008cc      func2   14      /home/kennyd/tmp/test.cpp
 0x00000000004008d1      func2   14      /home/kennyd/tmp/test.cpp
 ===================================
-0x00000000004008d6 <+61>:       48 89 c7        mov    %rax,%rdi
-0x00000000004008d9 <+64>:       e8 72 fe ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt>
+0x00000000004008d6 <+61>:       48 89 c7        mov    %rax,%rdi //把调用返回值(cout) 放到第一个参数寄存器rdi中
+0x00000000004008d9 <+64>:       e8 72 fe ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt> //di
 0x00000000004008de <+69>:       8b 45 ec        mov    -0x14(%rbp),%eax
 0x00000000004008e1 <+72>:       83 c0 03        add    $0x3,%eax
 0x00000000004008e4 <+75>:       89 45 f4        mov    %eax,-0xc(%rbp)
@@ -247,11 +247,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTE0MTA2OSwxMzEzNDg1NjY0LC01OD
-A5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMx
-NjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsOD
-g1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2
-NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Ny
-w3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTcz
-NzMyMF19
+eyJoaXN0b3J5IjpbODY2MDA4NDM1LDEzMTM0ODU2NjQsLTU4MD
+kxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2
+MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwtMTk2MDI2NTI1Myw4OD
+U1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4LC0xOTM1MzY1
+Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LD
+cwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3
+MzIwXX0=
 -->
