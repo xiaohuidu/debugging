@@ -501,6 +501,16 @@ Stack dump:
 <00007fd9b67f38a0> 00000000 00000000 00000000 00000000
 <00007fd9b67f38b0> ffffffff 00000000 00000000 00000000
 ```
+Function Back Trace:
+```
+Funct Addr   Funct Name                 Line #                          File
+===============================================================================
+000000001196def7     findMediaPolicyData4NK   1103      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_multiple_sessions_util.cpp
+0000000011a6d7ca     MediaPolicy_nk_red_data_rcvCheckpt   1410      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+00000000108be59c     STIproc_pard_restore   158      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pard_resp.cpp
+00000000108c47b0     STIproc_msg           784      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_msg.cpp
+00000000115fac90     IMSmain               52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/main/linux_x86-64_csbc_ds_ims_proxy/../../../../../../../ssp/ds/ims/main/IMS_main.cpp
+```
 
 ```asm
 ```
@@ -509,11 +519,11 @@ Stack dump:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTIxNjk2NSwtMzYwMTY4NTQ3LC0xMj
-QzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5NjE2
-NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3MDIxODQ5LC
-0yMTExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMx
-MzQ4NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0LC00NDY1Nz
-g2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUxLC0x
-OTYwMjY1MjUzXX0=
+eyJoaXN0b3J5IjpbLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMT
+I0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYx
+NjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OS
+wtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEz
+MTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NT
+c4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwt
+MTk2MDI2NTI1M119
 -->
