@@ -106,11 +106,77 @@ pop rbp
  26         return 0;
  27 }
 ```
+
+
+```asm
+>>>>>>>> Disassembling function: main()
+0x00000000004008ff <+0>:        55      push   %rbp
+0x0000000000400900 <+1>:        48 89 e5        mov    %rsp,%rbp
+0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp
+0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp)
+0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp)
+0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi
+0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax
+0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp
+
+0x00000000004008ff      main    21      /home/kennyd/tmp/test.cpp
+0x0000000000400900      main    21      /home/kennyd/tmp/test.cpp
+0x0000000000400903      main    21      /home/kennyd/tmp/test.cpp
+0x0000000000400907      main    22      /home/kennyd/tmp/test.cpp
+0x000000000040090e      main    23      /home/kennyd/tmp/test.cpp
+0x0000000000400916      main    24      /home/kennyd/tmp/test.cpp
+0x000000000040091a      main    24      /home/kennyd/tmp/test.cpp
+0x000000000040091d      main    24      /home/kennyd/tmp/test.cpp
+===================================
+0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555
+0x0000000000400926 <+39>:       41 b9 44 04 00 00       mov    $0x444,%r9d
+0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d
+0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx
+0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx
+0x000000000040093c <+61>:       89 c7   mov    %eax,%edi
+0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)>
+0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp
+
+0x0000000000400921      main    24      /home/kennyd/tmp/test.cpp
+0x0000000000400926      main    24      /home/kennyd/tmp/test.cpp
+0x000000000040092c      main    24      /home/kennyd/tmp/test.cpp
+0x0000000000400932      main    24      /home/kennyd/tmp/test.cpp
+0x0000000000400937      main    24      /home/kennyd/tmp/test.cpp
+0x000000000040093c      main    24      /home/kennyd/tmp/test.cpp
+0x000000000040093e      main    24      /home/kennyd/tmp/test.cpp
+0x0000000000400943      main    24      /home/kennyd/tmp/test.cpp
+===================================
+0x0000000000400947 <+72>:       8b 45 fc        mov    -0x4(%rbp),%eax
+0x000000000040094a <+75>:       89 c6   mov    %eax,%esi
+0x000000000040094c <+77>:       bf 60 10 60 00  mov    $0x601060,%edi
+0x0000000000400951 <+82>:       e8 1a fe ff ff  callq  0x400770 <_ZNSolsEi@plt>
+0x0000000000400956 <+87>:       be 20 07 40 00  mov    $0x400720,%esi
+0x000000000040095b <+92>:       48 89 c7        mov    %rax,%rdi
+0x000000000040095e <+95>:       e8 ed fd ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt>
+0x0000000000400963 <+100>:      b8 00 00 00 00  mov    $0x0,%eax
+
+0x0000000000400947      main    25      /home/kennyd/tmp/test.cpp
+0x000000000040094a      main    25      /home/kennyd/tmp/test.cpp
+0x000000000040094c      main    25      /home/kennyd/tmp/test.cpp
+0x0000000000400951      main    25      /home/kennyd/tmp/test.cpp
+0x0000000000400956      main    25      /home/kennyd/tmp/test.cpp
+0x000000000040095b      main    25      /home/kennyd/tmp/test.cpp
+0x000000000040095e      main    25      /home/kennyd/tmp/test.cpp
+0x0000000000400963      main    26      /home/kennyd/tmp/test.cpp
+===================================
+0x0000000000400968 <+105>:      c9      leaveq
+0x0000000000400969 <+106>:      c3      retq
+
+0x0000000000400968      main    27      /home/kennyd/tmp/test.cpp
+0x0000000000400969      main    27      /home/kennyd/tmp/test.cpp
+===================================
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjU1OTEzNCwtMTkzNTM2NTI5OSwtMT
-MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
-MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
-kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
-NjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MT
-YsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
+eyJoaXN0b3J5IjpbMzg2MDc2MDE3LC0xOTM1MzY1Mjk5LC0xMz
+EwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUx
+LC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOT
+MzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2
+ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNi
+wtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
 -->
