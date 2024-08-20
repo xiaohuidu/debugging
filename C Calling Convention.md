@@ -219,7 +219,7 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008de <+69>:       8b 45 ec        mov    -0x14(%rbp),%eax // 把a 放到eax 寄存器中
 0x00000000004008e1 <+72>:       83 c0 03        add    $0x3,%eax // a+3
 0x00000000004008e4 <+75>:       89 45 f4        mov    %eax,-0xc(%rbp) // 把a+3的结果赋给变量y
-0x00000000004008e7 <+78>:       48 8b 55 e0     mov    -0x20(%rbp),%rdx
+0x00000000004008e7 <+78>:       48 8b 55 e0     mov    -0x20(%rbp),%rdx //第二个参数b 放到rdx 寄存器 （调用func1的第三个参数）
 0x00000000004008eb <+82>:       8b 45 f4        mov    -0xc(%rbp),%eax
 0x00000000004008ee <+85>:       48 89 d6        mov    %rdx,%rsi
 
@@ -247,11 +247,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01OD
-A5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMx
-NjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsOD
-g1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2
-NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Ny
-w3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTcz
-NzMyMF19
+eyJoaXN0b3J5IjpbLTg4MzMyODM5MiwtMzk5NzIyMjk0LDEzMT
+M0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4
+NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwtMT
+k2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUy
+NDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5Ny
+wtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4
+OTU2OF19
 -->
