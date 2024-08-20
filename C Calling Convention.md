@@ -234,9 +234,9 @@ func2 (被调用函数) 汇编代码:
 ===================================
 0x00000000004008f1 <+88>:       89 c7   mov    %eax,%edi // y放到第一个参数寄存器rdi 准备调用func1
 0x00000000004008f3 <+90>:       e8 7e ff ff ff  callq  0x400876 <func1(int, char*)> //调用func1
-0x00000000004008f8 <+95>:       b8 01 00 00 00  mov    $0x1,%eax
-0x00000000004008fd <+100>:      c9      leaveq
-0x00000000004008fe <+101>:      c3      retq
+0x00000000004008f8 <+95>:       b8 01 00 00 00  mov    $0x1,%eax // 把true 放到返回值寄存器eax中
+0x00000000004008fd <+100>:      c9      leaveq // 修改rsp， rbp到调用函数
+0x00000000004008fe <+101>:      c3      retq // 修改RIP 继续指令执行
 
 0x00000000004008f1      func2   16      /home/kennyd/tmp/test.cpp
 0x00000000004008f3      func2   16      /home/kennyd/tmp/test.cpp
@@ -247,11 +247,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTAzMTMzNSwtMzk5NzIyMjk0LDEzMT
-M0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4
-NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwtMT
-k2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUy
-NDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5Ny
-wtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4
-OTU2OF19
+eyJoaXN0b3J5IjpbLTE5MzQwMTUwMTYsLTM5OTcyMjI5NCwxMz
+EzNDg1NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3
+ODY4MywtODA1MTMxNjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLT
+E5NjAyNjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1
+MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OT
+csLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1
+ODk1NjhdfQ==
 -->
