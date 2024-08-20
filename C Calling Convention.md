@@ -151,8 +151,8 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400947 <+72>:       8b 45 fc        mov    -0x4(%rbp),%eax //把a 放到eax寄存器中
 0x000000000040094a <+75>:       89 c6   mov    %eax,%esi // 把a的值放到 esi（第二个参数） 为调用 cout << a << endl做准备。
 0x000000000040094c <+77>:       bf 60 10 60 00  mov    $0x601060,%edi // 第一个参数放到edi(the cout object)
-0x0000000000400951 <+82>:       e8 1a fe ff ff  callq  0x400770 <_ZNSolsEi@plt>
-0x0000000000400956 <+87>:       be 20 07 40 00  mov    $0x400720,%esi
+0x0000000000400951 <+82>:       e8 1a fe ff ff  callq  0x400770 <_ZNSolsEi@plt> // 调用 operator<< (ostream& << int)
+0x0000000000400956 <+87>:       be 20 07 40 00  mov    $0x400720,%esi // 把endl 的地址放到第二个参数
 0x000000000040095b <+92>:       48 89 c7        mov    %rax,%rdi
 0x000000000040095e <+95>:       e8 ed fd ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt>
 0x0000000000400963 <+100>:      b8 00 00 00 00  mov    $0x0,%eax
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0OD
-g5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3
-LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMT
-MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
-MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
-kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
-NjgxMF19
+eyJoaXN0b3J5IjpbMTc4OTc2NzU0LC00NDY1Nzg2ODMsLTgwNT
+EzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUxLC0xOTYwMjY1MjUz
+LDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0NDgsLTE5Mz
+UzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQw
+NzcsNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNTg5NTY4LC05Mz
+E3MzczMjAsLTE5MzM2MDQwMDAsLTIzNDk1NzEwMSwtNTc1OTY3
+OTMwXX0=
 -->
