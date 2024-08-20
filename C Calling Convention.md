@@ -332,9 +332,9 @@ k7             0x0                 0
 0x7fffffffdc30: 0xffffdc80      0x00007fff      0x004008f8      0x00000000 //1. 当前RBP is here(0x7fffffffdc30), 
 // 调用函数(func2)RBP is 0x7fffffffdc80. 返回地址(0x004008f8)
 0x7fffffffdc40: 0x00000444      0x00000000      0x00000333      0x00000000
-0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000 
+0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000 // 第三个参数0x111,第四个参数0x222...
 0x7fffffffdc60: 0x00400a59      0x00000000      0x004009bb      0x00000003 // func2 函数中, -0x14(%rbp) 存的是第一个参数 a(3).
-// -0x20(%rbp) 存的是第二个参数 *str(
+// -0x20(%rbp) 存的是第二个参数 *str(0x00400a59)
 0x7fffffffdc70: 0x00000002      0x00000006      0x00400a59      0x00000000
 0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000 // func2的RBP(0x7fffffffdc80),
 // func2的调用函数main的RBP(0x7fffffffdcb0), 返回地址(0x00400943)
@@ -362,11 +362,11 @@ k7             0x0                 0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzU3NzA0OCwxNDQ3NjY1MDg3LDExNj
-IxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIy
-NjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNi
-wtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3
-NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0Nz
-QsMTEzODE0NjI1MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2
-Mjc2Njg1Ml19
+eyJoaXN0b3J5IjpbLTEyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMT
+YyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OTcsMTI3ODAy
+MjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMT
+YsLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01ODA5MTg5NjEsLTIw
+NzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0ODg5ND
+c0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3LC0z
+NjI3NjY4NTJdfQ==
 -->
