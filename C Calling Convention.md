@@ -107,7 +107,7 @@ pop rbp
  27 }
 ```
 
-main() 函数的汇编代码: 
+main() （调用函数）函数的汇编代码: 
 ```asm
 >>>>>>>> Disassembling function: main()
 0x00000000004008ff <+0>:        55      push   %rbp
@@ -172,10 +172,10 @@ main() 函数的汇编代码:
 ===================================
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MzA2NDYxLC0xOTM1MzY1Mjk5LC0xMz
-EwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUx
-LC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOT
-MzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2
-ODEwLDEzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNi
-wtNTYyNTY5MTIwLDIxMTY2Njk5ODJdfQ==
+eyJoaXN0b3J5IjpbLTI1MTIxNjY4NCwtMTkzNTM2NTI5OSwtMT
+MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
+MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
+kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
+NjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MT
+YsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
 -->
