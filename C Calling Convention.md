@@ -132,8 +132,8 @@ main() （调用函数）函数的汇编代码:
 ===================================
 0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555// 第七个参数入栈
 0x0000000000400926 <+39>:       41 b9 44 04 00 00       mov    $0x444,%r9d // 第六个参数放到r9（低32 bit）
-0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d
-0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx
+0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d // 第五个参数放到r8（低32 bit）
+0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx // 
 0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx
 0x000000000040093c <+61>:       89 c7   mov    %eax,%edi
 0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)>
@@ -246,7 +246,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MjM4NTU5NiwtMTk2MDI2NTI1Myw4OD
+eyJoaXN0b3J5IjpbMTEzODE0NjI1MSwtMTk2MDI2NTI1Myw4OD
 U1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4LC0xOTM1MzY1
 Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LD
 cwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3
