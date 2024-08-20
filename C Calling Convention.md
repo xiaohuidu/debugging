@@ -121,7 +121,7 @@ main() （调用函数）函数的汇编代码:
 0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax // 第一个参数暂存在eax
 0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp
 // 因为被调用函数有7个参数（超过6个）， 所以最后一个参数要放到栈上， 把栈顶
-// 寄存器往上yi
+// 寄存器往上移 8 bytes 用来存放第七个参数。
 0x00000000004008ff      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400900      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400903      main    21      /home/kennyd/tmp/test.cpp
@@ -131,7 +131,7 @@ main() （调用函数）函数的汇编代码:
 0x000000000040091a      main    24      /home/kennyd/tmp/test.cpp
 0x000000000040091d      main    24      /home/kennyd/tmp/test.cpp
 ===================================
-0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555
+0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555// 第七个参数入栈
 0x0000000000400926 <+39>:       41 b9 44 04 00 00       mov    $0x444,%r9d
 0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d
 0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx
@@ -247,7 +247,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTExNjE1NTUsODg1NTM5MzQ3LC0zNj
+eyJoaXN0b3J5IjpbLTE1NjA4MjY1ODUsODg1NTM5MzQ3LC0zNj
 I3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0
 ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtND
 k3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYw
