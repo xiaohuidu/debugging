@@ -183,8 +183,8 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008a1 <+8>:        89 7d ec        mov    %edi,-0x14(%rbp) // 把第一个参数a 入栈。
 0x00000000004008a4 <+11>:       48 89 75 e0     mov    %rsi,-0x20(%rbp) //把第二个参数b入栈
 0x00000000004008a8 <+15>:       48 89 55 d8     mov    %rdx,-0x28(%rbp) // 把第三个参数c 入栈
-0x00000000004008ac <+19>:       48 89 4d d0     mov    %rcx,-0x30(%rbp) // 把第四个参数入栈
-0x00000000004008b0 <+23>:       4c 89 45 c8     mov    %r8,-0x38(%rbp) // 把第五个参数入栈
+0x00000000004008ac <+19>:       48 89 4d d0     mov    %rcx,-0x30(%rbp) // 把第四个参数d入栈
+0x00000000004008b0 <+23>:       4c 89 45 c8     mov    %r8,-0x38(%rbp) // 把第五个参数e入栈
 
 0x0000000000400899      func2   12      /home/kennyd/tmp/test.cpp
 0x000000000040089a      func2   12      /home/kennyd/tmp/test.cpp
@@ -195,7 +195,7 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008ac      func2   12      /home/kennyd/tmp/test.cpp
 0x00000000004008b0      func2   12      /home/kennyd/tmp/test.cpp
 ===================================
-0x00000000004008b4 <+27>:       4c 89 4d c0     mov    %r9,-0x40(%rbp) //把第六个参数入栈
+0x00000000004008b4 <+27>:       4c 89 4d c0     mov    %r9,-0x40(%rbp) //把第六个参数f入栈
 0x00000000004008b8 <+31>:       48 8b 45 e0     mov    -0x20(%rbp),%rax
 0x00000000004008bc <+35>:       48 89 45 f8     mov    %rax,-0x8(%rbp)
 0x00000000004008c0 <+39>:       48 8b 45 f8     mov    -0x8(%rbp),%rax
@@ -246,7 +246,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NzU0OTg3OSwtNTgwOTE4OTYxLC0yMD
+eyJoaXN0b3J5IjpbMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMD
 c1OTQ3Mjc0LC00NDY1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3
 NCwxMTM4MTQ2MjUxLC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMz
 YyNzY2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1
