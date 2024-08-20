@@ -246,13 +246,14 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008fe      func2   18      /home/kennyd/tmp/test.cpp
 ===================================
 ```
-
+栈的变化情况:
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/1.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMT
-kzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkx
-ODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2Mz
-EsOTQ4ODk0NzQsMTEzODE0NjI1MSwtMTk2MDI2NTI1Myw4ODU1
-MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4LC0xOTM1MzY1Mj
-k5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcw
-NzUyNTUxXX0=
+eyJoaXN0b3J5IjpbLTI2MjA4NjYzMiwtOTk3MDIxODQ5LC0yMT
+ExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMxMzQ4
+NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0LC00NDY1Nzg2OD
+MsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUxLC0xOTYw
+MjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0ND
+gsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC0y
+Nzc3NDQwNzddfQ==
 -->
