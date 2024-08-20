@@ -330,12 +330,13 @@ k7             0x0                 0
 ```asm
 (gdb) x/100x $rsp
 0x7fffffffdc30: 0xffffdc80      0x00007fff      0x004008f8      0x00000000 //1. 当前RBP is here(0x7fffffffdc30), 
-// 调用函数(func2)RBP is 0x7fffffffdc80. 返回地址()
+// 调用函数(func2)RBP is 0x7fffffffdc80. 返回地址(0x004008f8)
 0x7fffffffdc40: 0x00000444      0x00000000      0x00000333      0x00000000
 0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000
 0x7fffffffdc60: 0x00400a59      0x00000000      0x004009bb      0x00000003
 0x7fffffffdc70: 0x00000002      0x00000006      0x00400a59      0x00000000
-0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000
+0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000 // 调用函数func2的RBP(0x7fffffffdc80),
+// func2
 0x7fffffffdc90: 0x00000555      0x00000000      0x00400790      0x00000000
 0x7fffffffdca0: 0x00400a59      0x00000000      0x00000000      0x00000003
 0x7fffffffdcb0: 0x004009c0      0x00000000      0xf7114d85      0x00007fff
@@ -359,11 +360,11 @@ k7             0x0                 0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjAyMDE3OTcsMTI3ODAyMjY1LC05OT
-cwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMTYsLTM5OTcy
-MjI5NCwxMzEzNDg1NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNz
-QsLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0ODg5NDc0LDExMzgx
-NDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NT
-IsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0y
-OTA4NDk3OTddfQ==
+eyJoaXN0b3J5IjpbLTIwNzU2OTE5MzIsLTEzMjAyMDE3OTcsMT
+I3ODAyMjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQw
+MTUwMTYsLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01ODA5MTg5Nj
+EsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0
+ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5Mz
+Q3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwt
+MTMxMDU0ODYzXX0=
 -->
