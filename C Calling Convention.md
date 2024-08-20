@@ -246,6 +246,39 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008fe      func2   18      /home/kennyd/tmp/test.cpp
 ===================================
 ```
+**func1 汇编代码:**
+```asm
+>>>>>>>> Disassembling function: func1(int, char*)
+0x0000000000400876 <+0>:        55      push   %rbp
+0x0000000000400877 <+1>:        48 89 e5        mov    %rsp,%rbp
+0x000000000040087a <+4>:        89 7d ec        mov    %edi,-0x14(%rbp)
+0x000000000040087d <+7>:        48 89 75 e0     mov    %rsi,-0x20(%rbp)
+0x0000000000400881 <+11>:       48 8b 45 e0     mov    -0x20(%rbp),%rax
+0x0000000000400885 <+15>:       48 89 45 f8     mov    %rax,-0x8(%rbp)
+0x0000000000400889 <+19>:       8b 45 ec        mov    -0x14(%rbp),%eax
+0x000000000040088c <+22>:       83 c0 03        add    $0x3,%eax
+
+0x0000000000400876      func1   5       /home/kennyd/tmp/test.cpp
+0x0000000000400877      func1   5       /home/kennyd/tmp/test.cpp
+0x000000000040087a      func1   5       /home/kennyd/tmp/test.cpp
+0x000000000040087d      func1   5       /home/kennyd/tmp/test.cpp
+0x0000000000400881      func1   6       /home/kennyd/tmp/test.cpp
+0x0000000000400885      func1   6       /home/kennyd/tmp/test.cpp
+0x0000000000400889      func1   7       /home/kennyd/tmp/test.cpp
+0x000000000040088c      func1   7       /home/kennyd/tmp/test.cpp
+===================================
+0x000000000040088f <+25>:       89 45 f4        mov    %eax,-0xc(%rbp)
+0x0000000000400892 <+28>:       b8 01 00 00 00  mov    $0x1,%eax
+0x0000000000400897 <+33>:       5d      pop    %rbp
+0x0000000000400898 <+34>:       c3      retq
+
+0x000000000040088f      func1   7       /home/kennyd/tmp/test.cpp
+0x0000000000400892      func1   8       /home/kennyd/tmp/test.cpp
+0x0000000000400897      func1   9       /home/kennyd/tmp/test.cpp
+0x0000000000400898      func1   9       /home/kennyd/tmp/test.cpp
+===================================
+
+```
 **栈的变化情况:**
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/1.png)
@@ -325,11 +358,11 @@ k7             0x0                 0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDQwNzUyNywxMjc4MDIyNjUsLTk5Nz
-AyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIy
-Mjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NC
-wtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0
-NjI1MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1Mi
-wxNzY2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5
-MDg0OTc5N119
+eyJoaXN0b3J5IjpbLTE0NDM5MDQ5MTAsMTI3ODAyMjY1LC05OT
+cwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMTYsLTM5OTcy
+MjI5NCwxMzEzNDg1NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNz
+QsLTQ0NjU3ODY4MywtODA1MTMxNjMxLDk0ODg5NDc0LDExMzgx
+NDYyNTEsLTE5NjAyNjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NT
+IsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0y
+OTA4NDk3OTddfQ==
 -->
