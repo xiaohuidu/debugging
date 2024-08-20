@@ -196,8 +196,8 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008b0      func2   12      /home/kennyd/tmp/test.cpp
 ===================================
 0x00000000004008b4 <+27>:       4c 89 4d c0     mov    %r9,-0x40(%rbp) //把第六个参数f入栈
-0x00000000004008b8 <+31>:       48 8b 45 e0     mov    -0x20(%rbp),%rax
-0x00000000004008bc <+35>:       48 89 45 f8     mov    %rax,-0x8(%rbp)
+0x00000000004008b8 <+31>:       48 8b 45 e0     mov    -0x20(%rbp),%rax //把 第二个参数b放到eax中
+0x00000000004008bc <+35>:       48 89 45 f8     mov    %rax,-0x8(%rbp) //把第二个参数
 0x00000000004008c0 <+39>:       48 8b 45 f8     mov    -0x8(%rbp),%rax
 0x00000000004008c4 <+43>:       48 89 c6        mov    %rax,%rsi
 0x00000000004008c7 <+46>:       bf 60 10 60 00  mov    $0x601060,%edi
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMD
-c1OTQ3Mjc0LC00NDY1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3
-NCwxMTM4MTQ2MjUxLC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMz
-YyNzY2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1
-NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLT
-Q5NzU0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2
-MDQwMDBdfQ==
+eyJoaXN0b3J5IjpbMTgyMTI5NTgxNywxMzEzNDg1NjY0LC01OD
+A5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMx
+NjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsOD
+g1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2
+NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Ny
+w3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTcz
+NzMyMF19
 -->
