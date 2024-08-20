@@ -246,7 +246,8 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008fe      func2   18      /home/kennyd/tmp/test.cpp
 ===================================
 ```
-栈的变化情况:
+**栈的变化情况:**
+
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/1.png)
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/2.png)
@@ -254,12 +255,14 @@ func2 (被调用函数) 汇编代码:
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/3.png)
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/4.png)
+
+如果我们在第七行加断电
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODAyMjY1LC05OTcwMjE4NDksLTIxMT
-EwMTgyMTIsLTE5MzQwMTUwMTYsLTM5OTcyMjI5NCwxMzEzNDg1
-NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4My
-wtODA1MTMxNjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAy
-NjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OC
-wtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3
-Nzc0NDA3N119
+eyJoaXN0b3J5IjpbMTY3NTgxMjU5LDEyNzgwMjI2NSwtOTk3MD
+IxODQ5LC0yMTExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3MjIy
+OTQsMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0LC
+00NDY1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2
+MjUxLC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLD
+E3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkw
+ODQ5Nzk3XX0=
 -->
