@@ -76,7 +76,7 @@ pop rbp
 > 打开这个flag之后， RBP(EBP) 将会被作为通用寄存器使用。 RSP/ESP 将会被用来访问局部变量， 访问函数参数。因为RBP/EBP 被作为通用寄存器使用， 效率会有所提高。缺点是debugging 将会变得更复杂。
 
 # 实例
-下面我们以一个最简单的实力实例， 从汇编level分析函数调用过程中的指令和栈的变化
+下面我们以一个最简单的实力实例， 从汇编level分析函数调用过程中的指令和栈的变化情况。
 ```cpp
  1 #include <iostream>
   2 using namespace std;
@@ -107,10 +107,10 @@ pop rbp
  27 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3MjU2MDgsLTE5MzUzNjUyOTksLTEzMT
-A1NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEs
-LTQ5NzU0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5Mz
-M2MDQwMDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4
-MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC
-01NjI1NjkxMjAsMjExNjY2OTk4Ml19
+eyJoaXN0b3J5IjpbMTU0MjU1OTEzNCwtMTkzNTM2NTI5OSwtMT
+MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
+MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
+kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
+NjgxMCwxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MT
+YsLTU2MjU2OTEyMCwyMTE2NjY5OTgyXX0=
 -->
