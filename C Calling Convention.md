@@ -136,7 +136,7 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx // 第四个参数放到ecx
 0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx // 第三个参数放到edx
 0x000000000040093c <+61>:       89 c7   mov    %eax,%edi // 第一个参数放到edi
-0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)>
+0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)> //调用func2
 0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp
 
 0x0000000000400921      main    24      /home/kennyd/tmp/test.cpp
@@ -246,7 +246,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxOTY0NjQxMCwxMTM4MTQ2MjUxLC0xOT
+eyJoaXN0b3J5IjpbMTM4NzQ2NTgyNSwxMTM4MTQ2MjUxLC0xOT
 YwMjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0
 NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC
 0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNTg5
