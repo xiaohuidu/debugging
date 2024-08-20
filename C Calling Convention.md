@@ -120,7 +120,8 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi //开始位调用func2 做准备: 第二个参数放到rsi
 0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax // 第一个参数暂存在eax
 0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp
-
+// 因为被调用函数有7个参数（超过6个）， 所以最后一个参数要放到栈上， 把栈顶
+// 寄存器往上yi
 0x00000000004008ff      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400900      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400903      main    21      /home/kennyd/tmp/test.cpp
@@ -246,11 +247,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1NTE2OTM3LDg4NTUzOTM0NywtMzYyNz
-Y2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2
-MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5Nz
-U0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQw
-MDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMT
-M2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1
-NjkxMjBdfQ==
+eyJoaXN0b3J5IjpbLTE5OTExNjE1NTUsODg1NTM5MzQ3LC0zNj
+I3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMTMxMDU0
+ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1MSwtND
+k3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMTkzMzYw
+NDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIzNjgxMC
+wxMzY3NjM4NDczLC0yNjcyMDQ0NTAsLTEzMjc3OTI4MTYsLTU2
+MjU2OTEyMF19
 -->
