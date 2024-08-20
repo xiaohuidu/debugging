@@ -177,7 +177,7 @@ main() （调用函数）函数的汇编代码:
 func2 (被调用函数) 汇编代码:
 ```asm
 >>>>>>>> Disassembling function: func2(int, char*, int*, long*, char*, int*, int*)
-0x0000000000400899 <+0>:        55      push   %rbp
+0x0000000000400899 <+0>:        55      push   %rbp // 保存rbp 栈底寄存器（Frame Pointer）
 0x000000000040089a <+1>:        48 89 e5        mov    %rsp,%rbp
 0x000000000040089d <+4>:        48 83 ec 40     sub    $0x40,%rsp
 0x00000000004008a1 <+8>:        89 7d ec        mov    %edi,-0x14(%rbp)
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtND
-Q2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1
-MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNz
-Y2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0
-OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLT
-Y3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5
-NTcxMDFdfQ==
+eyJoaXN0b3J5IjpbLTI0NzE5OTcyNCwtNTgwOTE4OTYxLC0yMD
+c1OTQ3Mjc0LC00NDY1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3
+NCwxMTM4MTQ2MjUxLC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMz
+YyNzY2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1
+NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLT
+Q5NzU0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2
+MDQwMDBdfQ==
 -->
