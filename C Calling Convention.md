@@ -248,12 +248,18 @@ func2 (被调用函数) 汇编代码:
 ```
 栈的变化情况:
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/1.png)
+
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/2.png)
+
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/3.png)
+
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/4.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjA4NjYzMiwtOTk3MDIxODQ5LC0yMT
-ExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMxMzQ4
-NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0LC00NDY1Nzg2OD
-MsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUxLC0xOTYw
-MjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0ND
-gsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC0y
-Nzc3NDQwNzddfQ==
+eyJoaXN0b3J5IjpbMTI3ODAyMjY1LC05OTcwMjE4NDksLTIxMT
+EwMTgyMTIsLTE5MzQwMTUwMTYsLTM5OTcyMjI5NCwxMzEzNDg1
+NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4My
+wtODA1MTMxNjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAy
+NjUyNTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OC
+wtMTkzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3
+Nzc0NDA3N119
 -->
