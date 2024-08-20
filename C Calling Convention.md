@@ -171,8 +171,80 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400969      main    27      /home/kennyd/tmp/test.cpp
 ===================================
 ```
+
+func2 (被调用函数) 汇编代码:
+```asm
+>>>>>>>> Disassembling function: func2(int, char*, int*, long*, char*, int*, int*)
+0x0000000000400899 <+0>:        55      push   %rbp
+0x000000000040089a <+1>:        48 89 e5        mov    %rsp,%rbp
+0x000000000040089d <+4>:        48 83 ec 40     sub    $0x40,%rsp
+0x00000000004008a1 <+8>:        89 7d ec        mov    %edi,-0x14(%rbp)
+0x00000000004008a4 <+11>:       48 89 75 e0     mov    %rsi,-0x20(%rbp)
+0x00000000004008a8 <+15>:       48 89 55 d8     mov    %rdx,-0x28(%rbp)
+0x00000000004008ac <+19>:       48 89 4d d0     mov    %rcx,-0x30(%rbp)
+0x00000000004008b0 <+23>:       4c 89 45 c8     mov    %r8,-0x38(%rbp)
+
+0x0000000000400899      func2   12      /home/kennyd/tmp/test.cpp
+0x000000000040089a      func2   12      /home/kennyd/tmp/test.cpp
+0x000000000040089d      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008a1      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008a4      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008a8      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008ac      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008b0      func2   12      /home/kennyd/tmp/test.cpp
+===================================
+0x00000000004008b4 <+27>:       4c 89 4d c0     mov    %r9,-0x40(%rbp)
+0x00000000004008b8 <+31>:       48 8b 45 e0     mov    -0x20(%rbp),%rax
+0x00000000004008bc <+35>:       48 89 45 f8     mov    %rax,-0x8(%rbp)
+0x00000000004008c0 <+39>:       48 8b 45 f8     mov    -0x8(%rbp),%rax
+0x00000000004008c4 <+43>:       48 89 c6        mov    %rax,%rsi
+0x00000000004008c7 <+46>:       bf 60 10 60 00  mov    $0x601060,%edi
+0x00000000004008cc <+51>:       e8 6f fe ff ff  callq  0x400740 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+0x00000000004008d1 <+56>:       be 20 07 40 00  mov    $0x400720,%esi
+
+0x00000000004008b4      func2   12      /home/kennyd/tmp/test.cpp
+0x00000000004008b8      func2   13      /home/kennyd/tmp/test.cpp
+0x00000000004008bc      func2   13      /home/kennyd/tmp/test.cpp
+0x00000000004008c0      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008c4      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008c7      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008cc      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008d1      func2   14      /home/kennyd/tmp/test.cpp
+===================================
+0x00000000004008d6 <+61>:       48 89 c7        mov    %rax,%rdi
+0x00000000004008d9 <+64>:       e8 72 fe ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt>
+0x00000000004008de <+69>:       8b 45 ec        mov    -0x14(%rbp),%eax
+0x00000000004008e1 <+72>:       83 c0 03        add    $0x3,%eax
+0x00000000004008e4 <+75>:       89 45 f4        mov    %eax,-0xc(%rbp)
+0x00000000004008e7 <+78>:       48 8b 55 e0     mov    -0x20(%rbp),%rdx
+0x00000000004008eb <+82>:       8b 45 f4        mov    -0xc(%rbp),%eax
+0x00000000004008ee <+85>:       48 89 d6        mov    %rdx,%rsi
+
+0x00000000004008d6      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008d9      func2   14      /home/kennyd/tmp/test.cpp
+0x00000000004008de      func2   15      /home/kennyd/tmp/test.cpp
+0x00000000004008e1      func2   15      /home/kennyd/tmp/test.cpp
+0x00000000004008e4      func2   15      /home/kennyd/tmp/test.cpp
+0x00000000004008e7      func2   16      /home/kennyd/tmp/test.cpp
+0x00000000004008eb      func2   16      /home/kennyd/tmp/test.cpp
+0x00000000004008ee      func2   16      /home/kennyd/tmp/test.cpp
+===================================
+0x00000000004008f1 <+88>:       89 c7   mov    %eax,%edi
+0x00000000004008f3 <+90>:       e8 7e ff ff ff  callq  0x400876 <func1(int, char*)>
+0x00000000004008f8 <+95>:       b8 01 00 00 00  mov    $0x1,%eax
+0x00000000004008fd <+100>:      c9      leaveq
+0x00000000004008fe <+101>:      c3      retq
+
+0x00000000004008f1      func2   16      /home/kennyd/tmp/test.cpp
+0x00000000004008f3      func2   16      /home/kennyd/tmp/test.cpp
+0x00000000004008f8      func2   17      /home/kennyd/tmp/test.cpp
+0x00000000004008fd      func2   18      /home/kennyd/tmp/test.cpp
+0x00000000004008fe      func2   18      /home/kennyd/tmp/test.cpp
+===================================
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTIxNjY4NCwtMTkzNTM2NTI5OSwtMT
+eyJoaXN0b3J5IjpbMTc2NjI1MjQ0OCwtMTkzNTM2NTI5OSwtMT
 MxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Nyw3MDc1MjU1
 MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTczNzMyMCwtMT
 kzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5Njc5MzAsMTY4NDIz
