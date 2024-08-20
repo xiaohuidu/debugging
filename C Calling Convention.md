@@ -339,7 +339,7 @@ k7             0x0                 0
 // func2的调用函数main的RBP(0x7fffffffdcb0), 返回地址(0x00400943)
 0x7fffffffdc90: 0x00000555      0x00000000      0x00400790      0x00000000
 0x7fffffffdca0: 0x00400a59      0x00000000      0x00000000      0x00000003 // main 函数中 -0x4(%rbp）存的是a的值（3）
-// main 函数中-0x1
+// main 函数中-0x10(%rbp)存的是*str(0x00400a59)
 0x7fffffffdcb0: 0x004009c0      0x00000000      0xf7114d85      0x00007fff // main函数的RBP(0x7fffffffdcb0) 
 0x7fffffffdcc0: 0xf7afb9a0      0x00007fff      0xffffdd88      0x00007fff
 0x7fffffffdcd0: 0xf7afb960      0x00000001      0x004008ff      0x00000000
@@ -361,7 +361,7 @@ k7             0x0                 0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0ODkxODcyNSwxMTYyMTQ2Mjc0LC00OT
+eyJoaXN0b3J5IjpbMTQ0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OT
 k2MTY3MzIsLTEzMjAyMDE3OTcsMTI3ODAyMjY1LC05OTcwMjE4
 NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMTYsLTM5OTcyMjI5NC
 wxMzEzNDg1NjY0LC01ODA5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0
