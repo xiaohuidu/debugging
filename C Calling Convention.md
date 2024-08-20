@@ -75,12 +75,42 @@ pop rbp
 其实这些code 不是必须得。 这是从32 bit calling convention 继承来的。 我们可以通过添加 **-fomit-frame-pointer** 告诉GCC 编译器不要生成这些执行。
 > 打开这个flag之后， RBP(EBP) 将会被作为通用寄存器使用。 RSP/ESP 将会被用来访问局部变量， 访问函数参数。因为RBP/EBP 被作为通用寄存器使用， 效率会有所提高。缺点是debugging 将会变得更复杂。
 
-
+# 实例
+下面我们以一个最简单的实力实例， 从汇编level分析函数调用过程中的指令和栈的变化
+```cpp
+ 1 #include <iostream>
+  2 using namespace std;
+  3
+  4 bool func1(int a, char *b)
+  5 {
+  6         char *x = b;
+  7         int y = a +3;
+  8         return true;
+  9 }
+ 10
+ 11 bool func2(int a, char *b, int *c, long *d, char *e, int *f, int *g)
+ 12 {
+ 13         char *x = b;
+ 14         cout << x << endl;
+ 15         int y = a +3;
+ 16         func1(y, b);
+ 17         return true;
+ 18 }
+ 19
+ 20 int main()
+ 21 {
+ 22         int a = 3;
+ 23         char *str = "abc";
+ 24         func2(a, str, (int*)0x111, (long*)0x222, (char*)0x333, (int*)0x444, (int*)0x555);
+ 25         cout << a << endl;
+ 26         return 0;
+ 27 }
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMj
-kwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5NzU0MTIw
-NiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQwMDAsLT
-IzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMTM2NzYz
-ODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1NjkxMj
-AsMjExNjY2OTk4Ml19
+eyJoaXN0b3J5IjpbNDE3MjU2MDgsLTE5MzUzNjUyOTksLTEzMT
+A1NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEs
+LTQ5NzU0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5Mz
+M2MDQwMDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4
+MTAsMTM2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC
+01NjI1NjkxMjAsMjExNjY2OTk4Ml19
 -->
