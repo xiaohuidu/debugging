@@ -179,7 +179,7 @@ func2 (被调用函数) 汇编代码:
 >>>>>>>> Disassembling function: func2(int a, char*b, int*c, long*d, char*e, int*f, int*g)
 0x0000000000400899 <+0>:        55      push   %rbp // 保存rbp 栈底寄存器（Frame Pointer）
 0x000000000040089a <+1>:        48 89 e5        mov    %rsp,%rbp // 修改rbp 指向原来的栈顶(Stack Pointer) 寄存器
-0x000000000040089d <+4>:        48 83 ec 40     sub    $0x40,%rsp // 为局部变量分配栈(char *x, int y, a, *b, *c, *d)
+0x000000000040089d <+4>:        48 83 ec 40     sub    $0x40,%rsp // 为局部变量分配栈(char *x,  yint, a, *b, *c, *d, *e, *f, *g)
 0x00000000004008a1 <+8>:        89 7d ec        mov    %edi,-0x14(%rbp) // 把第一个参数a 入栈。
 0x00000000004008a4 <+11>:       48 89 75 e0     mov    %rsi,-0x20(%rbp) //把第二个参数b入栈
 0x00000000004008a8 <+15>:       48 89 55 d8     mov    %rdx,-0x28(%rbp) // 把第三个参数c 入栈
@@ -247,7 +247,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDY3NzQzOCwtMTkzNDAxNTAxNiwtMz
+eyJoaXN0b3J5IjpbMTkyNzM3NDU2MCwtMTkzNDAxNTAxNiwtMz
 k5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0
 NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMT
 EzODE0NjI1MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2
