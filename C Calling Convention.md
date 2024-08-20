@@ -155,7 +155,7 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400956 <+87>:       be 20 07 40 00  mov    $0x400720,%esi // 把endl 的地址放到第二个参数
 0x000000000040095b <+92>:       48 89 c7        mov    %rax,%rdi //把上一次调用发的返回值(cout object) 放到第一个参数
 0x000000000040095e <+95>:       e8 ed fd ff ff  callq  0x400750 <_ZNSolsEPFRSoS_E@plt> // 调用operator<< (ostream& << endl)
-0x0000000000400963 <+100>:      b8 00 00 00 00  mov    $0x0,%eax
+0x0000000000400963 <+100>:      b8 00 00 00 00  mov    $0x0,%eax //返回值放到eax 寄存器
 
 0x0000000000400947      main    25      /home/kennyd/tmp/test.cpp
 0x000000000040094a      main    25      /home/kennyd/tmp/test.cpp
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtOD
-A1MTMxNjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUy
-NTMsODg1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMT
-kzNTM2NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0
-NDA3Nyw3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLT
-kzMTczNzMyMCwtMTkzMzYwNDAwMCwtMjM0OTU3MTAxLC01NzU5
-Njc5MzBdfQ==
+eyJoaXN0b3J5IjpbMTMwMzE0NTEzOCwtMjA3NTk0NzI3NCwtND
+Q2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1
+MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNz
+Y2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0
+OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLT
+Y3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5
+NTcxMDFdfQ==
 -->
