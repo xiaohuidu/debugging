@@ -115,8 +115,8 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp // 移动栈顶寄存器(Stack Pointer)用来放局部变量(int a, char*str). 
 // 为什么是16 而不是12? 原因是stack alignment： stack 应该以
 // 16 byte 对齐。
-0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp)
-0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp)
+0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp) // 保存 a=3
+0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp) //保存 char *b
 0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi
 0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax
 0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1ODU1ODQxLDg4NTUzOTM0NywtMzYyNz
-Y2ODUyLDE3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2
-MywtMjkwODQ5Nzk3LC0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5Nz
-U0MTIwNiwtNjcwNTg5NTY4LC05MzE3MzczMjAsLTE5MzM2MDQw
-MDAsLTIzNDk1NzEwMSwtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMT
-M2NzYzODQ3MywtMjY3MjA0NDUwLC0xMzI3NzkyODE2LC01NjI1
-NjkxMjBdfQ==
+eyJoaXN0b3J5IjpbMjE0MzYxMDgxNCw4ODU1MzkzNDcsLTM2Mj
+c2Njg1MiwxNzY2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4
+NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUxLC00OT
+c1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOTMzNjA0
+MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2ODEwLD
+EzNjc2Mzg0NzMsLTI2NzIwNDQ1MCwtMTMyNzc5MjgxNiwtNTYy
+NTY5MTIwXX0=
 -->
