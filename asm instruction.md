@@ -35,9 +35,17 @@
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
 	```
-4. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
+3. **retq**(ret in 32 bit): 从被调用函数返回。 从栈上弹出返回地址（调用函数中在调用被调函数的时候call 指令的时候入栈的）， 然后跳到那个地址继续执行代码。
+4. > **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。 例如：  **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
+
+> **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
+
+> **call**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
+
+> **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzND
-Q0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1Niwt
-MjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE3ODEzMTU1NDgsMTk5NDgwNjg0Myw1Mz
+A2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUs
+LTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMD
+k5ODExNl19
 -->
