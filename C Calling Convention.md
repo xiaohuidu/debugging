@@ -201,7 +201,8 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008c0 <+39>:       48 8b 45 f8     mov    -0x8(%rbp),%rax // x 放到rax中
 0x00000000004008c4 <+43>:       48 89 c6        mov    %rax,%rsi // 为调用 cout << x 做准备： 把第二个参数x 放到rsi中
 0x00000000004008c7 <+46>:       bf 60 10 60 00  mov    $0x601060,%edi // 把第一个参数（cout object）放到rdi 寄存器
-0x00000000004008cc <+51>:       e8 6f fe ff ff  callq  0x400740 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>//调用cout << int*
+0x00000000004008cc <+51>:       e8 6f fe ff ff  callq  0x400740 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+//调用cout << int*
 0x00000000004008d1 <+56>:       be 20 07 40 00  mov    $0x400720,%esi
 
 0x00000000004008b4      func2   12      /home/kennyd/tmp/test.cpp
@@ -246,11 +247,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDgzNjQ3NDEsMTMxMzQ4NTY2NCwtNT
-gwOTE4OTYxLC0yMDc1OTQ3Mjc0LC00NDY1Nzg2ODMsLTgwNTEz
-MTYzMSw5NDg4OTQ3NCwxMTM4MTQ2MjUxLC0xOTYwMjY1MjUzLD
-g4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0NDgsLTE5MzUz
-NjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC0yNzc3NDQwNz
-csNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNTg5NTY4LC05MzE3
-MzczMjBdfQ==
+eyJoaXN0b3J5IjpbMTI1NTE0MTA2OSwxMzEzNDg1NjY0LC01OD
+A5MTg5NjEsLTIwNzU5NDcyNzQsLTQ0NjU3ODY4MywtODA1MTMx
+NjMxLDk0ODg5NDc0LDExMzgxNDYyNTEsLTE5NjAyNjUyNTMsOD
+g1NTM5MzQ3LC0zNjI3NjY4NTIsMTc2NjI1MjQ0OCwtMTkzNTM2
+NTI5OSwtMTMxMDU0ODYzLC0yOTA4NDk3OTcsLTI3Nzc0NDA3Ny
+w3MDc1MjU1MSwtNDk3NTQxMjA2LC02NzA1ODk1NjgsLTkzMTcz
+NzMyMF19
 -->
