@@ -233,7 +233,7 @@ func2 (被调用函数) 汇编代码:
 0x00000000004008ee      func2   16      /home/kennyd/tmp/test.cpp
 ===================================
 0x00000000004008f1 <+88>:       89 c7   mov    %eax,%edi // y放到第一个参数寄存器rdi 准备调用func1
-0x00000000004008f3 <+90>:       e8 7e ff ff ff  callq  0x400876 <func1(int, char*)> 
+0x00000000004008f3 <+90>:       e8 7e ff ff ff  callq  0x400876 <func1(int, char*)> //调用func1
 0x00000000004008f8 <+95>:       b8 01 00 00 00  mov    $0x1,%eax
 0x00000000004008fd <+100>:      c9      leaveq
 0x00000000004008fe <+101>:      c3      retq
@@ -247,7 +247,7 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTY3NDY0NywtMzk5NzIyMjk0LDEzMT
+eyJoaXN0b3J5IjpbLTU2MTAzMTMzNSwtMzk5NzIyMjk0LDEzMT
 M0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4
 NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwtMT
 k2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUy
