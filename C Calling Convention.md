@@ -137,7 +137,7 @@ main() （调用函数）函数的汇编代码:
 0x0000000000400937 <+56>:       ba 11 01 00 00  mov    $0x111,%edx // 第三个参数放到edx
 0x000000000040093c <+61>:       89 c7   mov    %eax,%edi // 第一个参数放到edi
 0x000000000040093e <+63>:       e8 56 ff ff ff  callq  0x400899 <func2(int, char*, int*, long*, char*, int*, int*)> //调用func2
-0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp
+0x0000000000400943 <+68>:       48 83 c4 10     add    $0x10,%rsp //调用结束，把位局部变量
 
 0x0000000000400921      main    24      /home/kennyd/tmp/test.cpp
 0x0000000000400926      main    24      /home/kennyd/tmp/test.cpp
@@ -246,11 +246,11 @@ func2 (被调用函数) 汇编代码:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzQ2NTgyNSwxMTM4MTQ2MjUxLC0xOT
-YwMjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLDE3NjYyNTI0
-NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkwODQ5Nzk3LC
-0yNzc3NDQwNzcsNzA3NTI1NTEsLTQ5NzU0MTIwNiwtNjcwNTg5
-NTY4LC05MzE3MzczMjAsLTE5MzM2MDQwMDAsLTIzNDk1NzEwMS
-wtNTc1OTY3OTMwLDE2ODQyMzY4MTAsMTM2NzYzODQ3MywtMjY3
-MjA0NDUwXX0=
+eyJoaXN0b3J5IjpbNzYxNTQxNzQsMTEzODE0NjI1MSwtMTk2MD
+I2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1MiwxNzY2MjUyNDQ4
+LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5MDg0OTc5NywtMj
+c3NzQ0MDc3LDcwNzUyNTUxLC00OTc1NDEyMDYsLTY3MDU4OTU2
+OCwtOTMxNzM3MzIwLC0xOTMzNjA0MDAwLC0yMzQ5NTcxMDEsLT
+U3NTk2NzkzMCwxNjg0MjM2ODEwLDEzNjc2Mzg0NzMsLTI2NzIw
+NDQ1MF19
 -->
