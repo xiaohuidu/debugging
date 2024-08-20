@@ -107,7 +107,7 @@ pop rbp
  27 }
 ```
 
-
+main() 函数的汇编代码: 
 ```asm
 >>>>>>>> Disassembling function: main()
 0x00000000004008ff <+0>:        55      push   %rbp
@@ -170,10 +170,9 @@ pop rbp
 0x0000000000400968      main    27      /home/kennyd/tmp/test.cpp
 0x0000000000400969      main    27      /home/kennyd/tmp/test.cpp
 ===================================
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2MDc2MDE3LC0xOTM1MzY1Mjk5LC0xMz
+eyJoaXN0b3J5IjpbODA1MzA2NDYxLC0xOTM1MzY1Mjk5LC0xMz
 EwNTQ4NjMsLTI5MDg0OTc5NywtMjc3NzQ0MDc3LDcwNzUyNTUx
 LC00OTc1NDEyMDYsLTY3MDU4OTU2OCwtOTMxNzM3MzIwLC0xOT
 MzNjA0MDAwLC0yMzQ5NTcxMDEsLTU3NTk2NzkzMCwxNjg0MjM2
