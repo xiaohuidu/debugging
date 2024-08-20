@@ -42,11 +42,11 @@
 7.  **retq(32 bit 是ret)**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
 8. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作:
 	- **movq %rbp, %rsp**: 把上一个函数的rbp 放到rsp中，这样就把这个函数得到局部变量和其他的data 从栈上清除了。
-	- popq %rbp: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。
+	- **popq %rbp**: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。这样栈就退到了上一个函数的栈。
 9. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTM5NTQ3LC0xMTgxMDk1NTEsLTIwND
-g3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1
-LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwND
-MxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTExMjM0NDU2MjEsLTExODEwOTU1MSwtMj
+A0ODc0NDk5NywxOTk0ODA2ODQzLDUzMDY1NjE4LDE3NjM0NDQ5
+MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MTMxNzU2LC0yNz
+A0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
 -->
