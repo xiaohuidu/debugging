@@ -40,10 +40,11 @@
  5.  **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4)。
 6.  **callq(call in 32 bit)**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 7.  **retq(32 bit 是ret)**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
-8. leaveq(leave in 32 bit): 用在retq/retqian
+8. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作。
+9. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MjY3Mzk4MSwtMTE4MTA5NTUxLC0yMD
-Q4NzQ0OTk3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0NDkx
-NSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MD
-QzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTE0NzQxOTAyLC0xMTgxMDk1NTEsLTIwND
+g3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1
+LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwND
+MxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
