@@ -39,9 +39,9 @@
  4.  **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。 例如：  **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
  5.  **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4)。
 6.  **call**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
-7.  **ret**: 从函数调用中返回， 保存在栈上的返回地址被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
+7.  **ret**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4Mjc5MTg3MywxOTk0ODA2ODQzLDUzMD
+eyJoaXN0b3J5IjpbLTg1MjA5MzM1NSwxOTk0ODA2ODQzLDUzMD
 Y1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwt
 OTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOT
 k4MTE2XX0=
