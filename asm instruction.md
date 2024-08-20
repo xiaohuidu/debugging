@@ -30,8 +30,8 @@
 	mov $0x12501f00,%edx
 	// $ 开头表示这是一个立即数。	
 	```
-	movl: 拷贝32bit data
-	movq: 拷贝64bit data
+	**movl**: 拷贝32bit data
+	**movq**: 拷贝64bit data
  2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
@@ -41,8 +41,8 @@
 6.  **callq(call in 32 bit)**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 7.  **retq(32 bit 是ret)**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDc4MTg0MTUsLTIwNDg3NDQ5OTcsMT
-k5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2
-Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNT
-gxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOT
+k0ODA2ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3
+LDk4NjYwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1OD
+E0OTg3OTEsNzMwOTk4MTE2XX0=
 -->
