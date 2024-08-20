@@ -256,13 +256,80 @@ func2 (被调用函数) 汇编代码:
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/4.png)
 
-如果我们在第七行加断电
+如果我们在第七行加断点， 查看 寄存器和栈情况:
+
+```asm
+(gdb) info registers
+rax            0x400a59            4196953
+rbx            0x0                 0
+rcx            0xb40               2880
+rdx            0x400a59            4196953
+rsi            0x400a59            4196953
+rdi            0x6                 6
+rbp            0x7fffffffdc30      0x7fffffffdc30
+rsp            0x7fffffffdc30      0x7fffffffdc30
+r8             0x7ffff749b860      140737342191712
+r9             0x7ffff7fe4f40      140737354026816
+r10            0xa                 10
+r11            0x246               582
+r12            0x400790            4196240
+r13            0x7fffffffdd80      140737488346496
+r14            0x0                 0
+r15            0x0                 0
+rip            0x400889            0x400889 <func1(int, char*)+19>
+eflags         0x206               [ PF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+k0             0x0                 0
+k1             0x0                 0
+k2             0x0                 0
+k3             0x0                 0
+k4             0x0                 0
+k5             0x0                 0
+k6             0x0                 0
+k7             0x0                 0
+```
+
+```asm
+(gdb) x/100x $rsp
+0x7fffffffdc30: 0xffffdc80      0x00007fff      0x004008f8      0x00000000
+0x7fffffffdc40: 0x00000444      0x00000000      0x00000333      0x00000000
+0x7fffffffdc50: 0x00000222      0x00000000      0x00000111      0x00000000
+0x7fffffffdc60: 0x00400a59      0x00000000      0x004009bb      0x00000003
+0x7fffffffdc70: 0x00000002      0x00000006      0x00400a59      0x00000000
+0x7fffffffdc80: 0xffffdcb0      0x00007fff      0x00400943      0x00000000
+0x7fffffffdc90: 0x00000555      0x00000000      0x00400790      0x00000000
+0x7fffffffdca0: 0x00400a59      0x00000000      0x00000000      0x00000003
+0x7fffffffdcb0: 0x004009c0      0x00000000      0xf7114d85      0x00007fff
+0x7fffffffdcc0: 0xf7afb9a0      0x00007fff      0xffffdd88      0x00007fff
+0x7fffffffdcd0: 0xf7afb960      0x00000001      0x004008ff      0x00000000
+0x7fffffffdce0: 0x00000000      0x00000000      0x693f8295      0x3d190cbe
+0x7fffffffdcf0: 0x00400790      0x00000000      0xffffdd80      0x00007fff
+0x7fffffffdd00: 0x00000000      0x00000000      0x00000000      0x00000000
+0x7fffffffdd10: 0xc33f8295      0xc2e6f3c1      0xe0cd8295      0xc2e6e21c
+0x7fffffffdd20: 0x00000000      0x00007fff      0x00000000      0x00000000
+0x7fffffffdd30: 0x00000000      0x00000000      0xf7dd701a      0x00007fff
+0x7fffffffdd40: 0x00000000      0x00000000      0x00000000      0x00000000
+0x7fffffffdd50: 0x00000000      0x00000000      0x00000000      0x00000000
+0x7fffffffdd60: 0x00000000      0x00000000      0x004007be      0x00000000
+0x7fffffffdd70: 0xffffdd78      0x00007fff      0xf7ffe100      0x00007fff
+0x7fffffffdd80: 0x00000001      0x00000000      0xffffe09d      0x00007fff
+0x7fffffffdd90: 0x00000000      0x00000000      0xffffe0b3      0x00007fff
+0x7fffffffdda0: 0xffffe69e      0x00007fff      0xffffe6de      0x00007fff
+0x7fffffffddb0: 0xffffe713      0x00007fff      0xffffe747      0x00007fff
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTgxMjU5LDEyNzgwMjI2NSwtOTk3MD
-IxODQ5LC0yMTExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3MjIy
-OTQsMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0LC
-00NDY1Nzg2ODMsLTgwNTEzMTYzMSw5NDg4OTQ3NCwxMTM4MTQ2
-MjUxLC0xOTYwMjY1MjUzLDg4NTUzOTM0NywtMzYyNzY2ODUyLD
-E3NjYyNTI0NDgsLTE5MzUzNjUyOTksLTEzMTA1NDg2MywtMjkw
-ODQ5Nzk3XX0=
+eyJoaXN0b3J5IjpbMjEzMDQwNzUyNywxMjc4MDIyNjUsLTk5Nz
+AyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIy
+Mjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NC
+wtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0
+NjI1MSwtMTk2MDI2NTI1Myw4ODU1MzkzNDcsLTM2Mjc2Njg1Mi
+wxNzY2MjUyNDQ4LC0xOTM1MzY1Mjk5LC0xMzEwNTQ4NjMsLTI5
+MDg0OTc5N119
 -->
