@@ -580,7 +580,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   23 0x00000000108be292 <+34>:       48 89 fb        mov    %rdi,%rbx // 把 IMS_MSG *msg_ptr放到rbx 寄存器
   24 0x00000000108be295 <+37>:       48 83 ec 48     sub    $0x48,%rsp // 为局部变量分配栈空间
   25 0x00000000108be299 <+41>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(pard_info) == FALSE )
-  26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> // c
+  26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> // 跳转到0x108be3a0 
   27 0x00000000108be2a2 <+50>:       4c 8b 67 0c     mov    0xc(%rdi),%r12
   28 0x00000000108be2a6 <+54>:       49 8d 94 24 00 f0 ff ff lea    -0x1000(%r12),%rdx
   29
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODk1MzE5LDU0MTAyMDAwOCwtNDYwNj
-kzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0
-LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxNDUsMT
-Q0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAy
-MDE3OTcsMTI3ODAyMjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMT
-IsLTE5MzQwMTUwMTYsLTM5OTcyMjI5NCwxMzEzNDg1NjY0LC01
-ODA5MTg5NjFdfQ==
+eyJoaXN0b3J5IjpbLTIzNjAyNzc5OSw1NDEwMjAwMDgsLTQ2MD
+Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
+NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC0xMjQzOTU2MTQ1LD
+E0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5NjE2NzMyLC0xMzIw
+MjAxNzk3LDEyNzgwMjI2NSwtOTk3MDIxODQ5LC0yMTExMDE4Mj
+EyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMxMzQ4NTY2NCwt
+NTgwOTE4OTYxXX0=
 -->
