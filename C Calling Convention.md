@@ -562,9 +562,9 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
    5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax //把IS_VALID_PTR 的最大合法地址放到 rax
    6 0x00000000108be282 <+18>:       48 8d 4f 0c     lea    0xc(%rdi),%rcx
    7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp //改变rbp 寄存器
-   8 0x00000000108be289 <+25>:       41 57   push   %r15 //保存
-   9 0x00000000108be28b <+27>:       41 56   push   %r14
-  10 0x00000000108be28d <+29>:       41 55   push   %r13
+   8 0x00000000108be289 <+25>:       41 57   push   %r15 //保存寄存器以防止覆盖丢失数据。
+   9 0x00000000108be28b <+27>:       41 56   push   %r14 //保存寄存器以防止覆盖丢失数据。
+  10 0x00000000108be28d <+29>:       41 55   push   %r13 //保存寄存器以防止覆盖丢失数据。
   11
   12 0x00000000108be270      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   13 0x00000000108be271      STIproc_pard_restore    56      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
@@ -647,7 +647,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTk0Nzk1Myw1NDEwMjAwMDgsLTQ2MD
+eyJoaXN0b3J5IjpbLTY2Mzg3MDg5OSw1NDEwMjAwMDgsLTQ2MD
 Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
 NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC0xMjQzOTU2MTQ1LD
 E0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5NjE2NzMyLC0xMzIw
