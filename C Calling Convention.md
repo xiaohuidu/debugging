@@ -541,6 +541,7 @@ void STIproc_pard_restore(IMS_MSG *msg_ptr)
         NK_SKEY  skey = pard_info->skey;
         IMS_RED_DATA_TYPE  data_type = pard_info->data_type;
 ...
+	 MediaPolicy_nk_red_data_rcvCheckpt(key, key_len, data, data_len, data_type, skey)
 }
 
 void MediaPolicy_nk_red_data_rcvCheckpt(
@@ -560,7 +561,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzgyNzEzODUsLTE0MjEyNTgwMzcsLT
+eyJoaXN0b3J5IjpbLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLT
 M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
 NDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNj
 UsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwt
