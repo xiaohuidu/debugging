@@ -665,7 +665,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp)
   95 0x00000000108be31f <+175>:      4c 89 6c 24 18  mov    %r13,0x18(%rsp)
   96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp)
-  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type)
+  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type). 可以从STIproc_pard_restore的
   98 0x00000000108be32d <+189>:      e8 2e 76 d4 00  callq  0x11605960 <IMS_dlog(IMS_MODULE_TYPE, IMS_LOG_LEVEL_TYPE, char cons     t*, int, char const*, ...)>
   99 0x00000000108be332 <+194>:      4c 89 ef        mov    %r13,%rdi
  100 0x00000000108be335 <+197>:      e8 56 5a ab ff  callq  0x10373d90 <LSkey_get_rcv_relinquishfrom_skey(NK_SKEY)>
@@ -692,11 +692,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3Mj
-Q5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2
-NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00Nj
-A2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcx
-NDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NS
-wxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMy
-MDIwMTc5N119
+eyJoaXN0b3J5IjpbLTk3NzEwMDM0NCwtMTU2Mzg4MTMxLC0zND
+U2MDc5NjgsMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEz
+Mzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1ND
+EwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4
+NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC
+0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5
+NjE2NzMyXX0=
 -->
