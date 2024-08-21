@@ -53,11 +53,17 @@
 	cmp %rax, %rdx
 	ja 0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> 
 	```
-12. xxx
+11. ja: jmp if above
+	  je: jmp if equal
+	  jg: jump if greater
+	  jl: jump if less
+	  jz: jump if zero
+	  jnz: jump if NOT zero
+13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTA5MjYzMCw0NDUyNDA0MjgsLTExMj
-M0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2
-ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4Nj
-YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
-OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2NjE0MDc1NTcsNDQ1MjQwNDI4LC0xMT
+IzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgw
+Njg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5OD
+Y2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4
+NzkxLDczMDk5ODExNl19
 -->
