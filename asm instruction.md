@@ -48,12 +48,12 @@
 	```asm
 	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
-10. cmp
+10. cmp: 比较两个操作数（从第一个操作数中减去第二个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, ）
 11. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODUxNTQ0Nyw0NDUyNDA0MjgsLTExMj
-M0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2
-ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4Nj
-YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
-OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE1MTU4OTM0MDAsNDQ1MjQwNDI4LC0xMT
+IzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgw
+Njg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5OD
+Y2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4
+NzkxLDczMDk5ODExNl19
 -->
