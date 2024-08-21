@@ -32,6 +32,7 @@
 	```
 	**movl**: 拷贝32bit data
 	**movq**: 拷贝64bit data
+	movabs: 把大
  2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
@@ -49,9 +50,9 @@
 	``` 
 10.xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMT
-gxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYx
-OCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNj
-EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbNDcyOTE2ODU1LDQ0NTI0MDQyOCwtMTEyMz
+Q0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4MDY4
+NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2Nj
+A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
+MSw3MzA5OTgxMTZdfQ==
 -->
