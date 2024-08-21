@@ -43,10 +43,13 @@
 8. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作:
 	- **movq %rbp, %rsp**: 把上一个函数的rbp 放到rsp中，这样就把这个函数得到局部变量和其他的data 从栈上清除了。
 	- **popq %rbp**: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。这样栈就退到了上一个函数的栈。
-9. lea(Load Effective Address):  和mov不一样的是， 这个指令不会访问地址suozhix
+9. lea(Load Effective Address):  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
+	```asm
+	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
+	``` 
 10.xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3Nzk2NTE3LC0xMTIzNDQ1NjIxLC0xMT
+eyJoaXN0b3J5IjpbNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMT
 gxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYx
 OCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNj
 EzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODEx
