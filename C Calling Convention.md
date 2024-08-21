@@ -598,8 +598,8 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   41 0x00000000108be2b7 <+71>:       4c 8b 57 18     mov    0x18(%rdi),%r10 
   42 0x00000000108be2bb <+75>:       44 8b 7f 14     mov    0x14(%rdi),%r15d
   43 0x00000000108be2bf <+79>:       49 8d 92 00 f0 ff ff    lea    -0x1000(%r10),%rdx // char *data 放到rdx
-  44 0x00000000108be2c6 <+86>:       48 39 c2        cmp    %rax,%rdx // 
-  45 0x00000000108be2c9 <+89>:       0f 87 91 00 00 00       ja     0x108be360 <STIproc_pard_restore(ims_MSG*)+240>
+  44 0x00000000108be2c6 <+86>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(data) == FALSE )
+  45 0x00000000108be2c9 <+89>:       0f 87 91 00 00 00       ja     0x108be360 <STIproc_pard_restore(ims_MSG*)+240> // 如果invliad， 跳转打印log
   46 0x00000000108be2cf <+95>:       4c 8b 6f 28     mov    0x28(%rdi),%r13
   47
   48 0x00000000108be2ae      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
@@ -611,7 +611,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   54 0x00000000108be2c9      STIproc_pard_restore    69      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   55 0x00000000108be2cf      STIproc_pard_restore    75      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   56 ===================================
-  57 0x00000000108be2d3 <+99>:       8b 47 20        mov    0x20(%rdi),%eax
+  57 0x00000000108be2d3 <+99>:       8b 47 20        mov    0x20(%rdi),%eax // 
   58 0x00000000108be2d6 <+102>:      45 89 fb        mov    %r15d,%r11d
   59 0x00000000108be2d9 <+105>:      44 8b 77 24     mov    0x24(%rdi),%r14d
   60 0x00000000108be2dd <+109>:      4c 89 de        mov    %r11,%rsi
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMzMzk5MTEsMTk4NDg5NDk5NSwtMT
-UzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3
-OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNj
-QwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2
-ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNz
-QsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5
-NzAyMTg0OV19
+eyJoaXN0b3J5IjpbLTc3NTA5Nzk5MCwxOTg0ODk0OTk1LC0xNT
+M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
+OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
+A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
+NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
+wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
+MDIxODQ5XX0=
 -->
