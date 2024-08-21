@@ -561,7 +561,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
    4 0x00000000108be271 <+1>:        48 8d 97 0c f0 ff ff    lea    -0xff4(%rdi),%rdx // 计算APP_PARD_RESTORE_INFO *pard_info， 并放到rdx中（rdi指向传入参数IMS_MSG *msg_ptr）。
    5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax //把IS_VALID_PTR 的最大合法地址放到 rax
    6 0x00000000108be282 <+18>:       48 8d 4f 0c     lea    0xc(%rdi),%rcx
-   7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp
+   7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp //改变rbp 寄存器
    8 0x00000000108be289 <+25>:       41 57   push   %r15
    9 0x00000000108be28b <+27>:       41 56   push   %r14
   10 0x00000000108be28d <+29>:       41 55   push   %r13
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
-A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
-NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
-wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
-MDIxODQ5LC0yMTExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3Mj
-IyOTQsMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0
-LC00NDY1Nzg2ODNdfQ==
+eyJoaXN0b3J5IjpbNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MD
+c3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgw
+MzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LD
+ExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4
+MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNT
+AxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwt
+MjA3NTk0NzI3NF19
 -->
