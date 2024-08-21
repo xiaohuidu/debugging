@@ -593,8 +593,8 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   36 0x00000000108be2a2      STIproc_pard_restore    61      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   37 0x00000000108be2a6      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   38 ===================================
-  39 0x00000000108be2ae <+62>:       48 39 c2        cmp    %rax,%rdx
-  40 0x00000000108be2b1 <+65>:       0f 87 09 01 00 00       ja     0x108be3c0 <STIproc_pard_restore(ims_MSG*)+336>
+  39 0x00000000108be2ae <+62>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(key) == FALSE )
+  40 0x00000000108be2b1 <+65>:       0f 87 09 01 00 00       ja     0x108be3c0 <STIproc_pard_restore(ims_MSG*)+336> // 
   41 0x00000000108be2b7 <+71>:       4c 8b 57 18     mov    0x18(%rdi),%r10
   42 0x00000000108be2bb <+75>:       44 8b 7f 14     mov    0x14(%rdi),%r15d
   43 0x00000000108be2bf <+79>:       49 8d 92 00 f0 ff ff    lea    -0x1000(%r10),%rdx
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2Nz
-gyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4
-LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNj
-Y2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1
-NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMi
-wtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjEx
-MTAxODIxMl19
+eyJoaXN0b3J5IjpbLTU1OTAwMDQ2NCwxOTg0ODk0OTk1LC0xNT
+M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
+OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
+A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
+NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
+wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
+MDIxODQ5XX0=
 -->
