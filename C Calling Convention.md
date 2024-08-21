@@ -511,6 +511,47 @@ Funct Addr   Funct Name                 Line #                          File
 00000000108c47b0     STIproc_msg           784      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_msg.cpp
 00000000115fac90     IMSmain               52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/ims/main/linux_x86-64_csbc_ds_ims_proxy/../../../../../../../ssp/ds/ims/main/IMS_main.cpp
 ```
+源代码:
+```cpp
+
+void STIproc_pard_restore(IMS_MSG *msg_ptr)
+{
+        APP_PARD_RESTORE_INFO *pard_info = &(msg_ptr->ims_hdr.msg_hdr_data.app_hdr_data.pard_restore_info);
+
+        /* Set local data from pard_info */
+        if ( IS_VALID_PTR(pard_info) == FALSE )
+        {
+                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid pard restore info (%p).", __func__, pard_info);
+                return;
+        }
+        char * key = pard_info->key;
+        if ( IS_VALID_PTR(key) == FALSE )
+        {
+                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore key (%p).", __func__, key);
+                return;
+        }
+        uint32_t key_len = pard_info->key_len;
+        char *data = pard_info->data;
+        if ( IS_VALID_PTR(data) == FALSE )
+        {
+                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore data (%p).", __func__, data);
+                return;
+        }
+        uint32_t data_len = pard_info->data_len;
+        NK_SKEY  skey = pard_info->skey;
+        IMS_RED_DATA_TYPE  data_type = pard_info->data_type;
+...
+}
+
+void MediaPolicy_nk_red_data_rcvCheckpt(
+        char *key,
+        unsigned long key_len,
+        char *data,
+        unsigned long data_len,
+        IMS_RED_DATA_TYPE data_type,
+        NK_SKEY skey)
+
+```
 
 ```asm
 ```
@@ -519,11 +560,11 @@ Funct Addr   Funct Name                 Line #                          File
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMT
-I0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYx
-NjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OS
-wtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEz
-MTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NT
-c4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQsMTEzODE0NjI1MSwt
-MTk2MDI2NTI1M119
+eyJoaXN0b3J5IjpbLTIwNzgyNzEzODUsLTE0MjEyNTgwMzcsLT
+M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
+NDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNj
+UsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwt
+Mzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NT
+k0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQs
+MTEzODE0NjI1MV19
 -->
