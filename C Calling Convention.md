@@ -576,8 +576,8 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   19 0x00000000108be28d      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   20 ===================================
   21 0x00000000108be28f <+31>:       41 54   push   %r12 //保存寄存器以防止覆盖丢失数据。
-  22 0x00000000108be291 <+33>:       53      push   %rbx
-  23 0x00000000108be292 <+34>:       48 89 fb        mov    %rdi,%rbx
+  22 0x00000000108be291 <+33>:       53      push   %rbx //保存寄存器以防止覆盖丢失数据。
+  23 0x00000000108be292 <+34>:       48 89 fb        mov    %rdi,%rbx // 把 IMS_MSG *msg_ptr放到rbx 寄存器
   24 0x00000000108be295 <+37>:       48 83 ec 48     sub    $0x48,%rsp
   25 0x00000000108be299 <+41>:       48 39 c2        cmp    %rax,%rdx
   26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304>
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY5NDEyNDQsNTQxMDIwMDA4LC00Nj
-A2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcx
-NDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NS
-wxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMy
-MDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxOD
-IxMiwtMTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQs
-LTU4MDkxODk2MV19
+eyJoaXN0b3J5IjpbMTMzMzU3MjI1NCw1NDEwMjAwMDgsLTQ2MD
+Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
+NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC0xMjQzOTU2MTQ1LD
+E0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5NjE2NzMyLC0xMzIw
+MjAxNzk3LDEyNzgwMjI2NSwtOTk3MDIxODQ5LC0yMTExMDE4Mj
+EyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMxMzQ4NTY2NCwt
+NTgwOTE4OTYxXX0=
 -->
