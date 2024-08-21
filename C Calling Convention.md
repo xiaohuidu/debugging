@@ -574,6 +574,70 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   18 0x00000000108be28b      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   19 0x00000000108be28d      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   20 ===================================
+  21 0x00000000108be28f <+31>:       41 54   push   %r12
+  22 0x00000000108be291 <+33>:       53      push   %rbx
+  23 0x00000000108be292 <+34>:       48 89 fb        mov    %rdi,%rbx
+  24 0x00000000108be295 <+37>:       48 83 ec 48     sub    $0x48,%rsp
+  25 0x00000000108be299 <+41>:       48 39 c2        cmp    %rax,%rdx
+  26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304>
+  27 0x00000000108be2a2 <+50>:       4c 8b 67 0c     mov    0xc(%rdi),%r12
+  28 0x00000000108be2a6 <+54>:       49 8d 94 24 00 f0 ff ff lea    -0x1000(%r12),%rdx
+  29
+  30 0x00000000108be28f      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  31 0x00000000108be291      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  32 0x00000000108be292      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  33 0x00000000108be295      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  34 0x00000000108be299      STIproc_pard_restore    56      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  35 0x00000000108be29c      STIproc_pard_restore    56      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  36 0x00000000108be2a2      STIproc_pard_restore    61      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  37 0x00000000108be2a6      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  38 ===================================
+  39 0x00000000108be2ae <+62>:       48 39 c2        cmp    %rax,%rdx
+  40 0x00000000108be2b1 <+65>:       0f 87 09 01 00 00       ja     0x108be3c0 <STIproc_pard_restore(ims_MSG*)+336>
+  41 0x00000000108be2b7 <+71>:       4c 8b 57 18     mov    0x18(%rdi),%r10
+  42 0x00000000108be2bb <+75>:       44 8b 7f 14     mov    0x14(%rdi),%r15d
+  43 0x00000000108be2bf <+79>:       49 8d 92 00 f0 ff ff    lea    -0x1000(%r10),%rdx
+  44 0x00000000108be2c6 <+86>:       48 39 c2        cmp    %rax,%rdx
+  45 0x00000000108be2c9 <+89>:       0f 87 91 00 00 00       ja     0x108be360 <STIproc_pard_restore(ims_MSG*)+240>
+  46 0x00000000108be2cf <+95>:       4c 8b 6f 28     mov    0x28(%rdi),%r13
+  47
+  48 0x00000000108be2ae      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  49 0x00000000108be2b1      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  50 0x00000000108be2b7      STIproc_pard_restore    68      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  51 0x00000000108be2bb      STIproc_pard_restore    67      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  52 0x00000000108be2bf      STIproc_pard_restore    69      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  53 0x00000000108be2c6      STIproc_pard_restore    69      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  54 0x00000000108be2c9      STIproc_pard_restore    69      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  55 0x00000000108be2cf      STIproc_pard_restore    75      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  56 ===================================
+  57 0x00000000108be2d3 <+99>:       8b 47 20        mov    0x20(%rdi),%eax
+  58 0x00000000108be2d6 <+102>:      45 89 fb        mov    %r15d,%r11d
+  59 0x00000000108be2d9 <+105>:      44 8b 77 24     mov    0x24(%rdi),%r14d
+  60 0x00000000108be2dd <+109>:      4c 89 de        mov    %r11,%rsi
+  61 0x00000000108be2e0 <+112>:      4c 89 e7        mov    %r12,%rdi
+  62 0x00000000108be2e3 <+115>:      4c 89 55 c0     mov    %r10,-0x40(%rbp)
+  63 0x00000000108be2e7 <+119>:      4c 89 5d c8     mov    %r11,-0x38(%rbp)
+  64 0x00000000108be2eb <+123>:      89 45 bc        mov    %eax,-0x44(%rbp)
+  65
+  66 0x00000000108be2d3      STIproc_pard_restore    74      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  67 0x00000000108be2d6      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  68 0x00000000108be2d9      STIproc_pard_restore    76      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  69 0x00000000108be2dd      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  70 0x00000000108be2e0      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  71 0x00000000108be2e3      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  72 0x00000000108be2e7      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  73 0x00000000108be2eb      STIproc_pard_restore    74      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  74 ===================================
+  75 0x00000000108be2ee <+126>:      e8 bd 51 8d ff  callq  0x101934b0 <key_to_hex>
+  76 0x00000000108be2f3 <+131>:      41 b9 40 4c 60 12       mov    $0x12604c40,%r9d
+  77 0x00000000108be2f9 <+137>:      48 89 44 24 10  mov    %rax,0x10(%rsp)
+  78 0x00000000108be2fe <+142>:      41 b8 e8 18 60 12       mov    $0x126018e8,%r8d
+  79 0x00000000108be304 <+148>:      31 c0   xor    %eax,%eax
+  80 0x00000000108be306 <+150>:      b9 4d 00 00 00  mov    $0x4d,%ecx
+  81 0x00000000108be30b <+155>:      ba c3 09 60 12  mov    $0x126009c3,%edx
+  82 0x00000000108be310 <+160>:      be 03 00 00 00  mov    $0x3,%esi
+  83
+  84 0x00000000108be2ee      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
 
 
 ```
@@ -582,11 +646,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU0MTcyMTgsLTEyNjY2MTcxNDQsLT
-E0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3
-NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMT
-c5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwt
-MTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MD
-kxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2
-MzEsOTQ4ODk0NzRdfQ==
+eyJoaXN0b3J5IjpbNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0Mj
+EyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1
+MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5Ny
+wxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkz
+NDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxOD
+k2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEs
+OTQ4ODk0NzRdfQ==
 -->
