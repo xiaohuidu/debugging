@@ -613,7 +613,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   56 ===================================
   57 0x00000000108be2d3 <+99>:       8b 47 20        mov    0x20(%rdi),%eax // uint32_t data_len 拷贝到eax
   58 0x00000000108be2d6 <+102>:      45 89 fb        mov    %r15d,%r11d
-  59 0x00000000108be2d9 <+105>:      44 8b 77 24     mov    0x24(%rdi),%r14d // 
+  59 0x00000000108be2d9 <+105>:      44 8b 77 24     mov    0x24(%rdi),%r14d // data_type
   60 0x00000000108be2dd <+109>:      4c 89 de        mov    %r11,%rsi
   61 0x00000000108be2e0 <+112>:      4c 89 e7        mov    %r12,%rdi
   62 0x00000000108be2e3 <+115>:      4c 89 55 c0     mov    %r10,-0x40(%rbp)
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzQ1MTk4NiwxOTg0ODk0OTk1LC0xNT
-M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
-OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
-A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
-NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
-wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
-MDIxODQ5XX0=
+eyJoaXN0b3J5IjpbLTE5NTYyMjgzODMsMTk4NDg5NDk5NSwtMT
+UzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3
+OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNj
+QwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2
+ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNz
+QsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5
+NzAyMTg0OV19
 -->
