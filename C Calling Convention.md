@@ -555,17 +555,38 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 ```
 
 ```asm
+   2 >>>>>>>> Disassembling function: STIproc_pard_restore(ims_MSG*)
+   3 0x00000000108be270 <+0>:        55      push   %rbp
+   4 0x00000000108be271 <+1>:        48 8d 97 0c f0 ff ff    lea    -0xff4(%rdi),%rdx
+   5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax
+   6 0x00000000108be282 <+18>:       48 8d 4f 0c     lea    0xc(%rdi),%rcx
+   7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp
+   8 0x00000000108be289 <+25>:       41 57   push   %r15
+   9 0x00000000108be28b <+27>:       41 56   push   %r14
+  10 0x00000000108be28d <+29>:       41 55   push   %r13
+  11
+  12 0x00000000108be270      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  13 0x00000000108be271      STIproc_pard_restore    56      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  14 0x00000000108be278      STIproc_pard_restore    56      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  15 0x00000000108be282      STIproc_pard_restore    53      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  16 0x00000000108be286      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  17 0x00000000108be289      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  18 0x00000000108be28b      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  19 0x00000000108be28d      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
+  20 ===================================
+
+
 ```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLT
-M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
-NDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNj
-UsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNTAxNiwt
-Mzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwtMjA3NT
-k0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEsOTQ4ODk0NzQs
-MTEzODE0NjI1MV19
+eyJoaXN0b3J5IjpbLTE5NjU0MTcyMTgsLTEyNjY2MTcxNDQsLT
+E0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3
+NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMT
+c5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwt
+MTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MD
+kxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2
+MzEsOTQ4ODk0NzRdfQ==
 -->
