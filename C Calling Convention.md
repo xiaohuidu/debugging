@@ -449,7 +449,7 @@ Stack dump:
 <00007fd9b67f35c0> 6cb95f0b da7f0000 0c00f400 7a65fe4c
 <00007fd9b67f35d0> 5f000000 00000000 33000000 00000000
 <00007fd9b67f35e0> 60367fb6 d97f0000 a4e58b10 00000000 // RBP: MediaPolicy_nk_red_data_rcvCheckpt
-<00007fd9b67f35f0> 5f000000 d97f0000 33000000 da7f0000
+<00007fd9b67f35f0> 5f000000 d97f0000 33000000 da7f0000 //5f000000 是入栈的data_type
 <00007fd9b67f3600> 80975a14 00000000 0c00f400 7a65fe4c
 <00007fd9b67f3610> 0c00f400 7a65fe4c 2c345f0b 10000000
 <00007fd9b67f3620> ccb95f0b da7f0000 33000000 00000000
@@ -665,7 +665,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp)
   95 0x00000000108be31f <+175>:      4c 89 6c 24 18  mov    %r13,0x18(%rsp)
   96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp)
-  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type). 可以从STIproc_pard_restore的
+  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type). 可以从STIproc_pard_restore的栈上对应的位置找到这个值(5f000000)
   98 0x00000000108be32d <+189>:      e8 2e 76 d4 00  callq  0x11605960 <IMS_dlog(IMS_MODULE_TYPE, IMS_LOG_LEVEL_TYPE, char cons     t*, int, char const*, ...)>
   99 0x00000000108be332 <+194>:      4c 89 ef        mov    %r13,%rdi
  100 0x00000000108be335 <+197>:      e8 56 5a ab ff  callq  0x10373d90 <LSkey_get_rcv_relinquishfrom_skey(NK_SKEY)>
@@ -692,11 +692,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzEwMDM0NCwtMTU2Mzg4MTMxLC0zND
-U2MDc5NjgsMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEz
-Mzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1ND
-EwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4
-NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC
-0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5
-NjE2NzMyXX0=
+eyJoaXN0b3J5IjpbMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NT
+YwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMz
+ODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MT
+AyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1
+LC0xMjY2NjE3MTQ0LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLT
+EyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2
+MTY3MzJdfQ==
 -->
