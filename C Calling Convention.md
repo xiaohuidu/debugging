@@ -680,6 +680,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
  109 0x00000000108be335      STIproc_pard_restore    80      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
  110 ===================================
 
+...
+ 440 0x00000000108be593 <+803>:      45 89 f0        mov    %r14d,%r8d //R8 存储第五个参数 data_type
+
+ 454 0x00000000108be59f <+815>:      e8 6c ec 1a 01  callq  0x11a6d210 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long     , char*, unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)>
+
 
 ```
 
@@ -687,11 +692,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTYwNzk2OCwxNzI0OTUyMDYxLDE5OD
-Q4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5ODQyMzAw
-OCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xND
-A3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xNDIxMjU4
-MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxNDUsMTQ0NzY2NTA4Ny
-wxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OTcsMTI3
-ODAyMjY1XX0=
+eyJoaXN0b3J5IjpbLTEyNjM3MzI2MDAsLTM0NTYwNzk2OCwxNz
+I0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMx
+NjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtND
+YwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3
+MTQ0LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxND
+UsMTQ0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEz
+MjAyMDE3OTddfQ==
 -->
