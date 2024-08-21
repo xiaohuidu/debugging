@@ -48,9 +48,10 @@
 	```asm
 	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
-10.xxx 
+10. cmp
+11. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MzI1MjA1Myw0NDUyNDA0MjgsLTExMj
+eyJoaXN0b3J5IjpbLTMwODUxNTQ0Nyw0NDUyNDA0MjgsLTExMj
 M0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2
 ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4Nj
 YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
