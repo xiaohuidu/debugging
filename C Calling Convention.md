@@ -514,32 +514,33 @@ Funct Addr   Funct Name                 Line #                          File
 源代码:
 ```cpp
 
-void STIproc_pard_restore(IMS_MSG *msg_ptr)
-{
-        APP_PARD_RESTORE_INFO *pard_info = &(msg_ptr->ims_hdr.msg_hdr_data.app_hdr_data.pard_restore_info);
+ 51 void STIproc_pard_restore(IMS_MSG *msg_ptr)
+ 52 {
+ 53         APP_PARD_RESTORE_INFO *pard_info = &(msg_ptr->ims_hdr.msg_hdr_data.app_hdr_data.pard_restore_info);
+ 54
+ 55         /* Set local data from pard_info */
+ 56         if ( IS_VALID_PTR(pard_info) == FALSE )
+ 57         {
+ 58                 IMS_DLOG( IMS_LOGHIGH, "%s: Invalid pard restore info (%p).", __func__, pard_info);
+ 59                 return;
+ 60         }
+ 61         char * key = pard_info->key;
+ 62         if ( IS_VALID_PTR(key) == FALSE )
+ 63         {
+ 64                 IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore key (%p).", __func__, key);
+ 65                 return;
+ 66         }
+ 67         uint32_t key_len = pard_info->key_len;
+ 68         char *data = pard_info->data;
+ 69         if ( IS_VALID_PTR(data) == FALSE )
+ 70         {
+ 71                 IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore data (%p).", __func__, data);
+ 72                 return;
+ 73         }
+ 74         uint32_t data_len = pard_info->data_len;
+ 75         NK_SKEY  skey = pard_info->skey;
+ 76         IMS_RED_DATA_TYPE  data_type = pard_info->data_type;
 
-        /* Set local data from pard_info */
-        if ( IS_VALID_PTR(pard_info) == FALSE )
-        {
-                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid pard restore info (%p).", __func__, pard_info);
-                return;
-        }
-        char * key = pard_info->key;
-        if ( IS_VALID_PTR(key) == FALSE )
-        {
-                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore key (%p).", __func__, key);
-                return;
-        }
-        uint32_t key_len = pard_info->key_len;
-        char *data = pard_info->data;
-        if ( IS_VALID_PTR(data) == FALSE )
-        {
-                IMS_DLOG( IMS_LOGHIGH, "%s: Invalid restore data (%p).", __func__, data);
-                return;
-        }
-        uint32_t data_len = pard_info->data_len;
-        NK_SKEY  skey = pard_info->skey;
-        IMS_RED_DATA_TYPE  data_type = pard_info->data_type;
 ...
 	 MediaPolicy_nk_red_data_rcvCheckpt(key, key_len, data, data_len, data_type, skey)
 }
@@ -646,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0Mj
-EyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1
-MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5Ny
-wxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkz
-NDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxOD
-k2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4NjgzLC04MDUxMzE2MzEs
-OTQ4ODk0NzRdfQ==
+eyJoaXN0b3J5IjpbLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNj
+Y2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1
+NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMi
+wtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjEx
+MTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0OD
+U2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4Njgz
+LC04MDUxMzE2MzFdfQ==
 -->
