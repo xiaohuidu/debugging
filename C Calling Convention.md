@@ -665,7 +665,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp)
   95 0x00000000108be31f <+175>:      4c 89 6c 24 18  mov    %r13,0x18(%rsp)
   96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp)
-  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp)
+  97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type)
   98 0x00000000108be32d <+189>:      e8 2e 76 d4 00  callq  0x11605960 <IMS_dlog(IMS_MODULE_TYPE, IMS_LOG_LEVEL_TYPE, char cons     t*, int, char const*, ...)>
   99 0x00000000108be332 <+194>:      4c 89 ef        mov    %r13,%rdi
  100 0x00000000108be335 <+197>:      e8 56 5a ab ff  callq  0x10373d90 <LSkey_get_rcv_relinquishfrom_skey(NK_SKEY)>
@@ -681,7 +681,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
  110 ===================================
 
 ...
- 440 0x00000000108be593 <+803>:      45 89 f0        mov    %r14d,%r8d //R8 存储第五个参数 data_type
+ 440 0x00000000108be593 <+803>:      45 89 f0        mov    %r14d,%r8d //R8 存储第五个参数 data_type. R8 是从R14拷贝来的。
 
  454 0x00000000108be59f <+815>:      e8 6c ec 1a 01  callq  0x11a6d210 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long     , char*, unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)>
 
@@ -692,11 +692,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM3MzI2MDAsLTM0NTYwNzk2OCwxNz
-I0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMx
-NjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtND
-YwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3
-MTQ0LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxND
-UsMTQ0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEz
-MjAyMDE3OTddfQ==
+eyJoaXN0b3J5IjpbLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3Mj
+Q5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2
+NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00Nj
+A2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcx
+NDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NS
+wxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMy
+MDIwMTc5N119
 -->
