@@ -685,18 +685,80 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
  454 0x00000000108be59f <+815>:      e8 6c ec 1a 01  callq  0x11a6d210 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long     , char*, unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)>
 
+```
+
+我们也可以从被调用函数
+
+```asm
+ 603 >>>>>>>> Disassembling function: MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*, unsigned long, IMS_RED_DA     TA_TYPE, NK_SKEY)
+ 604 0x0000000011a6d210 <+0>:        55      push   %rbp
+ 605 0x0000000011a6d211 <+1>:        48 89 e5        mov    %rsp,%rbp
+ 606 0x0000000011a6d214 <+4>:        41 57   push   %r15
+ 607 0x0000000011a6d216 <+6>:        4d 89 cf        mov    %r9,%r15
+ 608 0x0000000011a6d219 <+9>:        41 56   push   %r14
+ 609 0x0000000011a6d21b <+11>:       49 89 ce        mov    %rcx,%r14
+ 610 0x0000000011a6d21e <+14>:       41 55   push   %r13
+ 611 0x0000000011a6d220 <+16>:       45 89 c5        mov    %r8d,%r13d
+ 612
+ 613 0x0000000011a6d210      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 614 0x0000000011a6d211      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 615 0x0000000011a6d214      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 616 0x0000000011a6d216      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 617 0x0000000011a6d219      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 618 0x0000000011a6d21b      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 619 0x0000000011a6d21e      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 620 0x0000000011a6d220      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 621 ===================================
+ 622 0x0000000011a6d223 <+19>:       41 54   push   %r12
+ 623 0x0000000011a6d225 <+21>:       49 89 fc        mov    %rdi,%r12
+ 624 0x0000000011a6d228 <+24>:       53      push   %rbx
+ 625 0x0000000011a6d229 <+25>:       48 89 d3        mov    %rdx,%rbx
+ 626 0x0000000011a6d22c <+28>:       48 81 ec c8 01 00 00    sub    $0x1c8,%rsp
+ 627 0x0000000011a6d233 <+35>:       48 89 b5 38 fe ff ff    mov    %rsi,-0x1c8(%rbp)
+ 628 0x0000000011a6d23a <+42>:       e8 91 12 e4 ff  callq  0x118ae4d0 <ALGLogCheck()>
+ 629 0x0000000011a6d23f <+47>:       4d 85 e4        test   %r12,%r12
+ 630
+ 631 0x0000000011a6d223      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 632 0x0000000011a6d225      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 633 0x0000000011a6d228      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 634 0x0000000011a6d229      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 635 0x0000000011a6d22c      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 636 0x0000000011a6d233      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 637 0x0000000011a6d23a      MediaPolicy_nk_red_data_rcvCheckpt      1157    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 638 0x0000000011a6d23f      MediaPolicy_nk_red_data_rcvCheckpt      1160    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 639 ===================================
+ 640 0x0000000011a6d242 <+50>:       0f 84 7d 00 00 00       je     0x11a6d2c5 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsig     ned long, char*, unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)+181>
+ 641 0x0000000011a6d248 <+56>:       4d 85 f6        test   %r14,%r14
+ 642 0x0000000011a6d24b <+59>:       75 73   jne    0x11a6d2c0 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*,      unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)+176>
+ 643 0x0000000011a6d24d <+61>:       80 3d dc 09 79 01 05    cmpb   $0x5,0x17909dc(%rip)        # 0x131fdc30 <ALG_log_level>
+ 644 0x0000000011a6d254 <+68>:       74 3a   je     0x11a6d290 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*,      unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)+128>
+ 645 0x0000000011a6d256 <+70>:       bf 20 00 00 00  mov    $0x20,%edi
+ 646 0x0000000011a6d25b <+75>:       e8 f0 82 b9 ff  callq  0x11605550 <IMSPerCallLoggingGetSBCPerCallFlag(IMS_MODULE_TYPE)>
+ 647 0x0000000011a6d260 <+80>:       66 83 f8 01     cmp    $0x1,%ax
+ 648
+ 649 0x0000000011a6d242      MediaPolicy_nk_red_data_rcvCheckpt      1160    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 650 0x0000000011a6d248      MediaPolicy_nk_red_data_rcvCheckpt      1160 (discriminator 1)  /home/ngl/22.5.0-pp1/R3722.5.20230     717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.     cpp
+ 651 0x0000000011a6d24b      MediaPolicy_nk_red_data_rcvCheckpt      1160 (discriminator 1)  /home/ngl/22.5.0-pp1/R3722.5.20230     717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.     cpp
+ 652 0x0000000011a6d24d      MediaPolicy_nk_red_data_rcvCheckpt      1168    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 653 0x0000000011a6d254      MediaPolicy_nk_red_data_rcvCheckpt      1168    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
+ 654 0x0000000011a6d256      MediaPolicy_nk_red_data_rcvCheckpt      1168 (discriminator 2)  /home/ngl/22.5.0-pp1/R3722.5.20230     717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.     cpp
+ 655 0x0000000011a6d25b      MediaPolicy_nk_red_data_rcvCheckpt      1168 (discriminator 2)  /home/ngl/22.5.0-pp1/R3722.5.20230     717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.     cpp
+ 656 0x0000000011a6d260      MediaPolicy_nk_red_data_rcvCheckpt      1168 (discriminator 2)  /home/ngl/22.5.0-pp1/R3722.5.20230     717_1/obj/linux_x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.     cpp
+ 657 ===================================
+ 658 0x0000000011a6d264 <+84>:       74 2a   je     0x11a6d290 <MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*,      unsigned long, IMS_RED_DATA_TYPE, NK_SKEY)+128>
+ 659 0x0000000011a6d266 <+86>:       41 8d 45 c7     lea    -0x39(%r13),%eax
+ 660 0x0000000011a6d26a <+90>:       48 89 9d 50 fe ff ff    mov    %rbx,-0x1b0(%rbp)
 
 ```
 
 
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NT
-YwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMz
-ODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MT
-AyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1
-LC0xMjY2NjE3MTQ0LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLT
-EyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMTYyMTQ2Mjc0LC00OTk2
-MTY3MzJdfQ==
+eyJoaXN0b3J5IjpbMTkzNTM4ODU3OCwxODg4MDQ2NzUsLTE1Nj
+M4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEsMTk4NDg5NDk5
+NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMz
+YwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMx
+MTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLT
+M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
+NDYyNzRdfQ==
 -->
