@@ -687,7 +687,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 ```
 
-我们也可以从被调用函数
+我们也可以从被调用函数 MediaPolicy_nk_red_data_rcvCheckpt() 中查看第五个参数r8 是不是被放入栈中了。
 
 ```asm
  603 >>>>>>>> Disassembling function: MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*, unsigned long, IMS_RED_DA     TA_TYPE, NK_SKEY)
@@ -698,7 +698,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
  608 0x0000000011a6d219 <+9>:        41 56   push   %r14
  609 0x0000000011a6d21b <+11>:       49 89 ce        mov    %rcx,%r14
  610 0x0000000011a6d21e <+14>:       41 55   push   %r13
- 611 0x0000000011a6d220 <+16>:       45 89 c5        mov    %r8d,%r13d
+ 611 0x0000000011a6d220 <+16>:       45 89 c5        mov    %r8d,%r13d //data_type, r8 被放入了r13
  612
  613 0x0000000011a6d210      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
  614 0x0000000011a6d211      MediaPolicy_nk_red_data_rcvCheckpt      1155    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
@@ -764,7 +764,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
  674 0x0000000011a6d28b      MediaPolicy_nk_red_data_rcvCheckpt      1175    /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_     x86-64/ssp/ds/ims/util/linux_x86-64_csbc_ds_ims/../../../../../../../ssp/ds/ims/util/IMSpolicy_redundancy.cpp
  675 ===================================
  676 0x0000000011a6d290 <+128>:      4c 89 7c 24 08  mov    %r15,0x8(%rsp)
- 677 0x0000000011a6d295 <+133>:      44 89 2c 24     mov    %r13d,(%rsp)
+ 677 0x0000000011a6d295 <+133>:      44 89 2c 24     mov    %r13d,(%rsp) // r13(data_type)被压栈了。
  678 0x0000000011a6d299 <+137>:      4d 89 e1        mov    %r12,%r9
 
 ```
@@ -772,11 +772,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQxMzEwMzEsMTg4ODA0Njc1LC0xNT
-YzODgxMzEsLTM0NTYwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5
-OTUsLTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMj
-M2MDI3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xNDA3Nzkz
-MTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xNDIxMjU4MDM3LC
-0zNjAxNjg1NDcsLTEyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMTYy
-MTQ2Mjc0XX0=
+eyJoaXN0b3J5IjpbLTgyOTU4MDcyNSwxODg4MDQ2NzUsLTE1Nj
+M4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEsMTk4NDg5NDk5
+NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMz
+YwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMx
+MTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLT
+M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
+NDYyNzRdfQ==
 -->
