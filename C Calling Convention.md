@@ -540,6 +540,8 @@ Funct Addr   Funct Name                 Line #                          File
  74         uint32_t data_len = pard_info->data_len;
  75         NK_SKEY  skey = pard_info->skey;
  76         IMS_RED_DATA_TYPE  data_type = pard_info->data_type;
+ 77         IMS_DLOG( IMS_LOGMED, "%s: restore data_type(%d). key_length (%d) key (%s) " PRT_SKEY_STR,
+ 78                  __func__, data_type, key_len, key_to_hex((char *)key, key_len), skey, skey);
 
 ...
 	 MediaPolicy_nk_red_data_rcvCheckpt(key, key_len, data, data_len, data_type, skey)
@@ -673,7 +675,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzU4MzM3MSwxOTg0ODk0OTk1LC0xNT
+eyJoaXN0b3J5IjpbMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNT
 M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
 OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
 A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
