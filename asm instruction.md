@@ -51,10 +51,11 @@
 10. cmp: 比较两个操作数（从第一个操作数中减去第二个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
 	```asm
 	cmp %rax, %rdx
+	ja 0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> 
 	```
 12. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ4MDE0Miw0NDUyNDA0MjgsLTExMj
+eyJoaXN0b3J5IjpbMTcxMTA5MjYzMCw0NDUyNDA0MjgsLTExMj
 M0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2
 ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4Nj
 YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
