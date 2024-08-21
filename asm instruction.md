@@ -32,7 +32,7 @@
 	```
 	**movl**: 拷贝32bit data
 	**movq**: 拷贝64bit data
-	movabs: 把大
+	**movabs**: 把大的立即数(large than 32-bit)直接拷贝到寄存器中。
  2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
@@ -44,15 +44,15 @@
 8. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作:
 	- **movq %rbp, %rsp**: 把上一个函数的rbp 放到rsp中，这样就把这个函数得到局部变量和其他的data 从栈上清除了。
 	- **popq %rbp**: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。这样栈就退到了上一个函数的栈。
-9. lea(Load Effective Address):  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
+9. **lea(Load Effective Address)**:  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
 	```asm
 	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
 10.xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyOTE2ODU1LDQ0NTI0MDQyOCwtMTEyMz
-Q0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4MDY4
-NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2Nj
-A5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5
-MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTE2MzI1MjA1Myw0NDUyNDA0MjgsLTExMj
+M0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2
+ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4Nj
+YwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3
+OTEsNzMwOTk4MTE2XX0=
 -->
