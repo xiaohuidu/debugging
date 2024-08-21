@@ -582,7 +582,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   25 0x00000000108be299 <+41>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(pard_info) == FALSE )
   26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> // 跳转到0x108be3a0 打印log
   27 0x00000000108be2a2 <+50>:       4c 8b 67 0c     mov    0xc(%rdi),%r12 
-  28 0x00000000108be2a6 <+54>:       49 8d 94 24 00 f0 ff ff lea    -0x1000(%r12),%rdx
+  28 0x00000000108be2a6 <+54>:       49 8d 94 24 00 f0 ff ff lea    -0x1000(%r12),%rdx // rdx 存储 char*key
   29
   30 0x00000000108be28f      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   31 0x00000000108be291      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MD
-I3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEy
-LDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xNDIxMjU4MDM3LC0zNj
-AxNjg1NDcsLTEyNDM5NTYxNDUsMTQ0NzY2NTA4NywxMTYyMTQ2
-Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OTcsMTI3ODAyMjY1LC
-05OTcwMjE4NDksLTIxMTEwMTgyMTIsLTE5MzQwMTUwMTYsLTM5
-OTcyMjI5NF19
+eyJoaXN0b3J5IjpbLTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5OD
+QyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1
+LC0xNDA3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xND
+IxMjU4MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxNDUsMTQ0NzY2
+NTA4NywxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OT
+csMTI3ODAyMjY1LC05OTcwMjE4NDksLTIxMTEwMTgyMTIsLTE5
+MzQwMTUwMTZdfQ==
 -->
