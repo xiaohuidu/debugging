@@ -562,7 +562,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
    5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax //把IS_VALID_PTR 的最大合法地址放到 rax
    6 0x00000000108be282 <+18>:       48 8d 4f 0c     lea    0xc(%rdi),%rcx
    7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp //改变rbp 寄存器
-   8 0x00000000108be289 <+25>:       41 57   push   %r15
+   8 0x00000000108be289 <+25>:       41 57   push   %r15 //保存
    9 0x00000000108be28b <+27>:       41 56   push   %r14
   10 0x00000000108be28d <+29>:       41 55   push   %r13
   11
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MD
-c3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgw
-MzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LD
-ExNjIxNDYyNzQsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4
-MDIyNjUsLTk5NzAyMTg0OSwtMjExMTAxODIxMiwtMTkzNDAxNT
-AxNiwtMzk5NzIyMjk0LDEzMTM0ODU2NjQsLTU4MDkxODk2MSwt
-MjA3NTk0NzI3NF19
+eyJoaXN0b3J5IjpbMjA3MTk0Nzk1Myw1NDEwMjAwMDgsLTQ2MD
+Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
+NCwtMTQyMTI1ODAzNywtMzYwMTY4NTQ3LC0xMjQzOTU2MTQ1LD
+E0NDc2NjUwODcsMTE2MjE0NjI3NCwtNDk5NjE2NzMyLC0xMzIw
+MjAxNzk3LDEyNzgwMjI2NSwtOTk3MDIxODQ5LC0yMTExMDE4Mj
+EyLC0xOTM0MDE1MDE2LC0zOTk3MjIyOTQsMTMxMzQ4NTY2NCwt
+NTgwOTE4OTYxXX0=
 -->
