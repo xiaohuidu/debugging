@@ -600,7 +600,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   43 0x00000000108be2bf <+79>:       49 8d 92 00 f0 ff ff    lea    -0x1000(%r10),%rdx // char *data 放到rdx
   44 0x00000000108be2c6 <+86>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(data) == FALSE )
   45 0x00000000108be2c9 <+89>:       0f 87 91 00 00 00       ja     0x108be360 <STIproc_pard_restore(ims_MSG*)+240> // 如果invliad， 跳转打印log
-  46 0x00000000108be2cf <+95>:       4c 8b 6f 28     mov    0x28(%rdi),%r13 
+  46 0x00000000108be2cf <+95>:       4c 8b 6f 28     mov    0x28(%rdi),%r13 //NK_SKEY  skey， 后面放到了栈上
   47
   48 0x00000000108be2ae      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   49 0x00000000108be2b1      STIproc_pard_restore    62      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDUwNDcwNiwxOTg0ODk0OTk1LC0xNT
-M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
-OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
-A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
-NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
-wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
-MDIxODQ5XX0=
+eyJoaXN0b3J5IjpbLTE5MDI2OTk0NzAsMTk4NDg5NDk5NSwtMT
+UzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3
+OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNj
+QwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2
+ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNz
+QsLTQ5OTYxNjczMiwtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5
+NzAyMTg0OV19
 -->
