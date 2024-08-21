@@ -558,7 +558,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 ```asm
    2 >>>>>>>> Disassembling function: STIproc_pard_restore(ims_MSG*)
    3 0x00000000108be270 <+0>:        55      push   %rbp
-   4 0x00000000108be271 <+1>:        48 8d 97 0c f0 ff ff    lea    -0xff4(%rdi),%rdx
+   4 0x00000000108be271 <+1>:        48 8d 97 0c f0 ff ff    lea    -0xff4(%rdi),%rdx // 计算APP_PARD_RESTORE_INFO *pard_info
    5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax
    6 0x00000000108be282 <+18>:       48 8d 4f 0c     lea    0xc(%rdi),%rcx
    7 0x00000000108be286 <+22>:       48 89 e5        mov    %rsp,%rbp
@@ -647,11 +647,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNj
-Y2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1
-NjE0NSwxNDQ3NjY1MDg3LDExNjIxNDYyNzQsLTQ5OTYxNjczMi
-wtMTMyMDIwMTc5NywxMjc4MDIyNjUsLTk5NzAyMTg0OSwtMjEx
-MTAxODIxMiwtMTkzNDAxNTAxNiwtMzk5NzIyMjk0LDEzMTM0OD
-U2NjQsLTU4MDkxODk2MSwtMjA3NTk0NzI3NCwtNDQ2NTc4Njgz
-LC04MDUxMzE2MzFdfQ==
+eyJoaXN0b3J5IjpbLTE2MzYwOTI3OSwtMTQwNzc5MzExMiw2ND
+A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
+NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
+wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
+MDIxODQ5LC0yMTExMDE4MjEyLC0xOTM0MDE1MDE2LC0zOTk3Mj
+IyOTQsMTMxMzQ4NTY2NCwtNTgwOTE4OTYxLC0yMDc1OTQ3Mjc0
+LC00NDY1Nzg2ODNdfQ==
 -->
