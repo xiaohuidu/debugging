@@ -513,8 +513,19 @@ Funct Addr   Funct Name                 Line #                          File
 ```
 源代码:
 ```cpp
+#pragma pack(1)
+typedef struct {
+        char *  key;
+        uint32_t key_len;
+        char *  data;
+        uint32_t data_len;
+        IMS_RED_DATA_TYPE  data_type;
+        NK_SKEY  skey;
+} APP_PARD_RESTORE_INFO;
+#pragma pack()
 
- 51 void STIproc_pard_restore(IMS_MSG *msg_ptr)
+ 51 void 
+ STIproc_pard_restore(IMS_MSG *msg_ptr)
  52 {
  53         APP_PARD_RESTORE_INFO *pard_info = &(msg_ptr->ims_hdr.msg_hdr_data.app_hdr_data.pard_restore_info);
  54
@@ -554,6 +565,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
         unsigned long data_len,
         IMS_RED_DATA_TYPE data_type,
         NK_SKEY skey)
+
 
 ```
 
@@ -675,11 +687,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNT
-M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
-OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2ND
-A5NzU4NSwtMTI2NjYxNzE0NCwtMTQyMTI1ODAzNywtMzYwMTY4
-NTQ3LC0xMjQzOTU2MTQ1LDE0NDc2NjUwODcsMTE2MjE0NjI3NC
-wtNDk5NjE2NzMyLC0xMzIwMjAxNzk3LDEyNzgwMjI2NSwtOTk3
-MDIxODQ5XX0=
+eyJoaXN0b3J5IjpbLTM0NTYwNzk2OCwxNzI0OTUyMDYxLDE5OD
+Q4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5ODQyMzAw
+OCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xND
+A3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xNDIxMjU4
+MDM3LC0zNjAxNjg1NDcsLTEyNDM5NTYxNDUsMTQ0NzY2NTA4Ny
+wxMTYyMTQ2Mjc0LC00OTk2MTY3MzIsLTEzMjAyMDE3OTcsMTI3
+ODAyMjY1XX0=
 -->
