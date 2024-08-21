@@ -48,7 +48,7 @@
 	```asm
 	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
-10. **cmp**: 比较两个操作数（从第一个操作数中减去第二个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
+10. **cmp**: 比较两个操作数（从第二个操作数中减去第一个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
 	```asm
 	cmp %rax, %rdx
 	ja 0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> 
@@ -61,9 +61,9 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMT
-IzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgw
-Njg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5OD
-Y2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4
-NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNjAxODg3NzEsLTE4NTU0OTQxNDksNDQ1Mj
+QwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5
+OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1Mz
+UxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkw
+LC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
