@@ -105,7 +105,7 @@
 	```asm
 	sub 0x30 $(rsp)
 	``` 
-14. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 
+14. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 下面不同的指令指令长度不一样。
 	```asm
 	nop
 	```
@@ -121,10 +121,11 @@
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzODYzNTQxLDE5NzcxNzk5ODcsNTkxND
-M5NDg1LC0xMDE1MjY3MTg3LC0xMTQ1MzQwMzM5LC0xODU1NDk0
-MTQ5LDQ0NTI0MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5NTUxLC
-0yMDQ4NzQ0OTk3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0
-NDkxNSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLT
-I3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTg2MjkyOTA1Miw5ODM4NjM1NDEsMTk3Nz
+E3OTk4Nyw1OTE0Mzk0ODUsLTEwMTUyNjcxODcsLTExNDUzNDAz
+MzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC
+0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2
+NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLT
+kzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5
+ODExNl19
 -->
