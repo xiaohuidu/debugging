@@ -595,7 +595,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   24 0x00000000108be295 <+37>:       48 83 ec 48     sub    $0x48,%rsp // 为局部变量分配栈空间
   25 0x00000000108be299 <+41>:       48 39 c2        cmp    %rax,%rdx // if ( IS_VALID_PTR(pard_info) == FALSE )
   26 0x00000000108be29c <+44>:       0f 87 fe 00 00 00       ja     0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> // 跳转到0x108be3a0 打印log
-  27 0x00000000108be2a2 <+50>:       4c 8b 67 0c     mov    0xc(%rdi),%r12 
+  27 0x00000000108be2a2 <+50>:       4c 8b 67 0c     mov    0xc(%rdi),%r12 //r12存着 char *key
   28 0x00000000108be2a6 <+54>:       49 8d 94 24 00 f0 ff ff lea    -0x1000(%r12),%rdx // rdx 存储 char*key
   29
   30 0x00000000108be28f      STIproc_pard_restore    52      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
@@ -664,7 +664,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   93 0x00000000108be315 <+165>:      bf 04 00 00 00  mov    $0x4,%edi
   94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp) //r13 存着char *skey
   95 0x00000000108be31f <+175>:      4c 89 6c 24 18  mov    %r13,0x18(%rsp)
-  96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp)
+  96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp) //r15 存着 uint32_t key_len
   97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type). 可以从STIproc_pard_restore的栈上对应的位置找到这个值(5f000000)
   98 0x00000000108be32d <+189>:      e8 2e 76 d4 00  callq  0x11605960 <IMS_dlog(IMS_MODULE_TYPE, IMS_LOG_LEVEL_TYPE, char cons     t*, int, char const*, ...)>
   99 0x00000000108be332 <+194>:      4c 89 ef        mov    %r13,%rdi
@@ -772,7 +772,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODMyODIyNywtODI5NTgwNzI1LDE4OD
+eyJoaXN0b3J5IjpbLTUwNDc1MDcxOCwtODI5NTgwNzI1LDE4OD
 gwNDY3NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyNDk1MjA2
 MSwxOTg0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1Miw5OT
 g0MjMwMDgsLTIzNjAyNzc5OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5
