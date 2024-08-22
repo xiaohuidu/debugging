@@ -25,6 +25,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 
 # 子程序的调用者Caller 遵循的rule
 1.  在调用另一个函数之前， caller 需要把一些**保存着caller 要继续使用data的寄存器的内容push到栈上**。 这些寄存器包括 r10, r11 和其他的一些保存参数的寄存器。这些内容往往是在调用另一个函数后还需要保持不变的。
+
 2.  把被调用函数需要的**参数放到6个寄存器中**。如果函数参数超过了6个， 把其他的参数以相反的顺序压到栈上。
 	> 六个寄存器依次是:
 	
@@ -42,8 +43,9 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	
 
 3.  **用 call 指令去调用被调用函数**。 **返回地址**（下一条指令地址）会被push到栈上， 然后跳到被调用函数的地址去执行。
-4. 在从被调用函数返回后（紧跟着call指令的指令）， 需要**把超过6个的参数部分从栈上删除**。这样栈就恢复到了调用函数之前。
-5. 被调用函数的返回值放在了**rax** 寄存器， caller 可以从这个寄存器或得返回值。
+
+5. 在从被调用函数返回后（紧跟着call指令的指令）， 需要**把超过6个的参数部分从栈上删除**。这样栈就恢复到了调用函数之前。
+6. 被调用函数的返回值放在了**rax** 寄存器， caller 可以从这个寄存器或得返回值。
 
 	> **rax 寄存器用途**:
 	> 1. 通用寄存器
@@ -361,11 +363,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2MTk3NTM1LDc5NTgzNzU0NSwxODM3Mj
-k4NDE3LC0zOTY5NjI3NDUsODkyMDQ4MjM2LC01MDQ3NTA3MTgs
-LTgyOTU4MDcyNSwxODg4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1Nj
-A3OTY4LDE3MjQ5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4
-NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMD
-IwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODVd
-fQ==
+eyJoaXN0b3J5IjpbMTkxMDAyNjExMyw5OTYxOTc1MzUsNzk1OD
+M3NTQ1LDE4MzcyOTg0MTcsLTM5Njk2Mjc0NSw4OTIwNDgyMzYs
+LTUwNDc1MDcxOCwtODI5NTgwNzI1LDE4ODgwNDY3NSwtMTU2Mz
+g4MTMxLC0zNDU2MDc5NjgsMTcyNDk1MjA2MSwxOTg0ODk0OTk1
+LC0xNTM1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNj
+AyNzc5OSw1NDEwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzEx
+Ml19
 -->
