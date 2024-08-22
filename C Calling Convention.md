@@ -124,7 +124,7 @@ pop rbp
 0x0000000000400903 <+4>:        48 83 ec 10     sub    $0x10,%rsp // 移动栈顶寄存器(Stack Pointer)用来放局部变量(int a, char*str). 
 // 为什么是16 而不是12? 原因是stack alignment： stack 应该以
 // 16 byte 对齐。
-0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp) // 保存 a=3
+0x0000000000400907 <+8>:        c7 45 fc 03 00 00 00    movl   $0x3,-0x4(%rbp) // 保存 a=3（第一个变量在栈高地址）
 0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp) //保存 char *b = "abc"
 0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi //开始位调用func2 做准备: 第二个参数放到rsi
 0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax // 第一个参数暂存在eax
@@ -370,11 +370,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDk3MDQzNTMsLTI3MTkxMjEyNCwxMz
-E3ODYzNTYsOTk2MTk3NTM1LDc5NTgzNzU0NSwxODM3Mjk4NDE3
-LC0zOTY5NjI3NDUsODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOT
-U4MDcyNSwxODg4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4
-LDE3MjQ5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2Nz
-gyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4
-XX0=
+eyJoaXN0b3J5IjpbLTc4NjUzMzQ3OSwtMTE0OTcwNDM1MywtMj
+cxOTEyMTI0LDEzMTc4NjM1Niw5OTYxOTc1MzUsNzk1ODM3NTQ1
+LDE4MzcyOTg0MTcsLTM5Njk2Mjc0NSw4OTIwNDgyMzYsLTUwND
+c1MDcxOCwtODI5NTgwNzI1LDE4ODgwNDY3NSwtMTU2Mzg4MTMx
+LC0zNDU2MDc5NjgsMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNT
+M1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5
+OV19
 -->
