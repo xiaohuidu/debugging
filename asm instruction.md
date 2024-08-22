@@ -45,20 +45,20 @@
  
  4.  **popq(pop in 32 bit)**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4)。
  
-6.  **callq(call in 32 bit)**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
+5.  **callq(call in 32 bit)**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
 
-7.  **retq(32 bit 是ret)**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
+6.  **retq(32 bit 是ret)**: 从函数调用中返回， 保存在栈上的返回地址(调用函数中在调用被调函数的时候call 指令的时候入栈的）被放到RIP/EIP 中去继续执行。此时返回地址是在栈顶的。64-bit 上是**retq**。地址在64-bit上是8 byte， 在32-bit上是4 byte。 例如：ret ; 从栈顶取出返回地址， 从这个地址继续执行。
 
-9. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作:
+7. **leaveq(leave in 32 bit)**: 用在retq/ret前， 在函数返回前做一些cleanup的工作:
 	- **movq %rbp, %rsp**: 把上一个函数的rbp 放到rsp中，这样就把这个函数得到局部变量和其他的data 从栈上清除了。
 	- **popq %rbp**: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。这样栈就退到了上一个函数的栈。
 
-10. **lea(Load Effective Address)**:  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
+8. **lea(Load Effective Address)**:  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
 	```asm
 	lea -0xff4(%rdi), %rdx //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
 	
-11. **cmp**: 比较两个操作数（从第二个操作数中减去第一个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
+9. **cmp**: 比较两个操作数（从第二个操作数中减去第一个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
 	```asm
 	cmp %rax, %rdx
 	ja 0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> 
@@ -68,29 +68,29 @@
 	```asm	
 	cmpb   $0x5,0x17909dc(%rip)
 	```
-12. **ja**: jmp if above
+10. **ja**: jmp if above
 	  **je**: jmp if equal
 	  **jg**: jump if greater
 	  **jl**: jump if less
 	  **jz**: jump if zero
 	  **jnz**: jump if NOT zero
 	  
-13.  **add**： 把第一个操作数加到第二个操作数上。
+11.  **add**： 把第一个操作数加到第二个操作数上。
 
 	```asm
 	add    $0x1c8,%rsp
 	```
-14. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
 	test   %r12, %r12 // 判断r12是不是0.
 	jz     some_label
 	```
-15. xxx 
+13. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDMxNzIxMywtMTAxNTI2NzE4NywtMT
-E0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0
-NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2OD
-QzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYw
-OTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OT
-EsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwMDk5Mzk1NzUsLTEwMTUyNjcxODcsLT
+ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
+NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
+g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
+MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4Nz
+kxLDczMDk5ODExNl19
 -->
