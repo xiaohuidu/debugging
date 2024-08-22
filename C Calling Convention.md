@@ -128,7 +128,7 @@ pop rbp
 0x000000000040090e <+15>:       48 c7 45 f0 59 0a 40 00 movq   $0x400a59,-0x10(%rbp) //保存 char *b = "abc"
 0x0000000000400916 <+23>:       48 8b 75 f0     mov    -0x10(%rbp),%rsi //开始位调用func2 做准备: 第二个参数放到rsi
 0x000000000040091a <+27>:       8b 45 fc        mov    -0x4(%rbp),%eax // 第一个参数暂存在eax
-0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp // ， 把栈顶 寄存器往上移 8 bytes 用来存放第七个参数。
+0x000000000040091d <+30>:       48 83 ec 08     sub    $0x8,%rsp 
 0x00000000004008ff      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400900      main    21      /home/kennyd/tmp/test.cpp
 0x0000000000400903      main    21      /home/kennyd/tmp/test.cpp
@@ -138,7 +138,8 @@ pop rbp
 0x000000000040091a      main    24      /home/kennyd/tmp/test.cpp
 0x000000000040091d      main    24      /home/kennyd/tmp/test.cpp
 ===================================
-0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555// 第七个参数入栈
+0x0000000000400921 <+34>:       68 55 05 00 00  pushq  $0x555// 第七个参数入栈(因为被调用函数有7个参数（超过6个）， 
+// 所以最后一个参数要放到栈上)
 0x0000000000400926 <+39>:       41 b9 44 04 00 00       mov    $0x444,%r9d // 第六个参数放到r9（低32 bit）
 0x000000000040092c <+45>:       41 b8 33 03 00 00       mov    $0x333,%r8d // 第五个参数放到r8（低32 bit）
 0x0000000000400932 <+51>:       b9 22 02 00 00  mov    $0x222,%ecx // 第四个参数放到ecx
@@ -369,11 +370,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczMTU5NTQxLC03ODY1MzM0NzksLTExND
-k3MDQzNTMsLTI3MTkxMjEyNCwxMzE3ODYzNTYsOTk2MTk3NTM1
-LDc5NTgzNzU0NSwxODM3Mjk4NDE3LC0zOTY5NjI3NDUsODkyMD
-Q4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcyNSwxODg4MDQ2NzUs
-LTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEsMTk4ND
-g5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4
-XX0=
+eyJoaXN0b3J5IjpbLTIwNDk3NzEyNDYsLTc4NjUzMzQ3OSwtMT
+E0OTcwNDM1MywtMjcxOTEyMTI0LDEzMTc4NjM1Niw5OTYxOTc1
+MzUsNzk1ODM3NTQ1LDE4MzcyOTg0MTcsLTM5Njk2Mjc0NSw4OT
+IwNDgyMzYsLTUwNDc1MDcxOCwtODI5NTgwNzI1LDE4ODgwNDY3
+NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyNDk1MjA2MSwxOT
+g0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMw
+MDhdfQ==
 -->
