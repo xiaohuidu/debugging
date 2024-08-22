@@ -41,7 +41,7 @@
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
 	```
 	
- 3.  **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。 例如：  **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
+ 3.  **pushq（push in 32 bit）**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。 例如：  **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
  
  4.  **popq(pop in 32 bit)**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4)。
  
@@ -92,10 +92,10 @@
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjM0NDQ0MSw1OTE0Mzk0ODUsLTEwMT
-UyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQw
-NDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OT
-csMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUx
-ODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC
-0xNTgxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE2NjUwMDE1MzgsNTkxNDM5NDg1LC0xMD
+E1MjY3MTg3LC0xMTQ1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0
+MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OT
+k3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1
+MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MC
+wtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
 -->
