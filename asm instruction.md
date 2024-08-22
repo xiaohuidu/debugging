@@ -68,12 +68,18 @@
 	```asm	
 	cmpb   $0x5,0x17909dc(%rip)
 	```
-10.  jmp: 跳转到
-**ja**: jmp if above
+10.  **jmp**: 跳转到地址。会修改指令寄存器RIP(EIP)
+
+	  **ja**: jmp if above
+	  
 	  **je**: jmp if equal
+	  
 	  **jg**: jump if greater
+	  
 	  **jl**: jump if less
+	  
 	  **jz**: jump if zero
+	  
 	  **jnz**: jump if NOT zero
 	  
 12.  **add**： 把第一个操作数加到第二个操作数上。 add 指令会set相应的flag。
@@ -93,10 +99,10 @@
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3MTEzNzU3LDU5MTQzOTQ4NSwtMTAxNT
-I2NzE4NywtMTE0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0
-MjgsLTExMjM0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5Ny
-wxOTk0ODA2ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4
-MzY3LDk4NjYwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLT
-E1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTEzNjMwNDk5MSw1OTE0Mzk0ODUsLTEwMT
+UyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQw
+NDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OT
+csMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUx
+ODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC
+0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
