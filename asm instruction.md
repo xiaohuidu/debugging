@@ -68,6 +68,7 @@
 	```asm	
 	cmpb   $0x5,0x17909dc(%rip)
 	```
+	
 	**cmpw**: 比较2个bytes
 	
 10.  **jmp**: 跳转到地址。会修改指令寄存器RIP(EIP)
@@ -101,7 +102,7 @@
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTcyOTIxNCw1OTE0Mzk0ODUsLTEwMT
+eyJoaXN0b3J5IjpbLTcwNzk1NjUwMCw1OTE0Mzk0ODUsLTEwMT
 UyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQw
 NDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OT
 csMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUx
