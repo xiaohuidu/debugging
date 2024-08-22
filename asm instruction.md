@@ -57,9 +57,8 @@
 	ja 0x108be3a0 <STIproc_pard_restore(ims_MSG*)+304> 
 	```
 	
-		**cmpb**: 只比较一个字节
+	**cmpb**: 只比较一个字节:
 		
-		asm
 		cmpb   $0x5,0x17909dc(%rip)
 		
 	11. **ja**: jmp if above
@@ -70,7 +69,7 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTc2NzI2MjcsLTExNDUzNDAzMzksLT
+eyJoaXN0b3J5IjpbLTE2NzM5MDc5NjgsLTExNDUzNDAzMzksLT
 E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
 MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
 wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
