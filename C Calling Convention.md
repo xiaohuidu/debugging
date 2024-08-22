@@ -1,4 +1,4 @@
-# 什么是 Calling Convention
+# 什么是 函数调用约定(Calling Convention)
 
 当在一个程序中结合使用更复杂的子程序时，会出现许多复杂的问题。例如，如何将参数传递给子程序？子程序能否覆盖寄存器中的值，还是调用者期望寄存器的内容保持不变？子程序中的局部变量应该存储在哪里？如何从函数中返回结果？
 
@@ -361,11 +361,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzI5ODQxNywtMzk2OTYyNzQ1LDg5Mj
-A0ODIzNiwtNTA0NzUwNzE4LC04Mjk1ODA3MjUsMTg4ODA0Njc1
-LC0xNTYzODgxMzEsLTM0NTYwNzk2OCwxNzI0OTUyMDYxLDE5OD
-Q4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5ODQyMzAw
-OCwtMjM2MDI3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xND
-A3NzkzMTEyLDY0MDk3NTg1LC0xMjY2NjE3MTQ0LC0xNDIxMjU4
-MDM3XX0=
+eyJoaXN0b3J5IjpbNzczMjc3OTUwLDE4MzcyOTg0MTcsLTM5Nj
+k2Mjc0NSw4OTIwNDgyMzYsLTUwNDc1MDcxOCwtODI5NTgwNzI1
+LDE4ODgwNDY3NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyND
+k1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1
+Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1NDEwMjAwMDgsLTQ2MD
+Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
+NF19
 -->
