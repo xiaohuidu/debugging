@@ -11,7 +11,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 
 **调用约定分为两组规则。第一组规则由子程序的调用者使用，第二组规则由子程序的编写者（即“被调用者”）遵循**。需要强调的是，未能遵守这些规则会迅速导致致命的程序错误；因此，在自己的子程序中实现这些调用约定时，应当非常谨慎。
 > **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。
-> 例如： **push %eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
+> 例如： **push %eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 eax寄存器的内容存在栈上。
 
 > **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。
 > 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
@@ -361,11 +361,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1ODM3NTQ1LDE4MzcyOTg0MTcsLTM5Nj
-k2Mjc0NSw4OTIwNDgyMzYsLTUwNDc1MDcxOCwtODI5NTgwNzI1
-LDE4ODgwNDY3NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyND
-k1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1
-Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1NDEwMjAwMDgsLTQ2MD
-Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
-NF19
+eyJoaXN0b3J5IjpbLTQwNzU3ODMyOSw3OTU4Mzc1NDUsMTgzNz
+I5ODQxNywtMzk2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4
+LC04Mjk1ODA3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NT
+YwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMz
+ODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MT
+AyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1
+XX0=
 -->
