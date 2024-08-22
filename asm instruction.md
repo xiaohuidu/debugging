@@ -71,9 +71,13 @@
 	  **jnz**: jump if NOT zero
 12.  add
 13. test: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
-14. xxx 
+```asm
+test   %r12, %r12 // 判断r12是不是0.
+jz     some_label
+```
+15. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUyNTE5NDAsLTEwMTUyNjcxODcsLT
+eyJoaXN0b3J5IjpbLTEzNjQzNTY5MTQsLTEwMTUyNjcxODcsLT
 ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
 NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
 g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
