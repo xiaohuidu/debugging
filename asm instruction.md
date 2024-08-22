@@ -31,8 +31,11 @@
 	// $ 开头表示这是一个立即数。	
 	```
 	**movl**: 拷贝32bit data
+	
 	**movq**: 拷贝64bit data
+	
 	**movabs**: 把大的立即数(large than 32-bit)直接拷贝到寄存器中。
+	
  2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
@@ -61,9 +64,9 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxODg3NzEsLTE4NTU0OTQxNDksNDQ1Mj
-QwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5
-OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1Mz
-UxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkw
-LC0xNTgxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTExNDUzNDAzMzksLTE4NTU0OTQxNDksND
+Q1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3
+NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LD
+k1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMx
+NTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
 -->
