@@ -9,7 +9,7 @@
 # C 语言函数调用约定(Calling Convention)
 C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语言的调用约定，你首先应该确保你完全理解`push`、`pop`、`call`和`ret`指令——这些将是大多数规则的基础。在这种调用约定中，子程序的参数通过栈传递，寄存器保存在栈上，子程序使用的局部变量也放置在栈中的内存中。事实上，这种以栈为中心的子程序实现方式并不仅限于C语言或x86架构。绝大多数在各种处理器上实现的高级过程式语言都使用了类似的调用约定。
 
-调用约定分为两组规则。第一组规则由子程序的调用者使用，第二组规则由子程序的编写者（即“被调用者”）遵循。需要强调的是，未能遵守这些规则会迅速导致致命的程序错误；因此，在自己的子程序中实现这些调用约定时，应当非常谨慎。
+**调用约定分为两组规则。第一组规则由子程序的调用者使用，第二组规则由子程序的编写者（即“被调用者”）遵循**。需要强调的是，未能遵守这些规则会迅速导致致命的程序错误；因此，在自己的子程序中实现这些调用约定时，应当非常谨慎。
 > **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。
 > 例如： **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
 
@@ -361,7 +361,7 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NjQwNzU2MCwxODM3Mjk4NDE3LC0zOT
+eyJoaXN0b3J5IjpbMTAwMjcyNjAwOCwxODM3Mjk4NDE3LC0zOT
 Y5NjI3NDUsODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcy
 NSwxODg4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3Mj
 Q5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2
