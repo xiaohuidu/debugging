@@ -59,10 +59,10 @@
 	
 		**cmpb**: 只比较一个字节
 		
-		```asm
+		asm
 		cmpb   $0x5,0x17909dc(%rip)
-	```
-11. **ja**: jmp if above
+		
+	11. **ja**: jmp if above
 	  **je**: jmp if equal
 	  **jg**: jump if greater
 	  **jl**: jump if less
@@ -70,10 +70,10 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyMzUxNDI1LC0xMTQ1MzQwMzM5LC0xOD
-U1NDk0MTQ5LDQ0NTI0MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5
-NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMT
-c2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3
-NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbLTE4OTc2NzI2MjcsLTExNDUzNDAzMzksLT
+E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
+MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
+wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
+MTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl
+19
 -->
