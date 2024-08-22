@@ -50,7 +50,7 @@
 	- **popq %rbp**: 把栈上保存的上一个函数的rbp 放到rbp 寄存器中。这样栈就退到了上一个函数的栈。
 9. **lea(Load Effective Address)**:  和mov不一样的是， 这个指令不会访问地址所指向的内存， 只是会计算并把地址赋给目的操作数。
 	```asm
-	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
+	lea -0xff4(%rdi), %rdx //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
 	
 10. **cmp**: 比较两个操作数（从第二个操作数中减去第一个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
@@ -60,9 +60,9 @@
 	```
 	
 	**cmpb**: 只比较一个字节:
-		
-		cmpb   $0x5,0x17909dc(%rip)
-		
+	```asm	
+	cmpb   $0x5,0x17909dc(%rip)
+	```
 	11. **ja**: jmp if above
 	  **je**: jmp if equal
 	  **jg**: jump if greater
@@ -71,10 +71,10 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDI4MDEyOCwtMTE0NTM0MDMzOSwtMT
-g1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0NDU2MjEsLTExODEw
-OTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2ODQzLDUzMDY1NjE4LD
-E3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MTMx
-NzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX
-0=
+eyJoaXN0b3J5IjpbLTEwMTUyNjcxODcsLTExNDUzNDAzMzksLT
+E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
+MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
+wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
+MTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl
+19
 -->
