@@ -206,7 +206,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 ```
 **汇编代码:**
 ```asm
-   2 >>>>>>>> Disassembling function: STIproc_pard_restore(ims_MSG*)
+   2 >>>>>>>> Disassembling function: **STIproc_pard_restore**(ims_MSG*)
    3 0x00000000108be270 <+0>:        55      push   %rbp
    4 0x00000000108be271 <+1>:        48 8d 97 0c f0 ff ff    lea    -0xff4(%rdi),%rdx // 计算APP_PARD_RESTORE_INFO *pard_info， 并放到rdx中（rdi指向传入参数IMS_MSG *msg_ptr）。
    5 0x00000000108be278 <+8>:        48 b8 ff ef ff ff ff ff 00 00   movabs $0xffffffffefff,%rax //把IS_VALID_PTR 的最大合法地址放到 rax
@@ -405,5 +405,5 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODExMzA0MzQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTY5MjAzMDg0Niw3MzA5OTgxMTZdfQ==
 -->
