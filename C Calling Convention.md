@@ -693,7 +693,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
  603 >>>>>>>> Disassembling function: MediaPolicy_nk_red_data_rcvCheckpt(char*, unsigned long, char*, unsigned long, IMS_RED_DA     TA_TYPE, NK_SKEY)
  604 0x0000000011a6d210 <+0>:        55      push   %rbp
  605 0x0000000011a6d211 <+1>:        48 89 e5        mov    %rsp,%rbp
- 606 0x0000000011a6d214 <+4>:        41 57   push   %r15 // r
+ 606 0x0000000011a6d214 <+4>:        41 57   push   %r15 // r15存着uint32_t key_len
  607 0x0000000011a6d216 <+6>:        4d 89 cf        mov    %r9,%r15
  608 0x0000000011a6d219 <+9>:        41 56   push   %r14 // r14存着 unit32 data_type
  609 0x0000000011a6d21b <+11>:       49 89 ce        mov    %rcx,%r14
@@ -772,11 +772,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTgyNjAxMywtNTA0NzUwNzE4LC04Mj
-k1ODA3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NTYwNzk2
-OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNj
-c4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAw
-OCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1LC0xMj
-Y2NjE3MTQ0LC0xNDIxMjU4MDM3LC0zNjAxNjg1NDcsLTEyNDM5
-NTYxNDVdfQ==
+eyJoaXN0b3J5IjpbODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOT
+U4MDcyNSwxODg4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4
+LDE3MjQ5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2Nz
+gyMzE2NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4
+LC00NjA2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNj
+Y2MTcxNDQsLTE0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1
+NjE0NV19
 -->
