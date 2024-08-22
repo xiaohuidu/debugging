@@ -80,14 +80,15 @@
 	```asm
 	add    $0x1c8,%rsp
 	```
-13. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+	
+12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
 	test   %r12, %r12 // 判断r12是不是0.
 	jz     some_label
 	```
-14. xxx 
+13. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzODc3ODAzLC0xMDE1MjY3MTg3LC0xMT
+eyJoaXN0b3J5IjpbNTA0OTExNDI3LC0xMDE1MjY3MTg3LC0xMT
 Q1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0MDQyOCwtMTEyMzQ0
 NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4MDY4ND
 MsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2NjA5
