@@ -62,10 +62,12 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 		sub rsp 12
 	```
 	
-2. 把**RBP/EBP** 入栈。同时把**RBX, R12~R15** 这些可能用来保存调用函数可能继续会用的数据的寄存器入栈(如果它们在被调用函数中被用到)。
+2. 把**RBP/EBP** 入栈。同时把**RBX, R12~R15** 这些可能用来保存调用函数继续会用的数据的寄存器入栈(如果它们在被调用函数中被用到)。
 
-4.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
-5. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
+3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
+
+4. 在被调用函数返回前， 以相反的顺序把 RBX, RBP, R12~R15 出栈填值。
+
 6. 把**局部变量**出栈， RSP 会被加上局部变量总共的空间大小。
 7. 被调用函数中最后一条指令是**retq**（ret in 32 bit）。这条指令会把返回地址从栈上取出， 然后跳到那条指令继续执行。
 
@@ -367,11 +369,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNjE1NzU3LC0yNzE5MTIxMjQsMTMxNz
-g2MzU2LDk5NjE5NzUzNSw3OTU4Mzc1NDUsMTgzNzI5ODQxNywt
-Mzk2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4LC04Mjk1OD
-A3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NTYwNzk2OCwx
-NzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNjc4Mj
-MxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAwOF19
-
+eyJoaXN0b3J5IjpbMTg4MTc1NjAzMSwtMjcxOTEyMTI0LDEzMT
+c4NjM1Niw5OTYxOTc1MzUsNzk1ODM3NTQ1LDE4MzcyOTg0MTcs
+LTM5Njk2Mjc0NSw4OTIwNDgyMzYsLTUwNDc1MDcxOCwtODI5NT
+gwNzI1LDE4ODgwNDY3NSwtMTU2Mzg4MTMxLC0zNDU2MDc5Njgs
+MTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEzMzg1LDY3OD
+IzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1NDEwMjAwMDhd
+fQ==
 -->
