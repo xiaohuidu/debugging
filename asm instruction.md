@@ -72,9 +72,9 @@
 	  
 12.  **add**： 把第一个操作数加到第二个操作数上。
 
-	```asm	
+	```asm
 	add    $0x1c8,%rsp
-	```	
+	```
 14. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
 	test   %r12, %r12 // 判断r12是不是0.
@@ -82,7 +82,7 @@
 	```
 15. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTUzMzU0MywtMTAxNTI2NzE4NywtMT
+eyJoaXN0b3J5IjpbMTE0NDMwMTk5MSwtMTAxNTI2NzE4NywtMT
 E0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0
 NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2OD
 QzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYw
