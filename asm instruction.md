@@ -106,16 +106,25 @@
 	sub 0x30 $(rsp)
 	``` 
 14. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 
+	```asm
+	nop
+	```
 
 	  **nopw**
+	  ```asm
+	   nopw   0x0(%rax,%rax,1)
+	```
 	  
 	  **nopl**
+	  ```asm
+	nopl 0x0(%eax,%eax,1)
+	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTA5OTI1NjIsMTk3NzE3OTk4Nyw1OT
-E0Mzk0ODUsLTEwMTUyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0
-OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NT
-EsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYz
-NDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1Ni
-wtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbOTgzODYzNTQxLDE5NzcxNzk5ODcsNTkxND
+M5NDg1LC0xMDE1MjY3MTg3LC0xMTQ1MzQwMzM5LC0xODU1NDk0
+MTQ5LDQ0NTI0MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5NTUxLC
+0yMDQ4NzQ0OTk3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0
+NDkxNSw5NTM1MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLT
+I3MDQzMTU5MCwtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
 -->
