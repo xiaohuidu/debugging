@@ -105,12 +105,14 @@
 	```asm
 	sub 0x30 $(rsp)
 	``` 
-14. nop
-	  nopw
+14. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 
+
+	  **nopw**
+	  
 	  nopl
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2Njk2MjUzMSwxOTc3MTc5OTg3LDU5MT
+eyJoaXN0b3J5IjpbLTkwOTE4MjE5NCwxOTc3MTc5OTg3LDU5MT
 QzOTQ4NSwtMTAxNTI2NzE4NywtMTE0NTM0MDMzOSwtMTg1NTQ5
 NDE0OSw0NDUyNDA0MjgsLTExMjM0NDU2MjEsLTExODEwOTU1MS
 wtMjA0ODc0NDk5NywxOTk0ODA2ODQzLDUzMDY1NjE4LDE3NjM0
