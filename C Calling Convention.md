@@ -53,6 +53,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> 2. 用在一些64-bit 指令中存储操作数。例如 mul, div 隐式的使用rax 存储数据。mul 中， rax 和另一个数进行乘法计算， 结果存在rax（低64 位） 和rdx（高64 位）
 	> 3. 存储函数调用后的返回值。比如返回值是 指针 或者整形数。
 	> 4. 
+	
 7. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
 
 # 被调用子程序callee遵循的rule
@@ -364,11 +365,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNzg2MzU2LDk5NjE5NzUzNSw3OTU4Mz
-c1NDUsMTgzNzI5ODQxNywtMzk2OTYyNzQ1LDg5MjA0ODIzNiwt
-NTA0NzUwNzE4LC04Mjk1ODA3MjUsMTg4ODA0Njc1LC0xNTYzOD
-gxMzEsLTM0NTYwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUs
-LTE1MzU3MTMzODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MD
-I3Nzk5LDU0MTAyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEy
-XX0=
+eyJoaXN0b3J5IjpbLTE4MzQ5NjU0NiwxMzE3ODYzNTYsOTk2MT
+k3NTM1LDc5NTgzNzU0NSwxODM3Mjk4NDE3LC0zOTY5NjI3NDUs
+ODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcyNSwxODg4MD
+Q2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEs
+MTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4ND
+IzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3OTVd
+fQ==
 -->
