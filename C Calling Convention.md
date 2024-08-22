@@ -189,7 +189,7 @@ pop rbp
 0x0000000000400899 <+0>:        55      push   %rbp // 保存rbp 栈底寄存器（Frame Pointer）
 0x000000000040089a <+1>:        48 89 e5        mov    %rsp,%rbp // 修改rbp 指向原来的栈顶(Stack Pointer) 寄存器
 0x000000000040089d <+4>:        48 83 ec 40     sub    $0x40,%rsp // 为局部变量分配栈(char *x,  yint, a, *b, *c, *d, *e, *f, *g)
-// 从高地址往地地址一次是 第一个局部变量，第二个局部变量..., 第一个参数， 第二个参数...
+// 从高地址往地地址依次是 第一个局部变量，第二个局部变量..., 第一个参数， 第二个参数...
 0x00000000004008a1 <+8>:        89 7d ec        mov    %edi,-0x14(%rbp) // 把第一个参数a 入栈。
 0x00000000004008a4 <+11>:       48 89 75 e0     mov    %rsi,-0x20(%rbp) //把第二个参数b入栈
 0x00000000004008a8 <+15>:       48 89 55 d8     mov    %rdx,-0x28(%rbp) // 把第三个参数c 入栈
@@ -370,11 +370,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDk3NzEyNDYsLTc4NjUzMzQ3OSwtMT
-E0OTcwNDM1MywtMjcxOTEyMTI0LDEzMTc4NjM1Niw5OTYxOTc1
-MzUsNzk1ODM3NTQ1LDE4MzcyOTg0MTcsLTM5Njk2Mjc0NSw4OT
-IwNDgyMzYsLTUwNDc1MDcxOCwtODI5NTgwNzI1LDE4ODgwNDY3
-NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyNDk1MjA2MSwxOT
-g0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1Miw5OTg0MjMw
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTk3MzIyMzgyNSwtMjA0OTc3MTI0NiwtNz
+g2NTMzNDc5LC0xMTQ5NzA0MzUzLC0yNzE5MTIxMjQsMTMxNzg2
+MzU2LDk5NjE5NzUzNSw3OTU4Mzc1NDUsMTgzNzI5ODQxNywtMz
+k2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4LC04Mjk1ODA3
+MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NTYwNzk2OCwxNz
+I0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNjc4MjMx
+NjUyXX0=
 -->
