@@ -63,18 +63,20 @@
 	```asm	
 	cmpb   $0x5,0x17909dc(%rip)
 	```
-	11. **ja**: jmp if above
+11. **ja**: jmp if above
 	  **je**: jmp if equal
 	  **jg**: jump if greater
 	  **jl**: jump if less
 	  **jz**: jump if zero
 	  **jnz**: jump if NOT zero
-13. xxx
+12.  add
+13. test: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+14. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTUyNjcxODcsLTExNDUzNDAzMzksLT
-E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
-MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
-wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
-MTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl
-19
+eyJoaXN0b3J5IjpbLTE4NTUyNTE5NDAsLTEwMTUyNjcxODcsLT
+ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
+NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
+g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
+MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4Nz
+kxLDczMDk5ODExNl19
 -->
