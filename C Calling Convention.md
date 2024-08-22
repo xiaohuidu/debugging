@@ -662,7 +662,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
   91 0x00000000108be310      STIproc_pard_restore    78      /home/ngl/22.5.0-pp1/R3722.5.20230717_1/obj/linux_x86-64/ssp/ds/im     s/stm_infra/stm_controller/linux_x86-64_csbc_ds_ims/../../../../../../../../ssp/ds/ims/stm_infra/stm_controller/STIproc_pa     rd_resp.cpp
   92 ===================================
   93 0x00000000108be315 <+165>:      bf 04 00 00 00  mov    $0x4,%edi
-  94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp)
+  94 0x00000000108be31a <+170>:      4c 89 6c 24 20  mov    %r13,0x20(%rsp) //r13
   95 0x00000000108be31f <+175>:      4c 89 6c 24 18  mov    %r13,0x18(%rsp)
   96 0x00000000108be324 <+180>:      44 89 7c 24 08  mov    %r15d,0x8(%rsp)
   97 0x00000000108be329 <+185>:      44 89 34 24     mov    %r14d,(%rsp) //r14 低32 位入栈(data_type). 可以从STIproc_pard_restore的栈上对应的位置找到这个值(5f000000)
@@ -772,11 +772,11 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTU4MDcyNSwxODg4MDQ2NzUsLTE1Nj
-M4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEsMTk4NDg5NDk5
-NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4NDIzMDA4LC0yMz
-YwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3OTUsLTE0MDc3OTMx
-MTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLTE0MjEyNTgwMzcsLT
-M2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3NjY1MDg3LDExNjIx
-NDYyNzRdfQ==
+eyJoaXN0b3J5IjpbLTE0MjkxNzE3ODUsLTgyOTU4MDcyNSwxOD
+g4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIw
+NjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOT
+k4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3
+OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcxNDQsLT
+E0MjEyNTgwMzcsLTM2MDE2ODU0NywtMTI0Mzk1NjE0NSwxNDQ3
+NjY1MDg3XX0=
 -->
