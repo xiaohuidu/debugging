@@ -23,7 +23,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > 例如：ret  ; 从栈顶取出返回地址， 从这个地址继续执行。
 
 
-# 子程序的调用者Caller 的rule
+# 子程序的调用者Caller 遵循的rule
 1.  在调用另一个函数之前， caller 需要把一些**保存着caller 使用data的寄存器的内容push到栈上**。 这些寄存器包括 r10, r11 和其他的一些保存参数的寄存器。这些内容往往是在调用另一个函数后还需要保持不变的。
 2.  把被调用函数需要的**参数放到6个寄存器中**。如果函数参数超过了6个， 把其他的参数以相反的顺序压到栈上。
 	> 六个寄存器依次是:
@@ -361,7 +361,7 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzM4NDE2NSw3OTU4Mzc1NDUsMTgzNz
+eyJoaXN0b3J5IjpbMTcwNDgwMjAyMiw3OTU4Mzc1NDUsMTgzNz
 I5ODQxNywtMzk2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4
 LC04Mjk1ODA3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NT
 YwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMz
