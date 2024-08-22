@@ -69,18 +69,19 @@
 	  **jl**: jump if less
 	  **jz**: jump if zero
 	  **jnz**: jump if NOT zero
-12.  add
-13. test: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+12.  add： 
+	11
+14. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
 	test   %r12, %r12 // 判断r12是不是0.
 	jz     some_label
 	```
 15. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzkyNzg4NTAsLTEwMTUyNjcxODcsLT
-ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
-NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
-g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
-MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4Nz
-kxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTA4OTUyNjU0MSwtMTAxNTI2NzE4NywtMT
+E0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0
+NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2OD
+QzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYw
+OTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OT
+EsNzMwOTk4MTE2XX0=
 -->
