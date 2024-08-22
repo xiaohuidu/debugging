@@ -71,9 +71,9 @@
 	  **jnz**: jump if NOT zero
 	  
 12.  **add**： 把第一个操作数加到第二个操作数上。
-	```asm
-	add    $0x1c8,%rsp
-	```
+
+		add    $0x1c8,%rsp
+
 	
 14. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
@@ -82,7 +82,7 @@
 	```
 15. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk2NjgzNzMsLTEwMTUyNjcxODcsLT
+eyJoaXN0b3J5IjpbLTE1NzM5MjMzMDgsLTEwMTUyNjcxODcsLT
 ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
 NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
 g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
