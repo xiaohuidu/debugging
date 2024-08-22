@@ -68,14 +68,15 @@
 	```asm	
 	cmpb   $0x5,0x17909dc(%rip)
 	```
-10. **ja**: jmp if above
+10.  jmp: 跳转到
+**ja**: jmp if above
 	  **je**: jmp if equal
 	  **jg**: jump if greater
 	  **jl**: jump if less
 	  **jz**: jump if zero
 	  **jnz**: jump if NOT zero
 	  
-11.  **add**： 把第一个操作数加到第二个操作数上。 add 指令会set相应的flag。
+12.  **add**： 把第一个操作数加到第二个操作数上。 add 指令会set相应的flag。
 
 ```asm
 	add $0x1c8,%rsp
@@ -92,10 +93,10 @@
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUwMDE1MzgsNTkxNDM5NDg1LC0xMD
-E1MjY3MTg3LC0xMTQ1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0
-MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OT
-k3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1
-MTgzNjcsOTg2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MC
-wtMTU4MTQ5ODc5MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTU3MTEzNzU3LDU5MTQzOTQ4NSwtMTAxNT
+I2NzE4NywtMTE0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0
+MjgsLTExMjM0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5Ny
+wxOTk0ODA2ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4
+MzY3LDk4NjYwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLT
+E1ODE0OTg3OTEsNzMwOTk4MTE2XX0=
 -->
