@@ -59,7 +59,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 # 被调用子程序callee遵循的rule
 1. 为**局部变量**分配寄存器或者栈空间。栈是从大地址向小地址增长， 所以RSP/ESP 会减小, 减小的数量由局部变量总共的空间决定。比如: 一个float 变量和一个long 变量 一共需要12 bytes， 所以汇编代码类似于:
 	```asm
-		sub rsp 12 // 在汇编代码里，有可能没有这一步， 隐式包含了这一步。
+		sub rsp 12
 	```
 2. 把**RBP/EBP** 入栈。同时把**RBX, R12~R15** 这些可能用来保存调用函数可能继续会用的数据的寄存器入栈(如果它们在被调用函数中被用到)。
 3.  被调用函数结束，返回前， 把**返回值放到RAX寄存器**中。
@@ -365,11 +365,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTkxMjEyNCwxMzE3ODYzNTYsOTk2MT
-k3NTM1LDc5NTgzNzU0NSwxODM3Mjk4NDE3LC0zOTY5NjI3NDUs
-ODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcyNSwxODg4MD
-Q2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEs
-MTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2NTIsOTk4ND
-IzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00NjA2OTM3OTVd
-fQ==
+eyJoaXN0b3J5IjpbNTAyOTE2ODA3LC0yNzE5MTIxMjQsMTMxNz
+g2MzU2LDk5NjE5NzUzNSw3OTU4Mzc1NDUsMTgzNzI5ODQxNywt
+Mzk2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4LC04Mjk1OD
+A3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NTYwNzk2OCwx
+NzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMzODUsNjc4Mj
+MxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MTAyMDAwOF19
+
 -->
