@@ -204,7 +204,7 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 
 ```
-汇编代码:
+**汇编代码:**
 ```asm
    2 >>>>>>>> Disassembling function: STIproc_pard_restore(ims_MSG*)
    3 0x00000000108be270 <+0>:        55      push   %rbp
@@ -405,5 +405,5 @@ void MediaPolicy_nk_red_data_rcvCheckpt(
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDk4NzM5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE0ODExMzA0MzQsNzMwOTk4MTE2XX0=
 -->
