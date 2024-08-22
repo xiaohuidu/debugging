@@ -6,7 +6,7 @@
 
 实际上，即使对于单一的处理器指令集，也可能存在多种调用约定。在本课程中，我们将研究并使用其中最重要的一个约定：C语言调用约定。理解这个约定将使你能够编写可以从C和C++代码中安全调用的汇编语言子程序，同时也能使你在汇编语言代码中调用C库函数。
 
-# C Calling Convention
+# C 语言函数调用约定(Calling Convention)
 C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语言的调用约定，你首先应该确保你完全理解`push`、`pop`、`call`和`ret`指令——这些将是大多数规则的基础。在这种调用约定中，子程序的参数通过栈传递，寄存器保存在栈上，子程序使用的局部变量也放置在栈中的内存中。事实上，这种以栈为中心的子程序实现方式并不仅限于C语言或x86架构。绝大多数在各种处理器上实现的高级过程式语言都使用了类似的调用约定。
 
 调用约定分为两组规则。第一组规则由子程序的调用者使用，第二组规则由子程序的编写者（即“被调用者”）遵循。需要强调的是，未能遵守这些规则会迅速导致致命的程序错误；因此，在自己的子程序中实现这些调用约定时，应当非常谨慎。
@@ -361,11 +361,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczMjc3OTUwLDE4MzcyOTg0MTcsLTM5Nj
-k2Mjc0NSw4OTIwNDgyMzYsLTUwNDc1MDcxOCwtODI5NTgwNzI1
-LDE4ODgwNDY3NSwtMTU2Mzg4MTMxLC0zNDU2MDc5NjgsMTcyND
-k1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEzMzg1LDY3ODIzMTY1
-Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1NDEwMjAwMDgsLTQ2MD
-Y5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4NSwtMTI2NjYxNzE0
-NF19
+eyJoaXN0b3J5IjpbLTY5NjQwNzU2MCwxODM3Mjk4NDE3LC0zOT
+Y5NjI3NDUsODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcy
+NSwxODg4MDQ2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3Mj
+Q5NTIwNjEsMTk4NDg5NDk5NSwtMTUzNTcxMzM4NSw2NzgyMzE2
+NTIsOTk4NDIzMDA4LC0yMzYwMjc3OTksNTQxMDIwMDA4LC00Nj
+A2OTM3OTUsLTE0MDc3OTMxMTIsNjQwOTc1ODUsLTEyNjY2MTcx
+NDRdfQ==
 -->
