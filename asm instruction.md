@@ -88,10 +88,11 @@
 	```
 13. sub: 把第一个操作数从第二个操作数中减去。 sub 指令会set相应的flag.
 	```asm
+	sub 0x30 $(rsp)
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTQ1NTEzNCw1OTE0Mzk0ODUsLTEwMT
+eyJoaXN0b3J5IjpbLTQ1MDEzNTU1OSw1OTE0Mzk0ODUsLTEwMT
 UyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQw
 NDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OT
 csMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUx
