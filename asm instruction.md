@@ -40,6 +40,7 @@
 	```asm
 	xor %eax, %eax //清空eax, 效率比复制要高。 这个操作会使rax 的高32bit 也被清零。
 	```
+	
  4.  **push**: 把一个值save到栈上。栈是一个先进后出的内存。RBP(EBP)指向栈底， RSP(ESP)指向栈顶。栈是从高地址向低地址长。 例如：  **push eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 EAX 地址存在栈上。
  5.  **popq(pop in 32 bit)**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4)。
 6.  **callq(call in 32 bit)**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。 例如:  **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
@@ -51,6 +52,7 @@
 	```asm
 	`lea -0xff4(%rdi), %rdx` //计算地址 %rdi - 0xff4, 然后把地址放到rdx中。
 	``` 
+	
 10. **cmp**: 比较两个操作数（从第二个操作数中减去第一个操作数）， 它不会存储结果，但是会设置flag （Zero Flag, Sign flag, Carry Flag, Overflow Flag）, 这些flag 会被接下来的条件指令使用(jz, jnz, jg, jl)
 	```asm
 	cmp %rax, %rdx
@@ -69,10 +71,10 @@
 	  **jnz**: jump if NOT zero
 13. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzM5MDc5NjgsLTExNDUzNDAzMzksLT
-E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
-MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
-wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
-MTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4NzkxLDczMDk5ODExNl
-19
+eyJoaXN0b3J5IjpbMTM1NDI4MDEyOCwtMTE0NTM0MDMzOSwtMT
+g1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0NDU2MjEsLTExODEw
+OTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2ODQzLDUzMDY1NjE4LD
+E3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MTMx
+NzU2LC0yNzA0MzE1OTAsLTE1ODE0OTg3OTEsNzMwOTk4MTE2XX
+0=
 -->
