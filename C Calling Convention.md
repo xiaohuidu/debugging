@@ -14,7 +14,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 > 例如： **push %eax**  ; RSP减8(在32-bit，ESP 减4) 同时把 eax寄存器的内容存在栈上。
 
 > **pop**: 从栈顶删掉一个值， 并把这个值放到寄存器里或者某个地址上。
-> 例如：**pop ebx**  ; 把指定值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
+> 例如：**pop %ebx**  ; 把栈顶的值拷贝到EBX 寄存器, RSP加8（在32-bit, ESP 加4。
 
 > **call**: 用来调用一个函数。它会保存下一条指令(返回指令)到栈上， 然后跳到函数的地址去执行（把函数地址放到RIP/EIP 寄存器中）。
 > 例如: **call my_function**  ; 把下一条指令地址放到栈上(返回地址)。 跳到 'my_function' 的地址去执行。
@@ -361,11 +361,11 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzU3ODMyOSw3OTU4Mzc1NDUsMTgzNz
-I5ODQxNywtMzk2OTYyNzQ1LDg5MjA0ODIzNiwtNTA0NzUwNzE4
-LC04Mjk1ODA3MjUsMTg4ODA0Njc1LC0xNTYzODgxMzEsLTM0NT
-YwNzk2OCwxNzI0OTUyMDYxLDE5ODQ4OTQ5OTUsLTE1MzU3MTMz
-ODUsNjc4MjMxNjUyLDk5ODQyMzAwOCwtMjM2MDI3Nzk5LDU0MT
-AyMDAwOCwtNDYwNjkzNzk1LC0xNDA3NzkzMTEyLDY0MDk3NTg1
-XX0=
+eyJoaXN0b3J5IjpbLTE5NTE1OTg1NjMsNzk1ODM3NTQ1LDE4Mz
+cyOTg0MTcsLTM5Njk2Mjc0NSw4OTIwNDgyMzYsLTUwNDc1MDcx
+OCwtODI5NTgwNzI1LDE4ODgwNDY3NSwtMTU2Mzg4MTMxLC0zND
+U2MDc5NjgsMTcyNDk1MjA2MSwxOTg0ODk0OTk1LC0xNTM1NzEz
+Mzg1LDY3ODIzMTY1Miw5OTg0MjMwMDgsLTIzNjAyNzc5OSw1ND
+EwMjAwMDgsLTQ2MDY5Mzc5NSwtMTQwNzc5MzExMiw2NDA5NzU4
+NV19
 -->
