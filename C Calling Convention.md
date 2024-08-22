@@ -54,7 +54,7 @@ C语言的调用约定主要依赖于硬件支持的栈的使用。要理解C语
 	> 3. 存储函数调用后的返回值。比如返回值是 指针 或者整形数。
 	> 4. 
 	
-7. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并他们从栈里删除。
+7. Caller 函数恢复 r10, 11 和任何传递参数的寄存器值， 并把他们从栈里删除。
 
 # 被调用子程序callee遵循的rule
 1. 为**局部变量**分配寄存器或者栈空间。栈是从大地址向小地址增长， 所以RSP/ESP 会减小, 减小的数量有局部变量总共的空间决定。比如: 一个float 变量和一个long 变量 一共需要12 bytes， 所以汇编代码类似于:
@@ -365,7 +365,7 @@ k7             0x0                 0
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ5NjU0NiwxMzE3ODYzNTYsOTk2MT
+eyJoaXN0b3J5IjpbLTYzMjk0NTA0NCwxMzE3ODYzNTYsOTk2MT
 k3NTM1LDc5NTgzNzU0NSwxODM3Mjk4NDE3LC0zOTY5NjI3NDUs
 ODkyMDQ4MjM2LC01MDQ3NTA3MTgsLTgyOTU4MDcyNSwxODg4MD
 Q2NzUsLTE1NjM4ODEzMSwtMzQ1NjA3OTY4LDE3MjQ5NTIwNjEs
