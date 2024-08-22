@@ -75,22 +75,22 @@
 	  **jz**: jump if zero
 	  **jnz**: jump if NOT zero
 	  
-11.  **add**： 把第一个操作数加到第二个操作数上。
+11.  **add**： 把第一个操作数加到第二个操作数上
 
 	```asm
 	add    $0x1c8,%rsp
 	```
-12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+13. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
 	test   %r12, %r12 // 判断r12是不是0.
 	jz     some_label
 	```
-13. xxx 
+14. xxx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk5Mzk1NzUsLTEwMTUyNjcxODcsLT
-ExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIz
-NDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNj
-g0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2
-MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgxNDk4Nz
-kxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNzUzODc3ODAzLC0xMDE1MjY3MTg3LC0xMT
+Q1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0MDQyOCwtMTEyMzQ0
+NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4MDY4ND
+MsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOTg2NjA5
+Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5ODc5MS
+w3MzA5OTgxMTZdfQ==
 -->
