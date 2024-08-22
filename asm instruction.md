@@ -36,7 +36,10 @@
 	
 	**movabs**: 把大的立即数(large than 32-bit)直接拷贝到寄存器中。
 
-	movzwl： 把16
+	movzwl： 把16位的源数据拷贝到32位的目的， 扩展部分补0.
+	```asm
+	movzwl (%rbx),%eax
+	```
 	
  2. **xor**: 位异或。 当两位相等时，结果是0， 否则是1。
 	```asm
@@ -104,7 +107,7 @@
 	``` 
 15. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE2NDEzMjQsNTkxNDM5NDg1LC0xMD
+eyJoaXN0b3J5IjpbLTE2Mjc1NjkxMzMsNTkxNDM5NDg1LC0xMD
 E1MjY3MTg3LC0xMTQ1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0
 MDQyOCwtMTEyMzQ0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OT
 k3LDE5OTQ4MDY4NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1
