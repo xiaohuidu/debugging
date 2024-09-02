@@ -130,17 +130,18 @@ ELF Header:
 - **e_version**(4 bytes): object file version.
 - **e_entry**(4 or 8 bytes):  程序的入口地址。
 - **e_phoff**(4 or 8 bytes): Program Header table的从文件开头开始的偏移量(bytes), 如果没有Program Header table, 值是0。
+- e_shoff (4 or 8 bytes): Section Header table的从文件开头开始的偏移量。如果没有Section Header table, 值是0。
 - xxx
 - 
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcyNDQ4Myw2MjE3MDM5ODUsNjQ5Nj
-c2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2
-LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MD
-g5NzcsMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMs
-MTgwNDI2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NT
-UxNjQ0LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUy
-Ml19
+eyJoaXN0b3J5IjpbMzQxMTk1MzY3LDYyMTcwMzk4NSw2NDk2Nz
+YzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYs
+NTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwOD
+k3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3Mywx
+ODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEwLC0xNzY1NT
+E2NDQsLTE5Mjk2MTEzOSwtMTEyNDk2MjQ3MywyMDA2OTQ2NTIy
+XX0=
 -->
