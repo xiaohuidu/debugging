@@ -13,9 +13,10 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/ELF_format.png)
 
+ELF
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjg4ODQyOTksLTE5Mjk2MTEzOSwtMT
+eyJoaXN0b3J5IjpbLTEwNTY3NTY4ODYsLTE5Mjk2MTEzOSwtMT
 EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
