@@ -112,7 +112,7 @@ ELF Header:
 	- **第八个**byte是这个object file 的目的 操作系统和ABI。
 	- 第九个byte： -   ELF（可执行和可链接格式）文件中的 `e_ident[EI_ABIVERSION]` 字节用于标识该对象文件目标的 ABI 版本。这个字段用于区分 ABI 的不兼容版本。该版本号的解释取决于由 `EI_OSABI` 字段标识的 ABI。如果处理器没有为 `EI_OSABI` 字段指定特定值，或者没有为 `EI_OSABI` 字节的某个特定值确定的 ABI 指定版本值，则使用 0 表示未指定。
 	- 其他的是留作将来用的。
-- e_type: 这个object file 的类型。
+- **e_type**: 这个object file 的类型。
 	- 0: No file type
 	- 1: Relocatable file
 	- 2: Executable file
@@ -125,7 +125,7 @@ ELF Header:
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjkzMDg5MiwtNTk1NTY0NDc0LDEyOT
+eyJoaXN0b3J5IjpbMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOT
 k5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5
 LDM3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OT
 k1NzY3MywxODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEw
