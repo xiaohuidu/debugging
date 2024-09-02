@@ -83,13 +83,13 @@ typedef struct {
 	- **第六个**byte是Data  编码方式: little endian(1) 和big endian(2)， 0表示非法。
 	`00000001： 2's complement, little endian`
 	- **第七个**byte是ELF header Version
-	- 第八个
+	- 第八个byte是这个object file 的目的 操作系统和ABI。
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mzk2MzcxOCwxMjk5OTMwMjY2LDU2MD
+eyJoaXN0b3J5IjpbMTgxMzQzODg0MCwxMjk5OTMwMjY2LDU2MD
 IyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5Nzcs
 MTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwND
 I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
