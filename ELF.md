@@ -92,13 +92,14 @@ typedef struct {
 	- 2: Executable file
 	- 3: Shared object file
 	- 4: Core file
-	- 0xff
+	- 0xff00: Processor-specific
+	- 0xffff: Processor-specific
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODg0MDgyMCwtNTk1NTY0NDc0LDEyOT
+eyJoaXN0b3J5IjpbLTMwMTEyMDcxMywtNTk1NTY0NDc0LDEyOT
 k5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5
 LDM3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OT
 k1NzY3MywxODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEw
