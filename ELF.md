@@ -84,14 +84,14 @@ typedef struct {
 	`00000001： 2's complement, little endian`
 	- **第七个**byte是ELF header Version
 	- **第八个**byte是这个object file 的目的 操作系统和ABI。
-	- 第九个byte： 
+	- 第九个byte： -   ELF（可执行和可链接格式）文件中的 `e_ident[EI_ABIVERSION]` 字节用于标识该对象文件目标的 ABI 版本。这个字段用于区分 ABI 的不兼容版本。该版本号的解释取决于由 `EI_OSABI` 字段标识的 ABI。如果处理器没有为 `EI_OSABI` 字段指定特定值，或者没有为 `EI_OSABI` 字节的某个特定值确定的 ABI 指定版本值，则使用 0 表示未指定。
 	- 其他的是留作将来用的。
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkyMjQ2NDc0LC01OTU1NjQ0NzQsMTI5OT
+eyJoaXN0b3J5IjpbMjIyMTUyMjIxLC01OTU1NjQ0NzQsMTI5OT
 kzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODks
 Mzc5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OT
 U3NjczLDE4MDQyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MDkyMTAs
