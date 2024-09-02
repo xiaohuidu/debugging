@@ -32,14 +32,13 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/elf64_datatype.png)
 
-所有由目标文件格式定义的数据结构都遵循相关类别的自然大小和对齐指南。如果有必要，数据结构会包含显式填充，以确保4字节对象的4字节对齐，强制结构的大小为4的倍数，等等。数据从文件的开头起也具有适当的对齐。因此，例如，一个包含 `Elf32_Addr` 成员的结构将在文件中以4字节边界对齐，而包含 `Elf64_Addr` 成员的结构将在8字节边界对齐。
+所有由目标文件格式定义的数据结构都遵循相关类别的自然大小和对齐指南。如果有必要，数据结构会包含显式填充，以确保4字节对象的4字节对齐，强制结构的大小为4的倍数，等等。数据从文件的开头起也具有适当的对齐。因此，例如，一个包含 `Elf32_Addr` 成员的结构将在文件中**以4字节边界对齐**，而包含 `Elf64_Addr` 成员的结构将在**8字节边界对齐**。
 
 ##
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQwODg1OTksMTgwNDI2NDgyOCwtOD
-EyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0LC0xOTI5NjEx
-MzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMj
+A1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5
+LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
 -->
