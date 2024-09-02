@@ -77,13 +77,13 @@ typedef struct {
         Elf64_Half      e_shstrndx;
 } Elf64_Ehdr;
 ```
-- e_ident(16 byte)
+- e_ident(16 byte):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyND
-k5NTc2NzMsMTgwNDI2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIx
-MCwtMTc2NTUxNjQ0LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMj
-AwNjk0NjUyMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTk4ODI4MTAyNCwxNzY2ODIwNjAxLC0xOT
+g5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0ODI4LC04MTIwNTUy
+MywxMzYwOTA5MjEwLC0xNzY1NTE2NDQsLTE5Mjk2MTEzOSwtMT
+EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
