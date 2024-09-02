@@ -36,12 +36,12 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 ## ELF Header
 
-某些object文件控制结构可能会增长，因为 ELF 头包含它们的实际大小。如果目标文件格式发生变化，程序可能会遇到比预期更大或更小的控制结构。因此，程序可能会忽略多余的信息。对于缺失信息的处理取决于上下文，并将在定义扩展时予以指定。
+某些object文件**控制结构**可能会增长，因为 ELF 头包含它们的实际大小。如果目标文件格式发生变化，程序可能会遇到比预期更大或更小的控制结构。因此，程序可能会忽略多余的信息。对于缺失信息的处理取决于上下文，并将在定义扩展时予以指定。
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0MDg2ODU4LDI0OTk1NzY3MywxODA0Mj
-Y0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEwLC0xNzY1NTE2NDQs
-LTE5Mjk2MTEzOSwtMTEyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTY5MTUxNTU3NCwyNDk5NTc2NzMsMTgwND
+I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
+LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3Mz
+A5OTgxMTZdfQ==
 -->
