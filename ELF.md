@@ -140,15 +140,15 @@ ELF Header:
 - **e_shstrndx**(2 bytes):  指向Section Header table里的一个特殊的entry的index， 这个section 包含了section name string table。
 
 ## Section 
-
+object file 里的Section Header Table 保存着定位所有section 所需要的信息。
 ## 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTM0MTIzNSwtMTkyMzc4MDM2NCw4NT
-EwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1
-LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MD
-IyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5Nzcs
-MTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwND
-I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
-XX0=
+eyJoaXN0b3J5IjpbNDYyMTg3MjY5LC0xOTIzNzgwMzY0LDg1MT
+AyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUs
+MTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMj
+I0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3Nywx
+NzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0Mj
+Y0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEwLC0xNzY1NTE2NDRd
+fQ==
 -->
