@@ -81,14 +81,16 @@ typedef struct {
 	- 前四个byte 是Magic Number: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
 	- 第五个byte是Class: 32-bit(1) or 64 bit(2), 0 表示非法。32-bit 最大虚拟地址空间是4G
 	- 第六个byte是Data  编码方式: little endian(1) 和big endian(2)， 0表示非法。
+	`00000001： 2's complement, little endian`
+	- xx
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjEwOTE4Nyw1NjAyMjQ1NDYsLTE2Mz
-I1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEs
-LTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMj
-A1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5
-LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5NTUwMDI2NzIsNTYwMjI0NTQ2LC0xNj
+MyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNzY2ODIwNjAx
+LC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0ODI4LC04MT
+IwNTUyMywxMzYwOTA5MjEwLC0xNzY1NTE2NDQsLTE5Mjk2MTEz
+OSwtMTEyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
