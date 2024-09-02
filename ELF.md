@@ -78,15 +78,16 @@ typedef struct {
 } Elf64_Ehdr;
 ```
 - e_ident(16 byte):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来decode和解析这个文件的内容。
-	- 前四个byte: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
-	- 
+	- 前四个byte 是Magic Number: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
+	- 第五个bytesh: 32-bit or 64 bit。
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5ODA4OTc3LDE3NjY4MjA2MDEsLTE5OD
-k5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMjA1NTIz
-LDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5LC0xMT
-I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTM5MjAzOTM3NCwzNzk4MDg5NzcsMTc2Nj
+gyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwNDI2NDgy
+OCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0LC0xOT
+I5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgx
+MTZdfQ==
 -->
