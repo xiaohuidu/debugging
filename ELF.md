@@ -13,10 +13,11 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/ELF_format.png)
 
-ELF
+ELF header: 在ELF 最开始，包含了描述整个文件的组织的信息。
+Section: 包含了从Linking 角度看到的object file 里的所有信息: 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTY3NTY4ODYsLTE5Mjk2MTEzOSwtMT
-EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE1NDQzMjc3MCwtMTkyOTYxMTM5LC0xMT
+I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
 -->
