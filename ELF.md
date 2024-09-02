@@ -17,11 +17,12 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 **Program header table**: 这个部分是可以没有的。如果存在， 是用来告诉系统如何去创建进程的image（可执行的程序）。可执行文件必须要有Program header table，可重定位object 不需要有Program header table。
 
-Section header table: 包含了描述section的信息。每一个section 在Section header table 里
+Section header table: 包含了描述section的信息。每一个section 在Section header table 里有一条记录。每一条记录包含了section的基本信息， 比如section 名字， section大小...
+
 Section: 包含了从Linking 角度看到的object file 里的所有信息: instructions, data, symbol table, relocation information...
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NjY1NDQ2NCwtMTkyOTYxMTM5LC0xMT
-I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNDgyOTc4MjUxLC0xOTI5NjExMzksLTExMj
+Q5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgxMTZdfQ==
 -->
