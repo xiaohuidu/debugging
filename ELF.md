@@ -22,9 +22,14 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 **Section**: 包含了从Linking 角度看到的object file 里的所有信息: instructions, data, symbol table, relocation information...
 
 > **Program header table** 和**Section header table** 的位置不是固定的，只有**ELF header** 的位置是固定的在文件最开始处。
+## 数据类型
+ELF32:
+
+##
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU1MTY0NCwtMTkyOTYxMTM5LC0xMT
-I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTM2MDkwOTIxMCwtMTc2NTUxNjQ0LC0xOT
+I5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgx
+MTZdfQ==
 -->
