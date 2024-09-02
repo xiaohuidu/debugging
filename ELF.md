@@ -20,9 +20,11 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 **Section header table**: 包含了描述section的信息。每一个section 在Section header table 里有一条记录。每一条记录包含了section的基本信息， 比如section 名字， section大小...
 
 **Section**: 包含了从Linking 角度看到的object file 里的所有信息: instructions, data, symbol table, relocation information...
+
+> Program header table 和Section header table 的位置不是固定的，只有ELF header 的位置是固定的在文件最开始处。
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMjM2NDI3LC0xOTI5NjExMzksLTExMj
-Q5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2OTM5MDIzNiwtMTkyOTYxMTM5LC0xMT
+I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
 -->
