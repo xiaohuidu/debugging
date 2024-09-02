@@ -84,16 +84,17 @@ typedef struct {
 	`00000001： 2's complement, little endian`
 	- **第七个**byte是ELF header Version
 	- **第八个**byte是这个object file 的目的 操作系统和ABI。
+	- 第九个byte： biao
 	- 其他的是留作将来用的。
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MD
-IyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5Nzcs
-MTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwND
-I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
-LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTkwMzY0MzA2MSwtNTk1NTY0NDc0LDEyOT
+k5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5
+LDM3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OT
+k1NzY3MywxODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEw
+LC0xNzY1NTE2NDQsLTE5Mjk2MTEzOSwtMTEyNDk2MjQ3MywyMD
+A2OTQ2NTIyLDczMDk5ODExNl19
 -->
