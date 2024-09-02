@@ -23,13 +23,15 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 > **Program header table** 和**Section header table** 的位置不是固定的，只有**ELF header** 的位置是固定的在文件最开始处。
 ## 数据类型
+
 ELF32:
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/elf32_datatype.png)
 
 ##
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDkwOTIxMCwtMTc2NTUxNjQ0LC0xOT
-I5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbNDE5NDU3NDk5LDEzNjA5MDkyMTAsLTE3Nj
+U1MTY0NCwtMTkyOTYxMTM5LC0xMTI0OTYyNDczLDIwMDY5NDY1
+MjIsNzMwOTk4MTE2XX0=
 -->
