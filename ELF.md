@@ -133,15 +133,16 @@ ELF Header:
 - **e_shoff** (4 or 8 bytes): Section Header table的从文件开头开始的偏移量。如果没有Section Header table, 值是0。
 - **e_flags** (4 bytes):  processor-specific的flag。 flag 名字可以从EF_machine_flag找到。当前对于IA， 这个flag 是0。
 - **e_ehsize**(2 bytes): ELF Header 的size。
+- e_phentsize(): Program Header table里的一个entry 的以byte 为单位的大小。每一个entry的大小都是一样的。
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDE3OTQ3LDYyMTcwMzk4NSw2NDk2Nz
-YzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYs
-NTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwOD
-k3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3Mywx
-ODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEwLC0xNzY1NT
-E2NDQsLTE5Mjk2MTEzOSwtMTEyNDk2MjQ3MywyMDA2OTQ2NTIy
-XX0=
+eyJoaXN0b3J5IjpbLTQyNDA1NzkyMSw2MjE3MDM5ODUsNjQ5Nj
+c2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2
+LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MD
+g5NzcsMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMs
+MTgwNDI2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NT
+UxNjQ0LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUy
+Ml19
 -->
