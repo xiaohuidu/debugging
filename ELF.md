@@ -10,11 +10,12 @@ ELF 格式是在  **System V Application Binary Interface** 中定义的。ELF�
 
 ## ELF 文件格式
 Object 文件参与一个程序的 build 和execution， 所以object 文件的格式可以从两个不同的角度来看。
+
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/ELF_format.png)
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTM5MjQ3MDEsLTE5Mjk2MTEzOSwtMT
+eyJoaXN0b3J5IjpbLTIxMjg4ODQyOTksLTE5Mjk2MTEzOSwtMT
 EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
