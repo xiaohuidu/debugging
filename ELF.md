@@ -77,6 +77,32 @@ typedef struct {
         Elf64_Half      e_shstrndx;
 } Elf64_Ehdr;
 ```
+一个例子：
+```
+$ readelf -h cngss.elf
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 03 00 00 00 00 00 00 00 00
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - GNU
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x100b4000
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          532462488 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         8
+  Size of section headers:           64 (bytes)
+  Number of section headers:         48
+  Section header string table index: 47
+
+```
+
 - **e_ident**(16 byte):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来decode和解析这个文件的内容。
 	- **前四个byte** 是Magic Number: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
 	- **第五个**byte是Class: 32-bit(1) or 64 bit(2), 0 表示非法。32-bit 最大虚拟地址空间是4G
@@ -99,7 +125,7 @@ typedef struct {
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTEyMDcxMywtNTk1NTY0NDc0LDEyOT
+eyJoaXN0b3J5IjpbMTY1MjczMzU4MCwtNTk1NTY0NDc0LDEyOT
 k5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5
 LDM3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OT
 k1NzY3MywxODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEw
