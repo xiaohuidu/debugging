@@ -137,16 +137,16 @@ ELF Header:
 - **e_phnum**(2 bytes): Program header table里的 entry的个数。
 - e_shentsize(2 bytes): Section Header table里的一个entry 的以byte 为单位的大小。每一个entry的大小都是一样的。
 - **e_shnum**(2 bytes): Section header table里的 entry的个数。
-- **e_shstrndx**(2 bytes): 
+- **e_shstrndx**(2 bytes):  zhi
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNz
-AzOTg1LDY0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQs
-MTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNj
-M5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAs
-MjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MD
-kyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5LC0xMTI0OTYyNDcz
+eyJoaXN0b3J5IjpbLTE4NTA2Mzg5ODksODUxMDI0NzUwLDE5Nz
+E1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3ODUy
+LC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2Mz
+I1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEs
+LTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMj
+A1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5
 XX0=
 -->
