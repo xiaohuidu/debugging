@@ -14,11 +14,11 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/ELF_format.png)
 
 **ELF header**: 在ELF 最开始，包含了描述整个文件的组织的信息。
-Program header table: 这个
+Program header table: 这个部分是可以没有的。如果存在， 是用来告诉系统如何去创建进程的image（可执行的程序）。可执行文件必须要有Program header table，可重定向
 Section: 包含了从Linking 角度看到的object file 里的所有信息: instructions, data, symbol table, relocation information...
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjEyODMwOTksLTE5Mjk2MTEzOSwtMT
-EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTY2MzkyNTExMywtMTkyOTYxMTM5LC0xMT
+I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
 -->
