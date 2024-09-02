@@ -77,13 +77,13 @@ typedef struct {
         Elf64_Half      e_shstrndx;
 } Elf64_Ehdr;
 ```
-
+- e_ident(16 byte)
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MD
-QyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0
-NCwtMTkyOTYxMTM5LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyND
+k5NTc2NzMsMTgwNDI2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIx
+MCwtMTc2NTUxNjQ0LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMj
+AwNjk0NjUyMiw3MzA5OTgxMTZdfQ==
 -->
