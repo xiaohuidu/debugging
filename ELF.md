@@ -135,7 +135,7 @@ ELF Header:
 - **e_ehsize**(2 bytes): ELF Header 的size。
 - **e_phentsize**(2 bytes): Program Header table里的一个entry 的以byte 为单位的大小。每一个entry的大小都是一样的。
 - **e_phnum**(2 bytes): Program header table里的 entry的个数。
-- e_shentsize(2 bytes): Section Header table里的一个entry 的以byte 为单位的大小。每一个entry的大小都是一样的。
+- **e_shentsize**(2 bytes): Section Header table里的一个entry 的以byte 为单位的大小。每一个entry的大小都是一样的。
 - **e_shnum**(2 bytes): Section header table里的 entry的个数。
 - **e_shstrndx**(2 bytes):  指向Section Header table里的一个特殊的entry的index， 这个section 包含了section name string table。
 
@@ -147,7 +147,7 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDM3OTA3NiwtMTg2NTcyNTM3NCwtMT
+eyJoaXN0b3J5IjpbMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMT
 kyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5
 ODUsNjQ5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMj
 k5OTMwMjY2LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4
