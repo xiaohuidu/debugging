@@ -82,16 +82,17 @@ typedef struct {
 	- **第五个**byte是Class: 32-bit(1) or 64 bit(2), 0 表示非法。32-bit 最大虚拟地址空间是4G
 	- **第六个**byte是Data  编码方式: little endian(1) 和big endian(2)， 0表示非法。
 	`00000001： 2's complement, little endian`
-	- **第七个**byte是Version
+	- **第七个**byte是ELF header Version
 	- 第八个
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2Mz
-I1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEs
-LTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMj
-A1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5
-LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTM5Mzk2MzcxOCwxMjk5OTMwMjY2LDU2MD
+IyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5Nzcs
+MTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwND
+I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
+LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3Mz
+A5OTgxMTZdfQ==
 -->
