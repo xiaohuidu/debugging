@@ -34,11 +34,14 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 
 所有由目标文件格式定义的数据结构都遵循相关类别的自然大小和对齐指南。如果有必要，数据结构会包含显式填充，以确保4字节对象的4字节对齐，强制结构的大小为4的倍数，等等。数据从文件的开头起也具有适当的对齐。因此，例如，一个包含 `Elf32_Addr` 成员的结构将在文件中**以4字节边界对齐**，而包含 `Elf64_Addr` 成员的结构将在**8字节边界对齐**。
 
-##
+## ELF Header
+
+某些目标文件控制结构可能会增长，因为 ELF 头包含它们的实际大小。如果目标文件格式发生变化，程序可能会遇到比预期更大或更小的控制结构。因此，程序可能会忽略多余的信息。对于缺失信息的处理取决于上下文，并将在定义扩展时予以指定。
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMj
-A1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0NCwtMTkyOTYxMTM5
-LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTU0NzYzMjU3OCwyNDk5NTc2NzMsMTgwND
+I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
+LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3Mz
+A5OTgxMTZdfQ==
 -->
