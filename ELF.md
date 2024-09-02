@@ -37,11 +37,53 @@ Object 文件参与一个程序的 build 和execution， 所以object 文件的�
 ## ELF Header
 
 某些object文件**控制结构**可能会增长，因为 ELF 头包含它们的实际大小。如果目标文件格式发生变化，程序可能会遇到比预期更大或更小的控制结构。因此，程序可能会忽略多余的信息。对于缺失信息的处理取决于上下文，并将在定义扩展时予以指定。
+
+ELF header 结构体定义在文件  sys/elf.h:
+
+```c
+#define EI_NIDENT       16
+ 
+typedef struct {
+        unsigned char   e_ident[EI_NIDENT]; 
+        Elf32_Half      e_type;
+        Elf32_Half      e_machine;
+        Elf32_Word      e_version;
+        Elf32_Addr      e_entry;
+        Elf32_Off       e_phoff;
+        Elf32_Off       e_shoff;
+        Elf32_Word      e_flags;
+        Elf32_Half      e_ehsize;
+        Elf32_Half      e_phentsize;
+        Elf32_Half      e_phnum;
+        Elf32_Half      e_shentsize;
+        Elf32_Half      e_shnum;
+        Elf32_Half      e_shstrndx;
+} Elf32_Ehdr;
+
+typedef struct {
+        unsigned char   e_ident[EI_NIDENT]; 
+        Elf64_Half      e_type;
+        Elf64_Half      e_machine;
+        Elf64_Word      e_version;
+        Elf64_Addr      e_entry;
+        Elf64_Off       e_phoff;
+        Elf64_Off       e_shoff;
+        Elf64_Word      e_flags;
+        Elf64_Half      e_ehsize;
+        Elf64_Half      e_phentsize;
+        Elf64_Half      e_phnum;
+        Elf64_Half      e_shentsize;
+        Elf64_Half      e_shnum;
+        Elf64_Half      e_shstrndx;
+} Elf64_Ehdr;
+```
+
+
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTUxNTU3NCwyNDk5NTc2NzMsMTgwND
-I2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIxMCwtMTc2NTUxNjQ0
-LC0xOTI5NjExMzksLTExMjQ5NjI0NzMsMjAwNjk0NjUyMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MD
+QyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0
+NCwtMTkyOTYxMTM5LC0xMTI0OTYyNDczLDIwMDY5NDY1MjIsNz
+MwOTk4MTE2XX0=
 -->
