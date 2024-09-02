@@ -80,14 +80,15 @@ typedef struct {
 - e_ident(16 byte):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来decode和解析这个文件的内容。
 	- 前四个byte 是Magic Number: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
 	- 第五个byte是Class: 32-bit(1) or 64 bit(2), 0 标识非法。32-bit 最大虚拟地址空间是4G
+	- 第六个byte是Data  编码方式: little endian 和big endian
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI1MTM2OTYsMTIxNjM5ODksMzc5OD
-A4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3Njcz
-LDE4MDQyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MDkyMTAsLTE3Nj
-U1MTY0NCwtMTkyOTYxMTM5LC0xMTI0OTYyNDczLDIwMDY5NDY1
-MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMT
+YzOTg5LDM3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQw
+LDI0OTk1NzY3MywxODA0MjY0ODI4LC04MTIwNTUyMywxMzYwOT
+A5MjEwLC0xNzY1NTE2NDQsLTE5Mjk2MTEzOSwtMTEyNDk2MjQ3
+MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
