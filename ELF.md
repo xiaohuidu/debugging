@@ -103,7 +103,7 @@ ELF Header:
 
 ```
 
-- **e_ident**(16 byte):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来decode和解析这个文件的内容。
+- **e_ident**(16 bytes):  elf identification。 ELF刚开始的16 byte 用来标识这个文件是一个object file。 提供其他的机器无关的数据，用来decode和解析这个文件的内容。
 	- **前四个byte** 是Magic Number: 7f 45 4c 46 (0x7f, 'E', 'L', 'F'): e_ident[0] ~ e_ident[3]
 	- **第五个**byte是Class: 32-bit(1) or 64 bit(2), 0 表示非法。32-bit 最大虚拟地址空间是4G
 	- **第六个**byte是Data  编码方式: little endian(1) 和big endian(2)， 0表示非法。
@@ -120,12 +120,14 @@ ELF Header:
 	- 4: Core file
 	- 0xff00: Processor-specific
 	- 0xffff: Processor-specific
+- **e_machine**  (2 bytes) : 运行所需要的architecture
+	- 
 - xxx
 
 ##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDQ3MzMzNiwxNTQzODY3ODUyLC01OT
+eyJoaXN0b3J5IjpbLTYyNjEwMzc3MCwxNTQzODY3ODUyLC01OT
 U1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2
 OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEsLTE5OD
 k5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4MjgsLTgxMjA1NTIz
