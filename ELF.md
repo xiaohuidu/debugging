@@ -140,15 +140,15 @@ ELF Header:
 - **e_shstrndx**(2 bytes):  指向Section Header table里的一个特殊的entry的index， 这个section 包含了section name string table。
 
 ## Section 
-object file 里的Section Header Table 保存着定位所有section 所需要的信息。
+object file 里的Section Header Table 保存着定位所有section 所需要的信息。Secion Header Table 起始偏移量是e_shoff 定义， 每一个section的大小是由e_shentsize 定义， section 的数量是由e_shnum定义。
 ## 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYyMTg3MjY5LC0xOTIzNzgwMzY0LDg1MT
-AyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUs
-MTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMj
-I0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3Nywx
-NzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0Mj
-Y0ODI4LC04MTIwNTUyMywxMzYwOTA5MjEwLC0xNzY1NTE2NDRd
-fQ==
+eyJoaXN0b3J5IjpbLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsOD
+UxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2
+NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1Nj
+AyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3
+LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MD
+QyNjQ4MjgsLTgxMjA1NTIzLDEzNjA5MDkyMTAsLTE3NjU1MTY0
+NF19
 -->
