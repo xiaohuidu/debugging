@@ -4,9 +4,10 @@
 ELF 格式是在  **System V Application Binary Interface** 中定义的。ELF最开始是作为ABI的一部分在UNIX System Laboratories(USL) 而进行开发和发布的。 后来 Tool Interface Standards 委员会(TIS) 选择把ELF 作为object 文件的标准格式。 
 # ELF 
 有三种object 文件:
-- 可重定位object 文件(relocatable file): 适合和其他的object文件一起创建可执行文件或者动态共享文件。
-- 可执行文件(Executable file): 
+- 可重定位object 文件(relocatable file): 适合和其他的object文件一起创建可执行文件或者共享文件。
+- 可执行文件(Executable file)
+- 共享文件(Shared object file): 适合在
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDY5MjI3OCwtMTkyOTYxMTM5LC0xMT
-I0OTYyNDczLDIwMDY5NDY1MjIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2ODI3NDMzOTAsLTE5Mjk2MTEzOSwtMT
+EyNDk2MjQ3MywyMDA2OTQ2NTIyLDczMDk5ODExNl19
 -->
