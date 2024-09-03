@@ -153,6 +153,7 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 - SHN_COMMON: 与此section相关的符号是common符号例。如 FORTRAN 的 COMMON 或未分配的 C 语言外部变量
 - SHN_HIRESERVE: 预留的index的最大值。预留的index是从SHN_LORESERVE到SHN_HIRESERVE, 包含这两值。这些值不引用Section Header table。也就是说，Section Header table中不包含这些保留索引的条目
 
+
 Section 包含了object file 里的除了ELF Header， Program Header Table， Section Header Table 的所有的信息。section 满足以下一些条件：
 
 -xxx
@@ -161,11 +162,11 @@ Section 包含了object file 里的除了ELF Header， Program Header Table， S
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTI2OTQzOTQsLTYwNDYyODQzNiwtMT
-EzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIz
-NzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NS
-w2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5
-MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LD
-M3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1
-NzY3M119
+eyJoaXN0b3J5IjpbMTQyMzYyMjA0MCwtNjA0NjI4NDM2LC0xMT
+MwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3
+ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LD
+Y0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkz
+MDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMz
+c5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3
+NjczXX0=
 -->
