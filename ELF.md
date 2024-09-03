@@ -201,7 +201,10 @@ typedef struct {
 - **sh_entsize**: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
 ### Section 类型(sh_type)
-![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
+|Name| Value |
+|--|--|
+| SHT_NULL | 0 |
+
 
 - **SHT_NULL**: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
 - **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
@@ -216,11 +219,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MT
-IyNjI4MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3Nzcs
-MTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5OD
-I0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0
-NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNT
-QzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1
-NDZdfQ==
+eyJoaXN0b3J5IjpbMjEzMDcxNjA2MywxMTgwMzQyMjAyLDY4Mz
+Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
+Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
+A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
+MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
+Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
+MjY2XX0=
 -->
