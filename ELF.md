@@ -237,7 +237,8 @@ typedef struct {
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
 
 #### 字符串表(String Table)
-String table sections 里面cunchu
+String table sections 里面存储了有结束符的字符串。 object file里的symbol 和section name 存了指向这个table 的index。
+
 
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
@@ -266,7 +267,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDc1NjI4MSwxMTgwMzQyMjAyLDY4Mz
+eyJoaXN0b3J5IjpbMTAyMTE5MjEwMywxMTgwMzQyMjAyLDY4Mz
 Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
 Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
 A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
