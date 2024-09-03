@@ -204,6 +204,17 @@ typedef struct {
 |Name| Value |
 |--|--|
 | SHT_NULL | 0 |
+| SHT_PROGBITS | 0 |
+| SHT_SYMTAB | 0 |
+| SHT_STRTAB | 0 |
+| SHT_RELA | 0 |
+| SHT_HASH | 0 |
+| SHT_DYNAMIC | 0 |
+| SHT_NOTE | 0 |
+| SHT_NOBITS | 0 |
+| SHT_REL | 0 |
+| SHT_SHLIB | 0 |
+| SHT_NULL | 0 |
 
 
 - **SHT_NULL**: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
@@ -219,11 +230,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDcxNjA2MywxMTgwMzQyMjAyLDY4Mz
-Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
-Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
-A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
-MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
-Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
-MjY2XX0=
+eyJoaXN0b3J5IjpbMTY2Mzk3MjQ1LDExODAzNDIyMDIsNjgzNj
+U1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3
+LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMD
+YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
+MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
+k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
+NjZdfQ==
 -->
