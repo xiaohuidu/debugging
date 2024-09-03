@@ -161,7 +161,7 @@ Section 包含了object file 里的除了ELF Header， Program Header Table， S
  - section直接不能重叠。没有一个byte 可以在两个section里。
  - object 中可能存在未使用的空间。各种header 和section可能并未覆盖目标文件中的每个字节。未使用数据的内容未作规定。
 
-Section Header 定义在 sys/elf.h里
+### Section Header 定义在 sys/elf.h里
 ```
 typedef struct {
         Elf32_Word      sh_name;
@@ -191,11 +191,14 @@ typedef struct {
 ```
 - sh_name: section的名字。它的值section header string table的index， 是一个有字符串结束的字符串。
 - sh_type: 
+
+### 特殊section
+
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzE3NjczOCw4MTI5Nzc3NywxMjc1ND
+eyJoaXN0b3J5IjpbLTgwMDg3ODc1OCw4MTI5Nzc3NywxMjc1ND
 cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
 MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
 k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
