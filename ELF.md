@@ -156,17 +156,20 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 
 Section 包含了object file 里的除了ELF Header， Program Header Table， Section Header Table 的所有的信息。section 满足以下一些条件：
 
- - 每一个section 有一个section header， section header 没有section
+ - 每一个section 有一个section header用来描述它， section header 可以没有section 而单独存在。
+ - 每一个section 占有连续的字节序列， 可能是空的。
+ - section直接不能重叠。没有
+ - section
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3ODk4MTgsLTYwNDYyODQzNiwtMTEzMD
-YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
-MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
-k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
-NjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OT
-gwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3
-M119
+eyJoaXN0b3J5IjpbNzg2ODYwNDIzLC02MDQ2Mjg0MzYsLTExMz
+A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
+MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
+Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
+MjY2LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNz
+k4MDg5NzcsMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2
+NzNdfQ==
 -->
