@@ -246,9 +246,10 @@ string table的第一个byte 是 '\0',  他的index 是0， 最后一个byte 也
 section header 的sh_name 存了一个 字符串表的index， 这个section table section 是由 e_shstrndx 指定的。
 
 下面这个字符串表包含了25个bytes 和对应的字符串的index。
+
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example.gif)
 
-https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example_strings.png
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example_strings.png)
 
 
 #### 符号表(Symbol Table)
@@ -278,11 +279,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk0MTk3NjksMTU4MDM3NTg0NCwxMT
-gwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4
-MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MD
-Q2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcy
-NTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OS
-w2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2
-NDQ3NF19
+eyJoaXN0b3J5IjpbLTY5OTkzNTkxMCwxNTgwMzc1ODQ0LDExOD
+AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
+MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
+YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
+Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LD
+YyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0
+NDc0XX0=
 -->
