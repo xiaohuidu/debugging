@@ -193,7 +193,8 @@ typedef struct {
 - sh_type: section 的类型。
 - sh_flags: 描述section的一些bit 属性。
 - sh_addr: 如果这个secion 要出现在进程内存镜像中， 这个值指定了起始地址。否则这个值是0.
-- sh_offset: 这个secion 从object 开始算气的pianyiliang
+- sh_offset: 这个secion 从object 开始算气的偏移量。SHT_NOBITS类型的section在object file 中不占用空间， 它的offset 只是概念上定位的。
+- sh_size: section的
 
 ### 特殊section
 
@@ -203,11 +204,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2MDM4NDk4LDgxMjk3Nzc3LDEyNzU0Nz
-E1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAw
-LC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOT
-cxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1
-MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0NTQ2LC0xNj
-MyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNzY2ODIwNjAx
-XX0=
+eyJoaXN0b3J5IjpbLTE0MjU2MDc2MDEsODEyOTc3NzcsMTI3NT
+Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
+MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLD
+E5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3
+ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLT
+E2MzI1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2
+MDFdfQ==
 -->
