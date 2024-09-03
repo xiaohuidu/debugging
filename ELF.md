@@ -156,17 +156,17 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 
 Section 包含了object file 里的除了ELF Header， Program Header Table， Section Header Table 的所有的信息。section 满足以下一些条件：
 
--xxx
+ - 每一个section 有一个section header， section header 没有section
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzYyMjA0MCwtNjA0NjI4NDM2LC0xMT
-MwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3
-ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LD
-Y0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkz
-MDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMz
-c5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3
-NjczXX0=
+eyJoaXN0b3J5IjpbNDk3ODk4MTgsLTYwNDYyODQzNiwtMTEzMD
+YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
+MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
+k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
+NjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OT
+gwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3
+M119
 -->
