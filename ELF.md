@@ -246,6 +246,7 @@ string table的第一个byte 是 '\0',  他的index 是0， 最后一个byte 也
 section header 的sh_name 存了一个 字符串表的index， 这个section table section 是由 e_shstrndx 指定的。
 
 下面这个字符串表包含了25个bytes 和对应的字符串的index。
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example.gif)
 
 
 #### 符号表(Symbol Table)
@@ -275,7 +276,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjM4MDIxMCwxMTgwMzQyMjAyLDY4Mz
+eyJoaXN0b3J5IjpbMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4Mz
 Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
 Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
 A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
