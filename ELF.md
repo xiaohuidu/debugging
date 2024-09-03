@@ -236,9 +236,10 @@ typedef struct {
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
 
-### 字符串表(String Table)
+#### 字符串表(String Table)
+String table sections 里面cunchu
 
-### 符号表(Symbol Table)
+#### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
 symbol table index 是对这个数组的一个索引。 index 0 是第一个也是没有define的一个index。
 符号表的entry定义在 sys/elf.h中
@@ -265,7 +266,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwODg3OTE5MCwxMTgwMzQyMjAyLDY4Mz
+eyJoaXN0b3J5IjpbMTEwMDc1NjI4MSwxMTgwMzQyMjAyLDY4Mz
 Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
 Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
 A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
