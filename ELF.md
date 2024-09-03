@@ -201,7 +201,7 @@ typedef struct {
 - **sh_entsize**: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
 ### Section 类型
-
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
 ### 特殊section
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
@@ -210,7 +210,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTEwMTI3NjUsLTc3MTIyNjI4MSwxNz
+eyJoaXN0b3J5IjpbLTIwNTE2NDkyODMsLTc3MTIyNjI4MSwxNz
 QzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3
 NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLT
 E4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1
