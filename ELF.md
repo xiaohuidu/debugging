@@ -200,7 +200,7 @@ typedef struct {
 - **sh_addralign**: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
 - **sh_entsize**: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
-### Section 类型
+### Section 类型(sh_type)
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
 
 
@@ -208,15 +208,17 @@ typedef struct {
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
 
+- SHT_NULL: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
+- SHT_PROGBITS: 程序定义的
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0Mz
-gzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUs
-LTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xOD
-Y1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2
-NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNT
-k1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEz
-Njk2XX0=
+eyJoaXN0b3J5IjpbLTE3MjE1MjE4MzksNjgzNjU1NDU3LC03Nz
+EyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3
+LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOT
+gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
+NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
+U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
+NTQ2XX0=
 -->
