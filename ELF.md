@@ -251,6 +251,7 @@ section header 的sh_name 存了一个 字符串表的index， 这个section tab
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example_strings.png)
 
+index 可以指向任意byte， 指向也是被允许的。
 
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
@@ -279,7 +280,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTkzNTkxMCwxNTgwMzc1ODQ0LDExOD
+eyJoaXN0b3J5IjpbMTY2MTExNTgxOCwxNTgwMzc1ODQ0LDExOD
 AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
 MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
 YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
