@@ -238,7 +238,8 @@ typedef struct {
 
 #### 字符串表(String Table)
 String table sections 里面存储了有结束符的字符串。 object file里的symbol 和section name 存了指向这个table 的index。
-string table的第一个byte 是 '\0', 
+string table的第一个byte 是 '\0',  他的index 是0， 最后一个byte 也是'\0'， 这样所有的字符都是有结束符的。如果一个string index 是0 ， 那么它可以使没有name 或者 是一个空name。
+一个空的zif
 
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
@@ -267,11 +268,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM2MDcyMTksMTE4MDM0MjIwMiw2OD
-M2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMxLC00NDQ1Njk4
-NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMT
-MwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3
-ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LD
-Y0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkz
-MDI2Nl19
+eyJoaXN0b3J5IjpbMTUyMjY2MjgzMSwxMTgwMzQyMjAyLDY4Mz
+Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
+Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
+A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
+MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
+Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
+MjY2XX0=
 -->
