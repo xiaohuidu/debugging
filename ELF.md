@@ -145,16 +145,16 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 一些特殊的Section Header Table的index 是被预留了， 不能被object file 使用。
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_index.png)
 
-- SHN_UNDEF: 
+- SHN_UNDEF: index 0 标识 没有定义的，丢失的， 不相关的，或者没有意义的section。
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk3Mzc0MTMsLTExMzA2MjM1OTgsMTk4Mj
-QyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3
-NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1ND
-M4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MDIyNDU0
-NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5NzcsMTc2Nj
-gyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwNDI2NDgy
-OF19
+eyJoaXN0b3J5IjpbMTYwNTk4NTI5MiwtMTEzMDYyMzU5OCwxOT
+gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
+NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
+U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
+NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNz
+Y2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0
+ODI4XX0=
 -->
