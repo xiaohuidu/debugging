@@ -195,6 +195,8 @@ typedef struct {
 - sh_addr: 如果这个secion 要出现在进程内存镜像中， 这个值指定了起始地址。否则这个值是0.
 - sh_offset: 这个secion 从object 开始算起的单位是byte的偏移量。SHT_NOBITS类型的section在object file 中不占用空间， 它的offset 只是概念上定位的。
 - sh_size: section的大小， 单位是byte。
+- sh_link: section header table index的link， 值的解释和section 类型相关。
+- sh_info. e
 
 ### 特殊section
 
@@ -204,11 +206,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5ODY3NTY4LDgxMjk3Nzc3LDEyNzU0Nz
-E1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAw
-LC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOT
-cxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1
-MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0NTQ2LC0xNj
-MyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNzY2ODIwNjAx
-XX0=
+eyJoaXN0b3J5IjpbLTI0MzM3MTYyOCw4MTI5Nzc3NywxMjc1ND
+cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
+MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
+k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
+NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MDIyNDU0NiwtMT
+YzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5NzcsMTc2NjgyMDYw
+MV19
 -->
