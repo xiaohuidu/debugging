@@ -279,13 +279,13 @@ typedef struct {
 ```
 
 - st_name: 指向字符串表的index。 symbol的名字。
-- st_value:  symbol 对应的内容， 他可以是juedui
+- st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDg3NjYxNywxNTgwMzc1ODQ0LDExOD
+eyJoaXN0b3J5IjpbLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
 AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
 MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
 YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
