@@ -196,7 +196,8 @@ typedef struct {
 - sh_offset: 这个secion 从object 开始算起的单位是byte的偏移量。SHT_NOBITS类型的section在object file 中不占用空间， 它的offset 只是概念上定位的。
 - sh_size: section的大小， 单位是byte。
 - sh_link: section header table index的link， 值的解释和section 类型相关。
-- sh_info. e
+- sh_info. 额外的信息。值的解释和section 类型相关。
+- sh_addralign: 有些节有地址对齐的限制。例如，如果一个节包含双字（double-word），系统必须确保整个节的双字对齐。也就是说，`sh_addr` 的值必须与 0 同余，模数为 `sh_addralign` 的值。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示该节没有对齐限制。
 
 ### 特殊section
 
@@ -206,7 +207,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzM3MTYyOCw4MTI5Nzc3NywxMjc1ND
+eyJoaXN0b3J5IjpbMjExMTA3OTI1NCw4MTI5Nzc3NywxMjc1ND
 cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
 MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
 k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
