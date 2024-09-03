@@ -148,16 +148,17 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 - SHN_UNDEF: index 0 标识 没有定义的，丢失的， 不相关的，或者没有意义的section。
 	> 尽管index0 是预留的， 但是section header table里包含一个index 是0 的entry。如果ELF header 里面的e_shnum是6， 那么他们的index 是 从0 到5。
 - SHN_LORESERVE: 预留的index范围的最小值。
-- SHN_LOPROC dao 
+- SHN_LOPROC 到 SHN_HIPROC, 这个范围内的index 是processor-specific的。
+- SHN_ABS: 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5MDc0NjE2LC0xMTMwNjIzNTk4LDE5OD
-I0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0
-NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNT
-QzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1
-NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3Nj
-Y4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3NjczLDE4MDQyNjQ4
-MjhdfQ==
+eyJoaXN0b3J5IjpbMTUyMTQyNzk4MSwtMTEzMDYyMzU5OCwxOT
+gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
+NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
+U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
+NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNz
+Y2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0
+ODI4XX0=
 -->
