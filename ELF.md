@@ -158,18 +158,18 @@ Section 包含了object file 里的除了ELF Header， Program Header Table， S
 
  - 每一个section 有一个section header用来描述它， section header 可以没有section 而单独存在。
  - 每一个section 占有连续的字节序列， 可能是空的。
- - section直接不能重叠。没有
+ - section直接不能重叠。没有一个byte 可以在两个section里。
  - section
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2ODYwNDIzLC02MDQ2Mjg0MzYsLTExMz
-A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
-MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
-Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
-MjY2LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNz
-k4MDg5NzcsMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2
-NzNdfQ==
+eyJoaXN0b3J5IjpbLTE1ODkwMjY4MiwtNjA0NjI4NDM2LC0xMT
+MwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3
+ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LD
+Y0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkz
+MDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMz
+c5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5NDAsMjQ5OTU3
+NjczXX0=
 -->
