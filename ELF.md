@@ -190,7 +190,9 @@ typedef struct {
 } Elf64_Shdr;
 ```
 - **sh_name**: section的名字。它的值section header string table的index， 是一个有字符串结束的字符串。
-- sh_type: 
+- sh_type: section 的类型。
+- sh_flags: 描述section的一些bit 属性。
+- sh_addr: 如果这个secion 要出现在内存中
 
 ### 特殊section
 
@@ -200,7 +202,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQzOTUzODksODEyOTc3NzcsMTI3NT
+eyJoaXN0b3J5IjpbLTE3NjExNTk5ODQsODEyOTc3NzcsMTI3NT
 Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
 MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLD
 E5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3
