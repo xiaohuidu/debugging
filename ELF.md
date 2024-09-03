@@ -253,6 +253,7 @@ section header 的sh_name 存了一个 字符串表的index， 这个section tab
 
 index 可以指向任意byte， 指向也是被允许的。
 
+
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
 symbol table index 是对这个数组的一个索引。 index 0 是第一个也是没有define的一个index。
@@ -280,7 +281,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTExNTgxOCwxNTgwMzc1ODQ0LDExOD
+eyJoaXN0b3J5IjpbLTQ5NDQ5NzAwMCwxNTgwMzc1ODQ0LDExOD
 AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
 MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
 YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
