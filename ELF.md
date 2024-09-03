@@ -202,6 +202,8 @@ typedef struct {
 
 ### Section 类型
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
+
+
 ### 特殊section
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
@@ -210,11 +212,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE2NDkyODMsLTc3MTIyNjI4MSwxNz
-QzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3
-NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLT
-E4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1
-NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3ODUyLC
-01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1
-MTM2OTZdfQ==
+eyJoaXN0b3J5IjpbNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0Mz
+gzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUs
+LTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xOD
+Y1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2
+NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNT
+k1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEz
+Njk2XX0=
 -->
