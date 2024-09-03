@@ -248,6 +248,8 @@ section header 的sh_name 存了一个 字符串表的index， 这个section tab
 下面这个字符串表包含了25个bytes 和对应的字符串的index。
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example.gif)
 
+https://github.com/xiaohuidu/debugging/blob/master/images/string_table_example_strings.png
+
 
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
@@ -276,11 +278,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4Mz
-Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
-Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
-A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
-MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
-Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
-MjY2XX0=
+eyJoaXN0b3J5IjpbLTE2Mjk0MTk3NjksMTU4MDM3NTg0NCwxMT
+gwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4
+MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MD
+Q2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcy
+NTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OS
+w2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2
+NDQ3NF19
 -->
