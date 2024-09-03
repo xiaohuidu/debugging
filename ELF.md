@@ -203,8 +203,8 @@ typedef struct {
 ### Section 类型(sh_type)
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
 
-- SHT_NULL: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
-- SHT_PROGBITS: 程序定义的信息， format 和意义有应用自己定义和解释。
+- **SHT_NULL**: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
+- **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
 - SHT_SYMTAB and SHT_DYNSYM: 
 
 ### 特殊section
@@ -216,7 +216,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjE3MzU3NCw2ODM2NTU0NTcsLTc3MT
+eyJoaXN0b3J5IjpbMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MT
 IyNjI4MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3Nzcs
 MTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5OD
 I0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0
