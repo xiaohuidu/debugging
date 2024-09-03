@@ -198,7 +198,7 @@ typedef struct {
 - sh_link: section header table index的link， 值的解释和section 类型相关。
 - sh_info. 额外的信息。值的解释和section 类型相关。
 - sh_addralign: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
-- sh_entsize: 某些section包含固定大小条目的表，例如符号表。对于这样的节，该成员给出了每个条目的字节大小。如果该节不包含固定大小的条目表，则该成员的值为 0。 
+- sh_entsize: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
 ### 特殊section
 
@@ -208,11 +208,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5NTM2ODA1LC00NDQ1Njk4NzcsODEyOT
-c3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4
-LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsOD
-UxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2
-NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1Nj
-AyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3
-XX0=
+eyJoaXN0b3J5IjpbLTE2NDEwMDI0MDksLTQ0NDU2OTg3Nyw4MT
+I5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1
+OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NC
+w4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2
+MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LD
+U2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5
+NzddfQ==
 -->
