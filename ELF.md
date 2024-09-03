@@ -140,7 +140,7 @@ ELF Header:
 - **e_shstrndx**(2 bytes):  指向Section Header table里的一个特殊的entry的index， 这个section 包含了section name string table。
 
 ## Section 
-object file 里的Section Header Table 保存着定位所有section 所需要的信息。Secion Header Table 起始偏移量是e_shoff 定义， 每一个section的大小是由e_shentsize 定义， section 的数量是由e_shnum定义。
+object file 里的**Section Header Table** 保存着定位所有section 所需要的信息。Secion Header Table 起始偏移量是e_shoff 定义， 每一个section的大小是由e_shentsize 定义， section 的数量是由e_shnum定义。
 
 一些特殊的Section Header Table的index 是被预留了， 不能被object file 使用。
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_index.png)
@@ -208,11 +208,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMj
-k3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5
-OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LD
-g1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYz
-NjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNT
-YwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3
-N119
+eyJoaXN0b3J5IjpbLTc3MTIyNjI4MSwxNzQzODM5ODMxLC00ND
+Q1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4NDM2
+LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLT
+E5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAz
+OTg1LDY0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0NzQsMT
+I5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMTIxNjM5
+ODldfQ==
 -->
