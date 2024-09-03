@@ -161,15 +161,43 @@ Section 包含了object file 里的除了ELF Header， Program Header Table， S
  - section直接不能重叠。没有一个byte 可以在两个section里。
  - object 中可能存在未使用的空间。各种header 和section可能并未覆盖目标文件中的每个字节。未使用数据的内容未作规定。
 
+Section Header 定义在 sys/elf.h里
+```
+typedef struct {
+        Elf32_Word      sh_name;
+        Elf32_Word      sh_type;
+        Elf32_Word      sh_flags;
+        Elf32_Addr      sh_addr;
+        Elf32_Off       sh_offset;
+        Elf32_Word      sh_size;
+        Elf32_Word      sh_link;
+        Elf32_Word      sh_info;
+        Elf32_Word      sh_addralign;
+        Elf32_Word      sh_entsize;
+} Elf32_Shdr;
+
+typedef struct {
+        Elf64_Word      sh_name;
+        Elf64_Word      sh_type;
+        Elf64_Xword     sh_flags;
+        Elf64_Addr      sh_addr;
+        Elf64_Off       sh_offset;
+        Elf64_Xword     sh_size;
+        Elf64_Word      sh_link;
+        Elf64_Word      sh_info;
+        Elf64_Xword     sh_addralign;
+        Elf64_Xword     sh_entsize;
+} Elf64_Shdr;
+```
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
-I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
-NzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNj
-IxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3ODUyLC01OTU1NjQ0
-NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2MzI1MTM2OTYsMT
-IxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDEsLTE5ODk5NzQ5
-NDBdfQ==
+eyJoaXN0b3J5IjpbODkwMzkyODIsODEyOTc3NzcsMTI3NTQ3MT
+U3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAs
+LTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLDE5Nz
+E1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3ODUy
+LC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLTE2Mz
+I1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2MDFd
+fQ==
 -->
