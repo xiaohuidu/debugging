@@ -146,17 +146,17 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_index.png)
 
 - SHN_UNDEF: index 0 标识 没有定义的，丢失的， 不相关的，或者没有意义的section。
-	> 尽管index0 是预留的， 但是section header table里包含一个index 是0 的entry。如果ELF header 里面的e_shnu
+	> 尽管index0 是预留的， 但是section header table里包含一个index 是0 的entry。如果ELF header 里面的e_shnum是6， 那么他们的index 是 从0 到5。
 - xxx
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjM0NTY4NDcsLTExMzA2MjM1OTgsMT
-k4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEw
-MjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LD
-E1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MDIy
-NDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5NzcsMT
-c2NjgyMDYwMSwtMTk4OTk3NDk0MCwyNDk5NTc2NzMsMTgwNDI2
-NDgyOF19
+eyJoaXN0b3J5IjpbLTEwMTkzMzA3MCwtMTEzMDYyMzU5OCwxOT
+gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
+NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
+U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
+NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNz
+Y2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0
+ODI4XX0=
 -->
