@@ -151,12 +151,12 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 - SHN_LOPROC 到 SHN_HIPROC, 这个范围内的index 是processor-specific的。
 - SHN_ABS: 该值为相应的引用指定了绝对值。例如，相对于section number SHN_ABS 定义的符号具有绝对值，不受重定位的影响。
 - SHN_COMMON: 与此section相关的符号是common符号例。如 FORTRAN 的 COMMON 或未分配的 C 语言外部变量
-- SHN_HIRESERVE: 预留的index的最大值。预留的index是从SHN_LORESERVE到SHN_HIRESERVE, 包含这两值。
+- SHN_HIRESERVE: 预留的index的最大值。预留的index是从SHN_LORESERVE到SHN_HIRESERVE, 包含这两值。这些值不引用Section Header table。也就是说，Section Header table中不包含这些保留索引的条目
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODYyNzQ2MywtMTEzMDYyMzU5OCwxOT
+eyJoaXN0b3J5IjpbLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOT
 gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
 NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
 U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
