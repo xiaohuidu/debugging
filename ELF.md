@@ -190,15 +190,15 @@ typedef struct {
 } Elf64_Shdr;
 ```
 - **sh_name**: section的名字。它的值section header string table的index， 是一个有字符串结束的字符串。
-- sh_type: section 的类型。
-- sh_flags: 描述section的一些bit 属性。
-- sh_addr: 如果这个secion 要出现在进程内存镜像中， 这个值指定了起始地址。否则这个值是0.
-- sh_offset: 这个secion 从object 开始算起的单位是byte的偏移量。SHT_NOBITS类型的section在object file 中不占用空间， 它的offset 只是概念上定位的。
-- sh_size: section的大小， 单位是byte。
-- sh_link: section header table index的link， 值的解释和section 类型相关。
-- sh_info. 额外的信息。值的解释和section 类型相关。
-- sh_addralign: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
-- sh_entsize: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
+- **sh_type**: section 的类型。
+- **sh_flags**: 描述section的一些bit 属性。
+- **sh_addr**: 如果这个secion 要出现在进程内存镜像中， 这个值指定了起始地址。否则这个值是0.
+- **sh_offset**: 这个secion 从object 开始算起的单位是byte的偏移量。SHT_NOBITS类型的section在object file 中不占用空间， 它的offset 只是概念上定位的。
+- **sh_size**: section的大小， 单位是byte。
+- **sh_link**: section header table index的link， 值的解释和section 类型相关。
+- **sh_info**. 额外的信息。值的解释和section 类型相关。
+- **sh_addralign**: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
+- **sh_entsize**: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
 ### 特殊section
 
@@ -208,11 +208,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDEwMDI0MDksLTQ0NDU2OTg3Nyw4MT
-I5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1
-OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NC
-w4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2
-MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LD
-U2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5
-NzddfQ==
+eyJoaXN0b3J5IjpbMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMj
+k3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5
+OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LD
+g1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYz
+NjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNT
+YwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3
+N119
 -->
