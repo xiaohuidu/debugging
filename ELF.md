@@ -198,6 +198,7 @@ typedef struct {
 - sh_link: section header table index的link， 值的解释和section 类型相关。
 - sh_info. 额外的信息。值的解释和section 类型相关。
 - sh_addralign: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
+- sh_entsize: 
 
 ### 特殊section
 
@@ -207,7 +208,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODkxMTQ1OCw4MTI5Nzc3NywxMjc1ND
+eyJoaXN0b3J5IjpbLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1ND
 cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
 MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
 k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
