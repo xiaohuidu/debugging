@@ -237,16 +237,17 @@ typedef struct {
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
 
 ### 符号表(Symbol Table)
-object 文件的符号表包含的信息可以用来进行对
+object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
+symbol table index 是对这个数组的一个索引。 index 0 是第一个也是没有define的一个index。
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA3NDUzNTk3LDExODAzNDIyMDIsNjgzNj
-U1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3
-LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMD
-YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
-MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
-k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
-NjZdfQ==
+eyJoaXN0b3J5IjpbLTgyNzMxNDAwNSwxMTgwMzQyMjAyLDY4Mz
+Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
+Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
+A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
+MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
+Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
+MjY2XX0=
 -->
