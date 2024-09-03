@@ -143,15 +143,17 @@ ELF Header:
 object file 里的Section Header Table 保存着定位所有section 所需要的信息。Secion Header Table 起始偏移量是e_shoff 定义， 每一个section的大小是由e_shentsize 定义， section 的数量是由e_shnum定义。
 
 一些特殊的Section Header Table的index 是被预留了， 不能被object file 使用。
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_index.png)
+
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMT
-kyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5
-ODUsNjQ5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMj
-k5OTMwMjY2LDU2MDIyNDU0NiwtMTYzMjUxMzY5NiwxMjE2Mzk4
-OSwzNzk4MDg5NzcsMTc2NjgyMDYwMSwtMTk4OTk3NDk0MCwyND
-k5NTc2NzMsMTgwNDI2NDgyOCwtODEyMDU1MjMsMTM2MDkwOTIx
-MF19
+eyJoaXN0b3J5IjpbLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMT
+g2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2
+Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4NTIsLT
+U5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MDIyNDU0NiwtMTYzMjUx
+MzY5NiwxMjE2Mzk4OSwzNzk4MDg5NzcsMTc2NjgyMDYwMSwtMT
+k4OTk3NDk0MCwyNDk5NTc2NzMsMTgwNDI2NDgyOCwtODEyMDU1
+MjNdfQ==
 -->
