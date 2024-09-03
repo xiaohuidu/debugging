@@ -203,22 +203,24 @@ typedef struct {
 ### Section 类型(sh_type)
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/section_type.png)
 
+- SHT_NULL: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
+- SHT_PROGBITS: 程序定义的信息， format 和意义有应用自己定义和解释。
+- SHT_SYMTAB and SHT_DYNSYM: 
 
 ### 特殊section
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
 
-- SHT_NULL: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
-- SHT_PROGBITS: 程序定义的
+
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE1MjE4MzksNjgzNjU1NDU3LC03Nz
-EyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3
-LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOT
-gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
-NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
-U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
-NTQ2XX0=
+eyJoaXN0b3J5IjpbLTIwNjE3MzU3NCw2ODM2NTU0NTcsLTc3MT
+IyNjI4MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3Nzcs
+MTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5OD
+I0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0
+NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNT
+QzODY3ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1
+NDZdfQ==
 -->
