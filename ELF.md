@@ -194,11 +194,13 @@ typedef struct {
 
 ### 特殊section
 
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/special_section_name.png)
+
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDg3ODc1OCw4MTI5Nzc3NywxMjc1ND
+eyJoaXN0b3J5IjpbMjEwNTgwNTUwNyw4MTI5Nzc3NywxMjc1ND
 cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
 MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
 k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
