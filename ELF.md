@@ -154,13 +154,14 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 - SHN_HIRESERVE: 预留的index的最大值。预留的index是从SHN_LORESERVE到SHN_HIRESERVE, 包含这两值。这些值不引用Section Header table。也就是说，Section Header table中不包含这些保留索引的条目
 
 Section 包含了object file 里的除了ELF Header， Program Header Table， Section Header Table 的所有的信息。section 满足以下一些条件：
+
 -xxx
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA2MjY1MDgsLTYwNDYyODQzNiwtMT
+eyJoaXN0b3J5IjpbLTE0OTI2OTQzOTQsLTYwNDYyODQzNiwtMT
 EzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIz
 NzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NS
 w2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5
