@@ -189,7 +189,7 @@ typedef struct {
         Elf64_Xword     sh_entsize;
 } Elf64_Shdr;
 ```
-- sh_name: section的名字。它的值section header string table的index， 是一个有字符串结束的字符串。
+- **sh_name**: section的名字。它的值section header string table的index， 是一个有字符串结束的字符串。
 - sh_type: 
 
 ### 特殊section
@@ -200,11 +200,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTgwNTUwNyw4MTI5Nzc3NywxMjc1ND
-cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
-MCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMT
-k3MTU2Njc0OSw2MjE3MDM5ODUsNjQ5Njc2MzY1LDE1NDM4Njc4
-NTIsLTU5NTU2NDQ3NCwxMjk5OTMwMjY2LDU2MDIyNDU0NiwtMT
-YzMjUxMzY5NiwxMjE2Mzk4OSwzNzk4MDg5NzcsMTc2NjgyMDYw
-MV19
+eyJoaXN0b3J5IjpbLTEzNjQzOTUzODksODEyOTc3NzcsMTI3NT
+Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
+MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLD
+E5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3
+ODUyLC01OTU1NjQ0NzQsMTI5OTkzMDI2Niw1NjAyMjQ1NDYsLT
+E2MzI1MTM2OTYsMTIxNjM5ODksMzc5ODA4OTc3LDE3NjY4MjA2
+MDFdfQ==
 -->
