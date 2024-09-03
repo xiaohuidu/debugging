@@ -152,15 +152,19 @@ object file 里的Section Header Table 保存着定位所有section 所需要的
 - SHN_ABS: 该值为相应的引用指定了绝对值。例如，相对于section number SHN_ABS 定义的符号具有绝对值，不受重定位的影响。
 - SHN_COMMON: 与此section相关的符号是common符号例。如 FORTRAN 的 COMMON 或未分配的 C 语言外部变量
 - SHN_HIRESERVE: 预留的index的最大值。预留的index是从SHN_LORESERVE到SHN_HIRESERVE, 包含这两值。这些值不引用Section Header table。也就是说，Section Header table中不包含这些保留索引的条目
+
+Section 包含了object file 里的除了ELF Header， Program Header Table， Section Header Table 的所有的信息。section 满足以下一些条件：
+-xxx
+
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOT
-gyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAy
-NDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMT
-U0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAyNjYsNTYwMjI0
-NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LDM3OTgwODk3NywxNz
-Y2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1NzY3MywxODA0MjY0
-ODI4XX0=
+eyJoaXN0b3J5IjpbLTE5NDA2MjY1MDgsLTYwNDYyODQzNiwtMT
+EzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIz
+NzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NS
+w2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5
+MzAyNjYsNTYwMjI0NTQ2LC0xNjMyNTEzNjk2LDEyMTYzOTg5LD
+M3OTgwODk3NywxNzY2ODIwNjAxLC0xOTg5OTc0OTQwLDI0OTk1
+NzY3M119
 -->
