@@ -229,7 +229,7 @@ typedef struct {
 
 - **SHT_NULL**: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
 - **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
-- SHT_SYMTAB and SHT_DYNSYM: 
+- **SHT_SYMTAB** and **SHT_DYNSYM**: 
 
 ### 特殊section
 
@@ -240,11 +240,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4ODA2MjM1LDExODAzNDIyMDIsNjgzNj
-U1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3
-LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMD
-YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
-MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
-k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
-NjZdfQ==
+eyJoaXN0b3J5IjpbMTU0MjcxMjc5NSwxMTgwMzQyMjAyLDY4Mz
+Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
+Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
+A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
+MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
+Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
+MjY2XX0=
 -->
