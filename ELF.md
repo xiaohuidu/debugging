@@ -240,7 +240,7 @@ typedef struct {
 String table sections 里面存储了有结束符的字符串。 object file里的symbol 和section name 存了指向这个table 的index。
 string table的第一个byte 是 '\0',  他的index 是0， 最后一个byte 也是'\0'， 这样所有的字符都是有结束符的。如果一个string index 是0 ， 那么它可以使没有name 或者 是一个空name。
 一个空的字符串表section 是允许的。section header里的 sh_size 是0， 非零的index 对于一个空的字符串表是不合法的。
-section header 的sh_name 存了一个 字符串表的index
+section header 的sh_name 存了一个 字符串表的index， 这个section table section 是由 e_shstrndx 指定的。
 
 #### 符号表(Symbol Table)
 object 文件的符号表包含了对符号定义已经引用进行定位和重定位所需要的所有的信息。
@@ -269,11 +269,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDczNTg5MSwxMTgwMzQyMjAyLDY4Mz
-Y1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3
-Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMz
-A2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4
-MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3MDM5ODUsNj
-Q5Njc2MzY1LDE1NDM4Njc4NTIsLTU5NTU2NDQ3NCwxMjk5OTMw
-MjY2XX0=
+eyJoaXN0b3J5IjpbNDc2NjExMzczLDExODAzNDIyMDIsNjgzNj
+U1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3
+LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMD
+YyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgw
+MzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2ND
+k2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0NDc0LDEyOTk5MzAy
+NjZdfQ==
 -->
