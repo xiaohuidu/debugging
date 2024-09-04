@@ -279,17 +279,17 @@ typedef struct {
 ```
 
 - st_name: 指向字符串表的index。 symbol的名字。
-- st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。
+- st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的lei
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
-AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
-MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
-YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
-Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LD
-YyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2Nzg1MiwtNTk1NTY0
-NDc0XX0=
+eyJoaXN0b3J5IjpbLTIwOTA0MjQ3OTAsLTQwNzQwNDM1MywxNT
+gwMzc1ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYy
+ODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNz
+U0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0
+NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MC
+wxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2
+Nzg1Ml19
 -->
