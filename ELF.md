@@ -289,8 +289,8 @@ typedef struct {
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
 
 	> STB_LOCAL: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
-	STB_GLOCAL: Global symbols。合并在一起的所有的object f
-	STB_WEAK: Weak Symbols
+	STB_GLOCAL: Global symbols。合并在一起的所有的object file 都可见。
+	STB_WEAK: Weak Symbols。类似global symbols， 但是他们的定义有更低的优先级。
 	STB_LOOS-STB_HIOS: OS-specific的预留类型。
 	STB_LPROC-STB_HIPROC: processor-specific的预留类型。
 
@@ -301,11 +301,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTI2MjgyMSwtMTQxNzU1NTc0MywtNT
-I2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQy
-MjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLT
-Q0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0
-MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NC
-wtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3
-MDM5ODVdfQ==
+eyJoaXN0b3J5IjpbMjAyNzQ4NTcsLTE0MTc1NTU3NDMsLTUyNj
+k4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0MjIw
+Miw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMxLC00ND
+Q1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4NDM2
+LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLT
+E5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAz
+OTg1XX0=
 -->
