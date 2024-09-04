@@ -290,11 +290,11 @@ typedef struct {
 绑定属性:
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
 
-	> STB_LOCAL: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
-	STB_GLOCAL: Global symbols。合并在一起的所有的object file 都可见。
-	STB_WEAK: Weak Symbols。类似global symbols， 但是他们的定义有更低的优先级。
-	STB_LOOS-STB_HIOS: OS-specific的预留类型。
-	STB_LPROC-STB_HIPROC: processor-specific的预留类型。
+	> `STB_LOCA`: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
+	`STB_GLOCAL`: Global symbols。合并在一起的所有的object file 都可见。
+	`STB_WEAK`: Weak Symbols。类似global symbols， 但是他们的定义有更低的优先级。
+	- STB_LOOS-STB_HIOS: OS-specific的预留类型。
+	-STB_LPROC-STB_HIPROC: processor-specific的预留类型。
 
 	>Global 和Weak 符号的区别:
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
@@ -304,7 +304,9 @@ typedef struct {
 		
 符号的类型。
 
-
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_type.png)
+	
+	> dd
 	
 - **st_other**:
 - **st_shndx**: 
@@ -313,7 +315,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDYzODUyLDIwNDUxNTQ0OSwtMTA4Mj
+eyJoaXN0b3J5IjpbMzM1NTIyNzQzLDIwNDUxNTQ0OSwtMTA4Mj
 k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
 LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
 M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
