@@ -288,8 +288,8 @@ typedef struct {
 - **st_info**: 符号的类型和绑定属性。下面表列出了一些值及其意义。
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
 
-	> STB_LOCAL: Local Symbol
-	STB_GLOCAL: Global symbols
+	> STB_LOCAL: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
+	STB_GLOCAL: Global symbols。合并在一起的所有的object f
 	STB_WEAK: Weak Symbols
 	STB_LOOS-STB_HIOS: OS-specific的预留类型。
 	STB_LPROC-STB_HIPROC: processor-specific的预留类型。
@@ -301,7 +301,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk0NjI2MCwtMTQxNzU1NTc0MywtNT
+eyJoaXN0b3J5IjpbMTczNTI2MjgyMSwtMTQxNzU1NTc0MywtNT
 I2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQy
 MjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLT
 Q0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0
