@@ -306,13 +306,14 @@ typedef struct {
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_type.png)
 	
-> STT_NOTYPE: 没有类型
-STT_OBJECT: 关联一个object， 比如variable， array 等等。
-STT_FUNC: 关联一个function或者其他的可执行代码。
-STT_SECTION: 关联一个section。主要是为了重定位， 通常有STB_LOCAL绑定属性。
-STT_FILE: symbol的name 能够给出和object file 关联的source file的名字。FILE 符号具有STB_LOCAL属性， 它的section index是SHN_ABS。如果这个符号存在， 他会位于该文件的其他STB_LOCAL符号之前。SHT_SYMTAB的符号index 1 是一个表示文件本身的STT_FILE symbol。 通常，这个符号后面是文件的STT_SECTION 符号， 以及任何被降级为Local 符号的Global 符号。
-STT_COMMON： 没有初始化的common的block， 它会被和STT_OBECT 完全同样对待。
-STT_LOOS - STT_HIOS: OS-specific yu
+> `STT_NOTYPE`: 没有类型
+`STT_OBJECT`: 关联一个object， 比如variable， array 等等。
+`STT_FUNC`: 关联一个function或者其他的可执行代码。
+`STT_SECTION`: 关联一个section。主要是为了重定位， 通常有STB_LOCAL绑定属性。
+`STT_FILE`: symbol的name 能够给出和object file 关联的source file的名字。FILE 符号具有STB_LOCAL属性， 它的section index是SHN_ABS。如果这个符号存在， 他会位于该文件的其他STB_LOCAL符号之前。SHT_SYMTAB的符号index 1 是一个表示文件本身的STT_FILE symbol。 通常，这个符号后面是文件的STT_SECTION 符号， 以及任何被降级为Local 符号的Global 符号。
+`STT_COMMON`： 没有初始化的common的block， 它会被和STT_OBECT 完全同样对待。
+`STT_LOOS` - `STT_HIOS`: OS-specific 预留的。
+`STT_LOPROC` - `STT_HIPROC`: processor-specific 预留的。
 
 - **st_other**:
 - **st_shndx**: 
@@ -321,7 +322,7 @@ STT_LOOS - STT_HIOS: OS-specific yu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4OTk2MzEwLDIwNDUxNTQ0OSwtMTA4Mj
+eyJoaXN0b3J5IjpbLTMxNjExMjg2LDIwNDUxNTQ0OSwtMTA4Mj
 k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
 LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
 M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
