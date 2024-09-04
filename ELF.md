@@ -302,11 +302,13 @@ typedef struct {
 		
 	在每一个symbol table里， 所有Local的symbol binding 优先于global 和wek symbol。
 		
-符号的类型。
+**符号的类型。**
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_type.png)
 	
-	> dd
+> STT_NOTYPE: 没有类型
+STT_OBJECT: 关联一个object， 比如variable， array 等等。
+STT_FUNC: 关联一个function或者其他的可执行代码
 	
 - **st_other**:
 - **st_shndx**: 
@@ -315,11 +317,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjkwNzM4MywyMDQ1MTU0NDksLTEwOD
-I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
-LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
-AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
-MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
-YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
-Mzc0XX0=
+eyJoaXN0b3J5IjpbMjEwNjUxMTYyLDIwNDUxNTQ0OSwtMTA4Mj
+k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
+LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
+M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
+LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
+I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
+NzRdfQ==
 -->
