@@ -326,18 +326,24 @@ typedef struct {
 #define ELF64_ST_INFO(bind, type)    (((bind)<<4)+((type)&0xf))
 ```
 
-- **st_other**:
+- **st_other**: 符号的可见性(Visibility)。
+
+如下code展示如何操作这些值.
+```
+#define ELF32_ST_VISIBILITY(o)       ((o)&0x3)
+#define ELF64_ST_VISIBILITY(o)       ((o)&0x3)
+```
 - **st_shndx**: 
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTk4MDQwLDIwNDUxNTQ0OSwtMTA4Mj
-k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
-LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
-M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
-LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
-I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
-NzRdfQ==
+eyJoaXN0b3J5IjpbLTUzOTczODM3MywyMDQ1MTU0NDksLTEwOD
+I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
+LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
+AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
+MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
+YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
+Mzc0XX0=
 -->
