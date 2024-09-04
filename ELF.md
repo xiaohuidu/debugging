@@ -300,7 +300,7 @@ typedef struct {
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
 		- 当链接编辑器搜索归档库(Archve Libraries)时，它会提取包含未定义或暂定global symbol定义的归档成员。成员的定义可以是global symbol或weak symbol。默认情况下，链接编辑器不会提取归档成员来解析未定义的weak symbol。未解析的weak symbol将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使weak引用能够引发归档成员的提取。
 		
-		在每一个symbol table里， 所有Local的symbol binding 优先于global 和wek symbol。
+	在每一个symbol table里， 所有Local的symbol binding 优先于global 和wek symbol。
 		
 符号的类型。
 
@@ -315,7 +315,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA3Njc1MSwyMDQ1MTU0NDksLTEwOD
+eyJoaXN0b3J5IjpbLTQ0MjkwNzM4MywyMDQ1MTU0NDksLTEwOD
 I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
 LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
 AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
