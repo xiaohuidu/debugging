@@ -280,14 +280,14 @@ typedef struct {
 
 - st_name: 指向字符串表的index。 symbol的名字。
 - st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的类型对值的解析是不一样的。
-	> 在**relocatable file**中， 对于节索引为SHN_COMMON的符号，`st_value`字段表示该符号的对齐约束
+	> 在**relocatable file**中， 对于节index为SHN_COMMON的符号，`st_value`字段表示该符号的对齐约束
 - xxx
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjc3NzMwOTIsLTQwNzQwNDM1MywxNT
+eyJoaXN0b3J5IjpbLTE5MzU4ODExNDMsLTQwNzQwNDM1MywxNT
 gwMzc1ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYy
 ODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNz
 U0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0
