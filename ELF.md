@@ -327,6 +327,7 @@ typedef struct {
 ```
 
 - **st_other**: 符号的可见性(Visibility)。
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_visibility.png)
 
 如下code展示如何操作这些值.
 ```
@@ -339,11 +340,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTczODM3MywyMDQ1MTU0NDksLTEwOD
-I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
-LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
-AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
-MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
-YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
-Mzc0XX0=
+eyJoaXN0b3J5IjpbMTEzNTcxNjA4OCwtNTM5NzM4MzczLDIwND
+UxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcs
+LTE0MTc1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1OD
+AzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4
+MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NT
+Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
+MDBdfQ==
 -->
