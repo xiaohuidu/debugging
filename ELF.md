@@ -295,7 +295,8 @@ typedef struct {
 	STB_LPROC-STB_HIPROC: processor-specific的预留类型。
 
 	>Global 和Weak 符号的区别:
-		- 当编译器把多个relocatable object file合并在一起的时候， 
+		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(co
+		- 
 - **st_other**:
 - **st_shndx**: 
 
@@ -303,7 +304,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjgxOTU0NCwyMDI3NDg1NywtMTQxNz
+eyJoaXN0b3J5IjpbMjA0NTQ3NDA3OSwyMDI3NDg1NywtMTQxNz
 U1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0
 NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3ND
 M4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1
