@@ -296,7 +296,7 @@ typedef struct {
 
 	>Global 和Weak 符号的区别:
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
-		- 当链接编辑器搜索归档库(Archve Libraries)时，它会提取包含未定义或暂定global symbol定义的归档成员。成员的定义可以是全局符号或弱符号。默认情况下，链接编辑器不会提取归档成员来解析未定义的弱符号。未解析的弱符号将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使弱引用能够引发归档成员的提取。
+		- 当链接编辑器搜索归档库(Archve Libraries)时，它会提取包含未定义或暂定global symbol定义的归档成员。成员的定义可以是global symbol或we。默认情况下，链接编辑器不会提取归档成员来解析未定义的弱符号。未解析的弱符号将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使弱引用能够引发归档成员的提取。
 - **st_other**:
 - **st_shndx**: 
 
@@ -304,11 +304,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NT
-U1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0
-LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0Mz
-gzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUs
-LTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xOD
-Y1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2
-NzQ5XX0=
+eyJoaXN0b3J5IjpbLTQ2NTIzODkyLDU3MzE1ODM0MiwyMDI3ND
+g1NywtMTQxNzU1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMs
+MTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMj
+I2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3Nywx
+Mjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4Mj
+QyNDcwMCwtMTg2NTcyNTM3NCwtMTkyMzc4MDM2NCw4NTEwMjQ3
+NTBdfQ==
 -->
