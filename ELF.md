@@ -311,7 +311,9 @@ STT_OBJECT: 关联一个object， 比如variable， array 等等。
 STT_FUNC: 关联一个function或者其他的可执行代码。
 STT_SECTION: 关联一个section。主要是为了重定位， 通常有STB_LOCAL绑定属性。
 STT_FILE: symbol的name 能够给出和object file 关联的source file的名字。FILE 符号具有STB_LOCAL属性， 它的section index是SHN_ABS。如果这个符号存在， 他会位于该文件的其他STB_LOCAL符号之前。SHT_SYMTAB的符号index 1 是一个表示文件本身的STT_FILE symbol。 通常，这个符号后面是文件的STT_SECTION 符号， 以及任何被降级为Local 符号的Global 符号。
-	
+STT_COMMON： 没有初始化的common的block， 它会被和STT_OBECT 完全同样对待。
+STT_LOOS - STT_HIOS: OS-specific yu
+
 - **st_other**:
 - **st_shndx**: 
 
@@ -319,11 +321,11 @@ STT_FILE: symbol的name 能够给出和object file 关联的source file的名字
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDczNDU3NywyMDQ1MTU0NDksLTEwOD
-I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
-LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
-AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
-MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
-YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
-Mzc0XX0=
+eyJoaXN0b3J5IjpbMzY4OTk2MzEwLDIwNDUxNTQ0OSwtMTA4Mj
+k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
+LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
+M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
+LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
+I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
+NzRdfQ==
 -->
