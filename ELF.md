@@ -293,10 +293,10 @@ typedef struct {
 	> `STB_LOCA`: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
 	`STB_GLOCAL`: Global symbols。合并在一起的所有的object file 都可见。
 	`STB_WEAK`: Weak Symbols。类似global symbols， 但是他们的定义有更低的优先级。
-	- STB_LOOS-STB_HIOS: OS-specific的预留类型。
-	-STB_LPROC-STB_HIPROC: processor-specific的预留类型。
+	`STB_LOOS`-`STB_HIOS`: OS-specific的预留类型。
+	`STB_LPROC`-`STB_HIPROC`: processor-specific的预留类型。
 
-	>Global 和Weak 符号的区别:
+	>`Global 和Weak 符号的区别`:
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
 		- 当链接编辑器搜索归档库(Archve Libraries)时，它会提取包含未定义或暂定global symbol定义的归档成员。成员的定义可以是global symbol或weak symbol。默认情况下，链接编辑器不会提取归档成员来解析未定义的weak symbol。未解析的weak symbol将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使weak引用能够引发归档成员的提取。
 		
@@ -315,11 +315,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NTIyNzQzLDIwNDUxNTQ0OSwtMTA4Mj
-k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
-LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
-M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
-LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
-I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
-NzRdfQ==
+eyJoaXN0b3J5IjpbLTE1NzA3Njc1MSwyMDQ1MTU0NDksLTEwOD
+I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
+LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
+AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
+MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
+YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
+Mzc0XX0=
 -->
