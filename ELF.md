@@ -330,7 +330,8 @@ typedef struct {
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_visibility.png)
 
-> STV_DEFAULT: 符号的可见性右符号的binding 属性决定。
+> STV_DEFAULT: 符号的可见性右符号的binding 属性决定。glocal，weak，local。
+STV_PROTECTED
 
 
 如下code展示如何操作这些值.
@@ -344,11 +345,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1OTA0OTg2MiwtNTM5NzM4MzczLDIwND
-UxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcs
-LTE0MTc1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1OD
-AzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4
-MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NT
-Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
-MDBdfQ==
+eyJoaXN0b3J5IjpbODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NT
+E1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1Nywt
+MTQxNzU1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MD
+M3NTg0NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2Mjgx
+LDE3NDM4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1ND
+cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
+MF19
 -->
