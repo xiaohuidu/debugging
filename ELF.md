@@ -286,7 +286,7 @@ typedef struct {
 	> 尽管符号表的value 对于不同的object file 有类似的意思， 但这些数据允许不同的程序高效的访问。
 - st_size: 很多符号是有size的， 比如一个数据对象的size 是这个对象所包含的字节数。如果符号没有size或者不知道size， st_size会是0.
 - st_info: 符号的类型和绑定属性。下面表列出了一些值及其意义。
-
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
 - st_other:
 - st_shndx: 
 
@@ -294,7 +294,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTYxODczNiwtMTQxNzU1NTc0MywtNT
+eyJoaXN0b3J5IjpbMTM3MTgxNjcwOCwtMTQxNzU1NTc0MywtNT
 I2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQy
 MjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLT
 Q0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0
