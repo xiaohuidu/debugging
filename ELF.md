@@ -330,6 +330,9 @@ typedef struct {
 
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_visibility.png)
 
+> STV_DEFAULT: 符号的可见性右符号的binding 属性决定。
+
+
 如下code展示如何操作这些值.
 ```
 #define ELF32_ST_VISIBILITY(o)       ((o)&0x3)
@@ -341,7 +344,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjQ0OTIyNiwtNTM5NzM4MzczLDIwND
+eyJoaXN0b3J5IjpbLTk1OTA0OTg2MiwtNTM5NzM4MzczLDIwND
 UxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcs
 LTE0MTc1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1OD
 AzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4
