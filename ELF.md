@@ -279,17 +279,19 @@ typedef struct {
 ```
 
 - st_name: 指向字符串表的index。 symbol的名字。
-- st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的lei
+- st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的类型对值的解析是不一样的。
+	> 在relocatable file中， st_value 
+- xxx
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTA0MjQ3OTAsLTQwNzQwNDM1MywxNT
-gwMzc1ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYy
-ODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNz
-U0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0
-NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LDg1MTAyNDc1MC
-wxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYzNjUsMTU0Mzg2
-Nzg1Ml19
+eyJoaXN0b3J5IjpbLTM4MTk2MDU1NiwtNDA3NDA0MzUzLDE1OD
+AzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4
+MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NT
+Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
+MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLD
+E5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3
+ODUyXX0=
 -->
