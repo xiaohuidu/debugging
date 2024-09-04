@@ -284,16 +284,17 @@ typedef struct {
 	在**relocatable file**中，`st_value`字段表示已定义符号的secion偏移量。也就是说，`st_value`是相对于`st_shndx`标识的section开头的偏移量。
 	在**executable 和shared object file**里， st_value 表示一个虚拟地址。为了使文件中的符号在运行时链接器中更有用， section offset（file interpretation）让位于 虚拟地址( memory interpretation)， 此时section number 已不再重要。
 	> 尽管符号表的value 对于不同的object file 有类似的意思， 但这些数据允许不同的程序高效的访问。
+- st_size: 很多符号是有size的， 比如一个数据对象的size 是这个
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMzODk3MjcsLTE0MTc1NTU3NDMsLT
-UyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0
-MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMxLC
-00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4
-NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNz
-QsLTE5MjM3ODAzNjQsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIx
-NzAzOTg1XX0=
+eyJoaXN0b3J5IjpbOTU0Nzk1OTA0LC0xNDE3NTU1NzQzLC01Mj
+Y5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExODAzNDIy
+MDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtND
+Q0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQz
+NiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC
+0xOTIzNzgwMzY0LDg1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcw
+Mzk4NV19
 -->
