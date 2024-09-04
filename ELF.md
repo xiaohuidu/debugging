@@ -281,18 +281,18 @@ typedef struct {
 - **st_name**: 指向字符串表的index。 symbol的名字。
 - **st_value**:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的类型对值的解析是不一样的。
 	> 在**relocatable file**中， 对于节index为SHN_COMMON的符号，`st_value`字段表示该符号的对齐约束。
-	在relocatable file中，`st_value`字段表示已定义符号的secion偏移量。也就是说，`st_value`是相对于`st_shndx`标识的section开头的偏移量。
-	在executable 和shared object file里， st_value 表示一个虚拟地址。为了使文件中的符号在运行时链接器中更有用， section offset（file interpretation）让位于 虚拟地址( memory interpretation)， 此时section number 已不再重要。
+	在**relocatable file**中，`st_value`字段表示已定义符号的secion偏移量。也就是说，`st_value`是相对于`st_shndx`标识的section开头的偏移量。
+	在**executable 和shared object file**里， st_value 表示一个虚拟地址。为了使文件中的符号在运行时链接器中更有用， section offset（file interpretation）让位于 虚拟地址( memory interpretation)， 此时section number 已不再重要。
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc1NTU3NDMsLTUyNjk4NzEzMywtND
-A3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0
-NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsOD
-EyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIz
-NTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNj
-QsODUxMDI0NzUwLDE5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3
-NjM2NV19
+eyJoaXN0b3J5IjpbMTM2MjE4MDk2MSwtMTQxNzU1NTc0MywtNT
+I2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQy
+MjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLT
+Q0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0
+MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3NC
+wtMTkyMzc4MDM2NCw4NTEwMjQ3NTAsMTk3MTU2Njc0OSw2MjE3
+MDM5ODVdfQ==
 -->
