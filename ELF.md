@@ -282,16 +282,17 @@ typedef struct {
 - st_value:  symbol 对应的内容， 他可以是绝对值， 地址和其他的。不同的类型对值的解析是不一样的。
 	> 在**relocatable file**中， 对于节index为SHN_COMMON的符号，`st_value`字段表示该符号的对齐约束。
 - 在relocatable file中，`st_value`字段表示已定义符号的secion偏移量。也就是说，`st_value`是相对于`st_shndx`标识的section开头的偏移量。
+- 在executable 和shared object file里， st_value 表示一个虚拟地址。
 
 ## 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1OD
-AzNzU4NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4
-MSwxNzQzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NT
-Q3MTU3NSwtNjA0NjI4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3
-MDAsLTE4NjU3MjUzNzQsLTE5MjM3ODAzNjQsODUxMDI0NzUwLD
-E5NzE1NjY3NDksNjIxNzAzOTg1LDY0OTY3NjM2NSwxNTQzODY3
-ODUyXX0=
+eyJoaXN0b3J5IjpbMjYzNDA1MjkyLC01MjY5ODcxMzMsLTQwNz
+QwNDM1MywxNTgwMzc1ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3
+LC03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMj
+k3Nzc3LDEyNzU0NzE1NzUsLTYwNDYyODQzNiwtMTEzMDYyMzU5
+OCwxOTgyNDI0NzAwLC0xODY1NzI1Mzc0LC0xOTIzNzgwMzY0LD
+g1MTAyNDc1MCwxOTcxNTY2NzQ5LDYyMTcwMzk4NSw2NDk2NzYz
+NjVdfQ==
 -->
