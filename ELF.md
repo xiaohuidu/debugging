@@ -287,6 +287,12 @@ typedef struct {
 - **st_size**: 很多符号是有size的， 比如一个数据对象的size 是这个对象所包含的字节数。如果符号没有size或者不知道size， st_size会是0.
 - **st_info**: 符号的类型和绑定属性。下面表列出了一些值及其意义。
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
+
+	> STB_LOCAL: Local Symbol
+	STB_GLOCAL: Global symbols
+	STB_WEAK: Weak Symbols
+	STB_LOOS-STB_HIOS: y
+
 - **st_other**:
 - **st_shndx**: 
 
@@ -294,7 +300,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY1NjA2MzYsLTE0MTc1NTU3NDMsLT
+eyJoaXN0b3J5IjpbLTEyMTAwNTUxMDksLTE0MTc1NTU3NDMsLT
 UyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0
 MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMxLC
 00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0NjI4
