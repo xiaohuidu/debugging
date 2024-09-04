@@ -296,7 +296,7 @@ typedef struct {
 
 	>Global 和Weak 符号的区别:
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
-		- 
+		- 当链接编辑器搜索归档库（ar）时，它会提取包含未定义或暂定全局符号定义的归档成员。成员的定义可以是全局符号或弱符号。默认情况下，链接编辑器不会提取归档成员来解析未定义的弱符号。未解析的弱符号将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使弱引用能够引发归档成员的提取。
 - **st_other**:
 - **st_shndx**: 
 
@@ -304,7 +304,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzM3OTc0MCwyMDI3NDg1NywtMTQxNz
+eyJoaXN0b3J5IjpbMjAxMjYzNDM3NSwyMDI3NDg1NywtMTQxNz
 U1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0
 NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3ND
 M4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1
