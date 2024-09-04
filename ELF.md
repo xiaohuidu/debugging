@@ -287,6 +287,7 @@ typedef struct {
 	> 尽管符号表的value 对于不同的object file 有类似的意思， 但这些数据允许不同的程序高效的访问。
 - **st_size**: 很多符号是有size的， 比如一个数据对象的size 是这个对象所包含的字节数。如果符号没有size或者不知道size， st_size会是0.
 - **st_info**: 符号的类型和绑定属性。下面表列出了一些值及其意义。
+绑定属性:
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_binding.png)
 
 	> STB_LOCAL: Local Symbol。只在所在的object file 里可见。不同的object file 允许出现相同的名字。
@@ -301,7 +302,10 @@ typedef struct {
 		
 		在每一个symbol table里， 所有Local的symbol binding 优先于global 和wek symbol。
 		
-	> 符号的类型
+符号的类型。
+
+
+	
 - **st_other**:
 - **st_shndx**: 
 
@@ -309,11 +313,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDkwMjcyNCwyMDQ1MTU0NDksLTEwOD
-I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
-LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
-AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
-MSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1NzUsLTYwND
-YyODQzNiwtMTEzMDYyMzU5OCwxOTgyNDI0NzAwLC0xODY1NzI1
-Mzc0XX0=
+eyJoaXN0b3J5IjpbLTg4MDYzODUyLDIwNDUxNTQ0OSwtMTA4Mj
+k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
+LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
+M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
+LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
+I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
+NzRdfQ==
 -->
