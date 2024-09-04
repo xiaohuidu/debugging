@@ -310,7 +310,7 @@ typedef struct {
 STT_OBJECT: 关联一个object， 比如variable， array 等等。
 STT_FUNC: 关联一个function或者其他的可执行代码。
 STT_SECTION: 关联一个section。主要是为了重定位， 通常有STB_LOCAL绑定属性。
-STT_FILE: 
+STT_FILE: symbol的name 能够给出和object file 关联的source file的名字。
 	
 - **st_other**:
 - **st_shndx**: 
@@ -319,7 +319,7 @@ STT_FILE:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTc0ODQxMiwyMDQ1MTU0NDksLTEwOD
+eyJoaXN0b3J5IjpbLTE5MjUxNzU2NywyMDQ1MTU0NDksLTEwOD
 I5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQz
 LC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExOD
 AzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMTc0MzgzOTgz
