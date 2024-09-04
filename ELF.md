@@ -315,6 +315,17 @@ typedef struct {
 `STT_LOOS` - `STT_HIOS`: OS-specific 预留的。
 `STT_LOPROC` - `STT_HIPROC`: processor-specific 预留的。
 
+如下code 展示如何操作这些值(sys/elf.h)
+```
+#define ELF32_ST_BIND(info)          ((info) >> 4)
+#define ELF32_ST_TYPE(info)          ((info) & 0xf)
+#define ELF32_ST_INFO(bind, type)    (((bind)<<4)+((type)&0xf))
+
+#define ELF64_ST_BIND(info)          ((info) >> 4)
+#define ELF64_ST_TYPE(info)          ((info) & 0xf)
+#define ELF64_ST_INFO(bind, type)    (((bind)<<4)+((type)&0xf))
+```
+
 - **st_other**:
 - **st_shndx**: 
 
@@ -322,7 +333,7 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjExMjg2LDIwNDUxNTQ0OSwtMTA4Mj
+eyJoaXN0b3J5IjpbMTk0NTk4MDQwLDIwNDUxNTQ0OSwtMTA4Mj
 k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
 LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
 M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
