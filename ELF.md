@@ -197,7 +197,7 @@ typedef struct {
 - **sh_size**: section的大小， 单位是byte。
 - **sh_link**: section header table index的link， 值的解释和section 类型相关。
 - **sh_info**. 额外的信息。值的解释和section 类型相关。
-	> 对于符号表(Symbol Table) Secton
+	> 对于符号表(Symbol Table) Section，这个值表示第一个非Local 符号的符号表index。
 - **sh_addralign**: 有些section有地址对齐的限制。例如，如果一个section包含双字（double-word），系统必须确保整个section的双字对齐。也就是说，`sh_addr` 的值除以 `sh_addralign` 的值， 余数必须是0。目前，只允许 0 和正整数次方的 2。值 0 和 1 表示section没有对齐限制。
 - **sh_entsize**: 某些section包含固定大小条目的表，例如符号表。对于这样的section，该member给出了每个条目的字节大小。如果该section不包含固定大小的条目表，则该成员的值为 0。 
 
@@ -308,11 +308,11 @@ typedef struct {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzODY5ODQsMjA0NTE1NDQ5LC0xMDgyOT
-Q1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0Mywt
-NTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMz
-QyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEs
-LTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mj
-g0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcwMCwtMTg2NTcyNTM3
-NF19
+eyJoaXN0b3J5IjpbNDI2NDU0NjQzLDIwNDUxNTQ0OSwtMTA4Mj
+k0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMs
+LTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MD
+M0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNzQzODM5ODMx
+LC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3NSwtNjA0Nj
+I4NDM2LC0xMTMwNjIzNTk4LDE5ODI0MjQ3MDAsLTE4NjU3MjUz
+NzRdfQ==
 -->
