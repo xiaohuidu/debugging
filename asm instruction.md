@@ -82,7 +82,7 @@
 	  
 	  **je**: jmp if equal (check Zero Flag if equal to 0)
 	  
-	  **jg**: jump if greater（True: Zero Flag is 0, ）
+	  **jg**: jump if greater（True: Zero Flag is 0, **Sign Flag (SF)** is equal to the **Overflow Flag (OF)**）
 	  
 	  **jl**: jump if less
 	  
@@ -122,7 +122,7 @@
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwOTAwNTI2LC04NjI5MjkwNTIsOTgzOD
+eyJoaXN0b3J5IjpbMTU3NDc2MDYzLC04NjI5MjkwNTIsOTgzOD
 YzNTQxLDE5NzcxNzk5ODcsNTkxNDM5NDg1LC0xMDE1MjY3MTg3
 LC0xMTQ1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0MDQyOCwtMT
 EyMzQ0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4
