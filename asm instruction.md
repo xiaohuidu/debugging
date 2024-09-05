@@ -80,7 +80,7 @@
 
 	  **ja**: jmp if above
 	  
-	  **je**: jmp if equal
+	  **je**: jmp if equal (check Zero Flag if equal to 0)
 	  
 	  **jg**: jump if greater
 	  
@@ -98,7 +98,7 @@
 	
 12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 	```asm
-	test   %r12, %r12 // 判断r12是不是0.
+	test   %r12, %r12 // 判断r12是不是0. 如果等于0， set Zero Flag。
 	jz     some_label
 	```
 13. **sub**: 把第一个操作数从第二个操作数中减去。 sub 指令会set相应的flag.
@@ -122,11 +122,11 @@
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTE0OTYyNywtODYyOTI5MDUyLDk4Mz
-g2MzU0MSwxOTc3MTc5OTg3LDU5MTQzOTQ4NSwtMTAxNTI2NzE4
-NywtMTE0NTM0MDMzOSwtMTg1NTQ5NDE0OSw0NDUyNDA0MjgsLT
-ExMjM0NDU2MjEsLTExODEwOTU1MSwtMjA0ODc0NDk5NywxOTk0
-ODA2ODQzLDUzMDY1NjE4LDE3NjM0NDQ5MTUsOTUzNTE4MzY3LD
-k4NjYwOTM5NSwtOTM2MTMxNzU2LC0yNzA0MzE1OTAsLTE1ODE0
-OTg3OTFdfQ==
+eyJoaXN0b3J5IjpbLTE2MTM5MTkxNTEsLTg2MjkyOTA1Miw5OD
+M4NjM1NDEsMTk3NzE3OTk4Nyw1OTE0Mzk0ODUsLTEwMTUyNjcx
+ODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksNDQ1MjQwNDI4LC
+0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3NDQ5OTcsMTk5
+NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LDk1MzUxODM2Ny
+w5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMxNTkwLC0xNTgx
+NDk4NzkxXX0=
 -->
