@@ -300,7 +300,7 @@ typedef struct {
 		- 当编译器把多个relocatable object file合并在一起的时候， 不允许出现多个相同的global的符号， 但是允许出现相同名字的weak的符号。global的符号会覆盖weak的符号。(common 符号也会覆盖weak符号)
 		- 当链接编辑器搜索归档库(Archve Libraries)时，它会提取包含未定义或暂定global symbol定义的归档成员。成员的定义可以是global symbol或weak symbol。默认情况下，链接编辑器不会提取归档成员来解析未定义的weak symbol。未解析的weak symbol将具有零值。使用 `-z weakextract` 选项可以覆盖此默认行为，从而使weak引用能够引发归档成员的提取。
 		
-	在每一个symbol table里， 所有Local的symbol binding 优先于global 和wek symbol。
+	在每一个symbol table里， 所有Local的symbol binding 优先于global 和weak symbol。
 		
 **符号的类型。**
 
@@ -345,11 +345,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NT
-E1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1Nywt
-MTQxNzU1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MD
-M3NTg0NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2Mjgx
-LDE3NDM4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1ND
-cxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1OTgsMTk4MjQyNDcw
-MF19
+eyJoaXN0b3J5IjpbLTIwNzA1NzA4NDIsODg4Mzg4NTgxLC01Mz
+k3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1ODM0
+MiwyMDI3NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3MTMzLC00MD
+c0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4MzY1NTQ1
+NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2OTg3Nyw4MT
+I5Nzc3NywxMjc1NDcxNTc1LC02MDQ2Mjg0MzYsLTExMzA2MjM1
+OThdfQ==
 -->
