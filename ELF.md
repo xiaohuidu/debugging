@@ -232,7 +232,7 @@ typedef struct {
 - **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
 - **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
-- SHT_RELA: 
+- SHT_RELA: 标识有显式家数的relocation entries。比如 类型Elf32_Rela
 - 
 
 ### 特殊section
@@ -347,7 +347,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2ODU3NTM1LC0yMDAyNzk0ODE1LC0yMD
+eyJoaXN0b3J5IjpbNDcwOTQ0MTExLC0yMDAyNzk0ODE1LC0yMD
 cwNTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIwNDUxNTQ0
 OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MT
 c1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4
