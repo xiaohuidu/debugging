@@ -233,7 +233,8 @@ typedef struct {
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
 - **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
 - SHT_RELA: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
-- SHT_SHLIB: 标识没有定义的预留section。b
+- SHT_SHLIB: 标识没有定义的预留section。包含这种section的object file 不符合ABI。
+- SHT_SUNW_COMDAT: 这个section 允许相同的data 的多个copy 减少的一个copy。
 - 
 
 ### 特殊section
@@ -348,7 +349,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NzQ4MTUyMiwtMjAwMjc5NDgxNSwtMj
+eyJoaXN0b3J5IjpbMTcxNzA5MzUxMywtMjAwMjc5NDgxNSwtMj
 A3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0
 NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xND
 E3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1
