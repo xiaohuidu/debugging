@@ -231,7 +231,8 @@ typedef struct {
 - **SHT_NULL**: 这个section header inactive，没有关联的section，这个section header的其他的field 没有意义。
 - **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
-- SHT_STRTAB, SHT_DYNSTR: 字符串表section
+- **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
+- SHT_RELA: 
 - 
 
 ### 特殊section
@@ -346,11 +347,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjE3NTU3MCwtMjAwMjc5NDgxNSwtMj
-A3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0
-NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xND
-E3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1
-ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMT
-c0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1
-NzVdfQ==
+eyJoaXN0b3J5IjpbODY2ODU3NTM1LC0yMDAyNzk0ODE1LC0yMD
+cwNTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIwNDUxNTQ0
+OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MT
+c1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4
+NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNz
+QzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3
+NV19
 -->
