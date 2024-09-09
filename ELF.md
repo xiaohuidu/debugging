@@ -235,7 +235,7 @@ typedef struct {
 - SHT_RELA: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
 - SHT_SHLIB: 标识没有定义的预留section。包含这种section的object file 不符合ABI。
 - SHT_SUNW_COMDAT: 这个section 允许相同的data 的多个copy 减少的一个copy。
-	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMrelocation
+	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMDAT section的relocation会被忽略， 任何的定义在被丢弃的section里的Symbol 不会被保留。
 	> 
 - 
 
@@ -351,7 +351,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzU0NTI2NywtMjAwMjc5NDgxNSwtMj
+eyJoaXN0b3J5IjpbLTUyNTIxODIwNCwtMjAwMjc5NDgxNSwtMj
 A3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0
 NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xND
 E3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1
