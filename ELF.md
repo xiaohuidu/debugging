@@ -232,9 +232,9 @@ typedef struct {
 - **SHT_PROGBITS**: 程序定义的信息， format 和意义有应用自己定义和解释。
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
 - **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
-- SHT_RELA: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
-- SHT_SHLIB: 标识没有定义的预留section。包含这种section的object file 不符合ABI。
-- SHT_SUNW_COMDAT: 这个section 允许相同的data 的多个copy 减少的一个copy。
+- **SHT_RELA**: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
+- **SHT_SHLIB**: 标识没有定义的预留section。包含这种section的object file 不符合ABI。
+- **SHT_SUNW_COMDAT**: 这个section 允许相同的data 的多个copy 减少的一个copy。
 	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMDAT section的relocation会被忽略， 任何的定义在被丢弃的section里的Symbol 不会被保留。
 	
 	> 此外，当编译器使用 `-xF` 选项调用时，link-editor也支持用于section重新排序的节命名约定。如果这些section被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的section中。通过这种方法，`SHT_SUNW_COMDAT` section 可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的section中。
@@ -352,11 +352,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3ODA4NzU0MywtMjAwMjc5NDgxNSwtMj
-A3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0
-NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xND
-E3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1
-ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMT
-c0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1
-NzVdfQ==
+eyJoaXN0b3J5IjpbLTQzOTA2NjUsLTIwMDI3OTQ4MTUsLTIwNz
+A1NzA4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5
+LC0xMDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNz
+U1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0
+NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcxMjI2MjgxLDE3ND
+M4Mzk4MzEsLTQ0NDU2OTg3Nyw4MTI5Nzc3NywxMjc1NDcxNTc1
+XX0=
 -->
