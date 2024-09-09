@@ -97,15 +97,16 @@
 ```
 	
 12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
+if the result is ze
 	```asm
 	test   %r12, %r12 // 判断r12是不是0. 如果等于0， set Zero Flag。
 	jz     some_label
 	```
-13. **sub**: 把第一个操作数从第二个操作数中减去。 sub 指令会set相应的flag.
+14. **sub**: 把第一个操作数从第二个操作数中减去。 sub 指令会set相应的flag.
 	```asm
 	sub 0x30 $(rsp)
 	``` 
-14. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 下面不同的指令指令长度不一样。
+15. **nop** : 这种指令不会进行任何的操作， 只是用来进行指令对齐， 以便让cpu 更高效的对指令进行存取。 下面不同的指令指令长度不一样。
 	```asm
 	nop
 	```
@@ -122,11 +123,11 @@
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwNDkyMTI3LC04NjI5MjkwNTIsOTgzOD
-YzNTQxLDE5NzcxNzk5ODcsNTkxNDM5NDg1LC0xMDE1MjY3MTg3
-LC0xMTQ1MzQwMzM5LC0xODU1NDk0MTQ5LDQ0NTI0MDQyOCwtMT
-EyMzQ0NTYyMSwtMTE4MTA5NTUxLC0yMDQ4NzQ0OTk3LDE5OTQ4
-MDY4NDMsNTMwNjU2MTgsMTc2MzQ0NDkxNSw5NTM1MTgzNjcsOT
-g2NjA5Mzk1LC05MzYxMzE3NTYsLTI3MDQzMTU5MCwtMTU4MTQ5
-ODc5MV19
+eyJoaXN0b3J5IjpbLTU0NDE3NzIyMSw0MjA0OTIxMjcsLTg2Mj
+kyOTA1Miw5ODM4NjM1NDEsMTk3NzE3OTk4Nyw1OTE0Mzk0ODUs
+LTEwMTUyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksND
+Q1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3
+NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOCwxNzYzNDQ0OTE1LD
+k1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEzMTc1NiwtMjcwNDMx
+NTkwXX0=
 -->
