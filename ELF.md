@@ -237,7 +237,7 @@ typedef struct {
 - SHT_SUNW_COMDAT: 这个section 允许相同的data 的多个copy 减少的一个copy。
 	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMDAT section的relocation会被忽略， 任何的定义在被丢弃的section里的Symbol 不会被保留。
 	
-	> 此外，当编译器使用 `-xF` 选项调用时，链接编辑器也支持用于节重新排序的节命名约定。如果这些节被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的节中。通过这种方法，`SHT_SUNW_COMDAT` 节可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的节中。
+	> 此外，当编译器使用 `-xF` 选项调用时，link-editor也支持用于section重新排序的节命名约定。如果这些节被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的节中。通过这种方法，`SHT_SUNW_COMDAT` 节可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的节中。
 - 
 
 ### 特殊section
@@ -352,11 +352,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTM3ODQxMiwtMjAwMjc5NDgxNSwtMj
-A3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0
-NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xND
-E3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1
-ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC03NzEyMjYyODEsMT
-c0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3Nzc3LDEyNzU0NzE1
-NzVdfQ==
+eyJoaXN0b3J5IjpbNTYzOTA5MzkxLC0yMDAyNzk0ODE1LC0yMD
+cwNTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIwNDUxNTQ0
+OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MT
+c1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1ODAzNzU4
+NDQsMTE4MDM0MjIwMiw2ODM2NTU0NTcsLTc3MTIyNjI4MSwxNz
+QzODM5ODMxLC00NDQ1Njk4NzcsODEyOTc3NzcsMTI3NTQ3MTU3
+NV19
 -->
