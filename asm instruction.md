@@ -98,7 +98,8 @@
 	
 12. **test**: 做按位 AND操作， 和add 不同的是， 结果不会保存，只是会设置一些flag。
 if the result is 0, then Zero Flag will be set.
-If the most significant bit(indicate the result is negative)  is 1, it will 
+If the most significant bit(indicate the result is negative)  is 1, the Sign Flag will be set.
+
 	```asm
 	test   %r12, %r12 // 判断r12是不是0. 如果等于0， set Zero Flag。
 	jz     some_label
@@ -124,7 +125,7 @@ If the most significant bit(indicate the result is negative)  is 1, it will
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ0MDQyNCw0MjA0OTIxMjcsLTg2Mj
+eyJoaXN0b3J5IjpbLTQ2NTIxMzY5Miw0MjA0OTIxMjcsLTg2Mj
 kyOTA1Miw5ODM4NjM1NDEsMTk3NzE3OTk4Nyw1OTE0Mzk0ODUs
 LTEwMTUyNjcxODcsLTExNDUzNDAzMzksLTE4NTU0OTQxNDksND
 Q1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgxMDk1NTEsLTIwNDg3
