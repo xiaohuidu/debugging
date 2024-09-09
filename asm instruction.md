@@ -80,7 +80,9 @@
 
 	  **ja**: jmp if above.
 	  检查两个Flag:
-	  1) Zero Flag must be 
+	  1) Zero Flag must be clear(not set), meaning the result is NOT zero.
+	  2) Carry Flag must be clear, no carry from the most significant bit)
+	  等价于第一个操作数大于第二个操作数。
 	  
 	  **je**: jmp if equal (check Zero Flag if equal to 0)
 	  
@@ -130,11 +132,11 @@ Other flags
 	  ```
 16. xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODQyMTU1NCwtNDY1MjEzNjkyLDQyMD
-Q5MjEyNywtODYyOTI5MDUyLDk4Mzg2MzU0MSwxOTc3MTc5OTg3
-LDU5MTQzOTQ4NSwtMTAxNTI2NzE4NywtMTE0NTM0MDMzOSwtMT
-g1NTQ5NDE0OSw0NDUyNDA0MjgsLTExMjM0NDU2MjEsLTExODEw
-OTU1MSwtMjA0ODc0NDk5NywxOTk0ODA2ODQzLDUzMDY1NjE4LD
-E3NjM0NDQ5MTUsOTUzNTE4MzY3LDk4NjYwOTM5NSwtOTM2MTMx
-NzU2XX0=
+eyJoaXN0b3J5IjpbLTE2MDEwODM4OTYsLTQ2NTIxMzY5Miw0Mj
+A0OTIxMjcsLTg2MjkyOTA1Miw5ODM4NjM1NDEsMTk3NzE3OTk4
+Nyw1OTE0Mzk0ODUsLTEwMTUyNjcxODcsLTExNDUzNDAzMzksLT
+E4NTU0OTQxNDksNDQ1MjQwNDI4LC0xMTIzNDQ1NjIxLC0xMTgx
+MDk1NTEsLTIwNDg3NDQ5OTcsMTk5NDgwNjg0Myw1MzA2NTYxOC
+wxNzYzNDQ0OTE1LDk1MzUxODM2Nyw5ODY2MDkzOTUsLTkzNjEz
+MTc1Nl19
 -->
