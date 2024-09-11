@@ -245,7 +245,30 @@ typedef struct {
 
 	> SHT_SUNW_move section 包含多个类型是ELF32_Move或者ELF64_Move的entry。这些entry允许变量被定义为不确定项(.bss), 所以在object文件中不占大小， 但是在运行时会contribute到process的object memory。move 记录如何在运行时初始化process的内存镜像。
 	```
-	
+	typedef struct {
+        Elf32_Lword       m_value;
+        Elf32_Word        m_info;
+        Elf32_Word        m_poffset;
+        Elf32_Half        m_repeat;
+        Elf32_Half        m_stride;
+} Elf32_Move;
+
+#define ELF32_M_SYM(info)       ((info)>>8)
+#define ELF32_M_SIZE(info)      ((unsigned char)(info))
+#define ELF32_M_INFO(sym, size) (((sym)<<8)+(unsigned char)(size))
+
+typedef struct {
+        Elf64_Lword       m_value;
+        Elf64_Xword       m_info;
+        Elf64_Xword       m_poffset;
+        Elf64_Half        m_repeat;
+        Elf64_Half        m_stride;
+} Elf64_Move;
+
+#define ELF64_M_SYM(info)       ((info)>>8)
+#define ELF64_M_SIZE(info)      ((unsigned char)(info))
+#define ELF64_M_INFO(sym, size) (((sym)<<8)+(unsigned char)(size))
+	```
 - xx
 
 ### 特殊section
@@ -360,11 +383,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3MDc3NzcsMTU5MDkzNjg1NSwxOTQwND
-EzMDkxLC0xMzc4ODU4MTYzLC0xNzQzNTEyNTQ5LDEyMzI4Mzcw
-MTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4NDIsODg4Mzg4NTgxLC
-01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1
-ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3MTMzLC
-00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4MzY1
-NTQ1N119
+eyJoaXN0b3J5IjpbMzk0MDIxMjQyLDE1OTA5MzY4NTUsMTk0MD
+QxMzA5MSwtMTM3ODg1ODE2MywtMTc0MzUxMjU0OSwxMjMyODM3
+MDE2LC0yMDAyNzk0ODE1LC0yMDcwNTcwODQyLDg4ODM4ODU4MS
+wtNTM5NzM4MzczLDIwNDUxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMx
+NTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMsLTUyNjk4NzEzMy
+wtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0MjIwMiw2ODM2
+NTU0NTddfQ==
 -->
