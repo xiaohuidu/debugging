@@ -244,6 +244,7 @@ typedef struct {
 	> 如果object 包含了大量的部分初始化的变量， 比如FORTRAN_COMMON blocks, 能够引起冥想的disk overhead。SHT_SUNW_move section 提供了数据压缩的一种机制，能够压缩数据减少disk的大小。
 
 	> SHT_SUNW_move section 包含多个类型是ELF32_Move或者ELF64_Move的entry。这些entry允许变量被定义为不确定项(.bss), 所以在object文件中不占大小， 但是在运行时会contribute到process的object memory。move 记录如何在运行时初始化process的内存镜像。
+	
 	```
 	typedef struct {
         Elf32_Lword       m_value;
@@ -383,11 +384,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0MDIxMjQyLDE1OTA5MzY4NTUsMTk0MD
-QxMzA5MSwtMTM3ODg1ODE2MywtMTc0MzUxMjU0OSwxMjMyODM3
-MDE2LC0yMDAyNzk0ODE1LC0yMDcwNTcwODQyLDg4ODM4ODU4MS
-wtNTM5NzM4MzczLDIwNDUxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMx
-NTgzNDIsMjAyNzQ4NTcsLTE0MTc1NTU3NDMsLTUyNjk4NzEzMy
-wtNDA3NDA0MzUzLDE1ODAzNzU4NDQsMTE4MDM0MjIwMiw2ODM2
-NTU0NTddfQ==
+eyJoaXN0b3J5IjpbLTE3MDY1NTY0MDAsMTU5MDkzNjg1NSwxOT
+QwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQzNTEyNTQ5LDEyMzI4
+MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4NDIsODg4Mzg4NT
+gxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LDU3
+MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3MT
+MzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4
+MzY1NTQ1N119
 -->
