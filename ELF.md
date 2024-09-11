@@ -240,11 +240,28 @@ typedef struct {
 
 bucket组包含 `nbucket` 个条目，链数组包含 `nchain` 个条目，索引从 0 开始。bucket和链都保存符号表的index。链表的条目与符号表平行。符号表的条目数应等于 `nchain`，因此符号表index也用于选择链表条目。
 
-哈希函数接受一个符号名称并返回一个值，该值可用于计算桶索引。因此，如果哈希函数对某个名称返回值 `x`，则 `bucket[x%nbucket]` 会给出符号表和链表中的索引 `y`。如果符号表中的条目不是所需的那个，`chain[y]` 会给出下一个具有相同哈希值的符号表条目。
+哈希函数接受一个符号名称并返回一个值，该值可用于计算bucket index。因此，如果哈希函数对某个名称返回值 `x`，则 `bucket[x%nbucket]` 会给出符号表和链表中的index `y`。如果符号表中的条目不是所需的那个，`chain[y]` 会给出下一个具有相同哈希值的符号表条目。
 
 你可以沿着链表链接前进，直到选定的符号表条目包含所需的名称，或者链表条目包含值 `STN_UNDEF`。
 
 哈希函数如下:
+```c
+unsigned long
+elf_Hash(const unsigned char *name)
+{
+    unsigned long h = 0, g;
+ 
+	    while (*name)
+	    {
+		     h = (h << 4) + *name++;
+		     if (g = h & 0xf0000000)
+			      h ^= g >> 24;
+				   h &= ~g;
+	    }
+	    return h;
+}
+```
+
 
 - **SHT_DYNAMIC**:
 - **SHT_NOTE**:
@@ -439,11 +456,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTkzMTY4MiwtMTM0MDQ3Mjc3OSwtMj
-AyNDQ2MzQzLC0xNTA3NzkyNjMyLDExMzMzNTUzOTAsLTIwNzM5
-OTYzNzEsMTU5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MT
-YzLC0xNzQzNTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUs
-LTIwNzA1NzA4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NT
-E1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1Nywt
-MTQxNzU1NTc0M119
+eyJoaXN0b3J5IjpbLTIwNDM1NTA1ODksLTEzNDA0NzI3NzksLT
+IwMjQ0NjM0MywtMTUwNzc5MjYzMiwxMTMzMzU1MzkwLC0yMDcz
+OTk2MzcxLDE1OTA5MzY4NTUsMTk0MDQxMzA5MSwtMTM3ODg1OD
+E2MywtMTc0MzUxMjU0OSwxMjMyODM3MDE2LC0yMDAyNzk0ODE1
+LC0yMDcwNTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIwND
+UxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcs
+LTE0MTc1NTU3NDNdfQ==
 -->
