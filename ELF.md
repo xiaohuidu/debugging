@@ -272,6 +272,9 @@ typedef struct {
 
 1. m_value: 初始化值， 将会被move到内存镜像中的值。
 2. m_info: 符号表index，与初始化所应用的对象有关，同时也包括被初始化的偏移量的大小（以字节为单位）。m_info的低8位定义了大小，可以是1、2、4或8字节。高字节定义符号index。
+3. m_poffset:相对于初始化所应用的关联符号的偏移量。
+4. m_repeat: 重复次数。
+5. m_stride:
 ```
 
 xxx
@@ -390,11 +393,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzExMDE3NjIsLTIwNzM5OTYzNzEsMT
-U5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQz
-NTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1Nz
-A4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0x
-MDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NT
-c0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwx
-MTgwMzQyMjAyXX0=
+eyJoaXN0b3J5IjpbMTM5OTU4OTQ4NiwtMjA3Mzk5NjM3MSwxNT
+kwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1
+MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MD
+g0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0NDksLTEw
+ODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1Nz
+QzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDEx
+ODAzNDIyMDJdfQ==
 -->
