@@ -235,7 +235,7 @@ typedef struct {
 - **SHT_RELA**: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
 - **SHT_HASH**:  标识一个symbol哈希表。所有动态链接的object file 必须要有一个 符号哈希表。现在每一个object file 只能有一个符号哈希表， 将来有可能会取消这个限制。
 	> 支持符号表访问的哈希表由 Elf32_Word 或 Elf64_Word 对象组成。与哈希相关联的symbole table在哈希表section header的 sh_link 条目中指定。下面出现的label用于帮助解释哈希表的结构，但它们不属于规范的一部分。
-
+![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_hash_table.png)
 
 - **SHT_DYNAMIC**:
 - **SHT_NOTE**:
@@ -430,11 +430,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0OTU1NTA4LC0yMDI0NDYzNDMsLTE1MD
-c3OTI2MzIsMTEzMzM1NTM5MCwtMjA3Mzk5NjM3MSwxNTkwOTM2
-ODU1LDE5NDA0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1MTI1ND
-ksMTIzMjgzNzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MDg0Miw4
-ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0NDksLTEwODI5ND
-UzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQzLC01
-MjY5ODcxMzNdfQ==
+eyJoaXN0b3J5IjpbMTM3Mjg1OTQ0NCwtMjAyNDQ2MzQzLC0xNT
+A3NzkyNjMyLDExMzMzNTUzOTAsLTIwNzM5OTYzNzEsMTU5MDkz
+Njg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQzNTEyNT
+Q5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4NDIs
+ODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOT
+Q1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0Mywt
+NTI2OTg3MTMzXX0=
 -->
