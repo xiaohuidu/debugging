@@ -287,7 +287,20 @@ Data move[0x1000] = {
         {0xf, 'F'},   {0xf, 'F'},   {0, 0},
         {0xe, 'E'},   {0, 0},       {0xe, 'E'}
 };
-使用SHT_SUNW_move section， 数据会被移到 .bss section中， 使用相对应的 move entriesji
+使用SHT_SUNW_move section， 数据会被移到 .bss section中， 使用相对应的 move entries进行初始化。
+$ **elfdump -s data | fgrep move**
+      [17]  0x00020868 0x00008000  OBJT GLOB 0   .bss       move
+$ **elfdump -m data**
+
+Move Section: .SUNW_move
+        offset  ndx     size    repeat  stride  value   with respect to
+        0x8     0x17    4       1       0       0x1     move
+        0xc     0x17    1       1       0       0x31    move
+        0x18    0x17    4       2       2       0xf     move
+        0x1c    0x17    1       2       8       0x46    move
+        0x28    0x17    4       2       4       0xe     move
+        0x2c    0x17    1       2       16      0x45    move
+
 ```
 
 xxx
@@ -406,11 +419,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTEwODAzNCwtMjA3Mzk5NjM3MSwxNT
-kwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1
-MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MD
-g0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0NDksLTEw
-ODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1Nz
-QzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDEx
-ODAzNDIyMDJdfQ==
+eyJoaXN0b3J5IjpbLTExNDMyNDAzMzAsLTIwNzM5OTYzNzEsMT
+U5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQz
+NTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1Nz
+A4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0x
+MDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NT
+c0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwx
+MTgwMzQyMjAyXX0=
 -->
