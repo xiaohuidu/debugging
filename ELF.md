@@ -245,7 +245,7 @@ typedef struct {
 
 	> SHT_SUNW_move section 包含多个类型是ELF32_Move或者ELF64_Move的entry。这些entry允许变量被定义为不确定项(.bss), 所以在object文件中不占大小， 但是在运行时会contribute到process的object memory。move 记录如何在运行时初始化process的内存镜像。
 	
-```
+```c
 typedef struct {
         Elf32_Lword       m_value;
         Elf32_Word        m_info;
@@ -271,9 +271,8 @@ typedef struct {
 #define ELF64_M_INFO(sym, size) (((sym)<<8)+(unsigned char)(size))
 
 ```
-	
 
- xxx
+xxx
 
 - xx
 
@@ -389,7 +388,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA1NjU1OCwxNTkwOTM2ODU1LDE5ND
+eyJoaXN0b3J5IjpbLTc1MTc3NTI2MSwxNTkwOTM2ODU1LDE5ND
 A0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgz
 NzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MDg0Miw4ODgzODg1OD
 EsLTUzOTczODM3MywyMDQ1MTU0NDksLTEwODI5NDUzNTksNTcz
