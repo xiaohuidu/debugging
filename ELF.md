@@ -240,7 +240,7 @@ typedef struct {
 	> 此外，当编译器使用 `-xF` 选项调用时，link-editor也支持用于section重新排序的节命名约定。如果这些section被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的section中。通过这种方法，`SHT_SUNW_COMDAT` section 可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的section中。
 - SHT_SUNW_move: 标识处理部分初始化的符号的data。
 	> 典型的， 在ELF 文件里， 初始化的data maintain 在object 文件内部。如果一个变量非常大，并且只是包含了少量的初始化的（非零）元素， 整个变量还是会maintain在object 文件内部。
-	如果object 包含了大量的部分初始化的变量， 比如FORTRAN_COMMON blocks, 能够引起冥想的disk overhead。SHT_SUNW_move section 提供了数据压缩的一种机制
+	如果object 包含了大量的部分初始化的变量， 比如FORTRAN_COMMON blocks, 能够引起冥想的disk overhead。SHT_SUNW_move section 提供了数据压缩的一种机制，能够压缩数据减少disk的大小。
 - xx
 
 ### 特殊section
@@ -355,7 +355,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDMzOTkxNCwtMTM3ODg1ODE2MywtMT
+eyJoaXN0b3J5IjpbMTk0MDQxMzA5MSwtMTM3ODg1ODE2MywtMT
 c0MzUxMjU0OSwxMjMyODM3MDE2LC0yMDAyNzk0ODE1LC0yMDcw
 NTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIwNDUxNTQ0OS
 wtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NTcsLTE0MTc1
