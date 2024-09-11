@@ -242,6 +242,8 @@ typedef struct {
 	> 典型的， 在ELF 文件里， 初始化的data maintain 在object 文件内部。如果一个变量非常大，并且只是包含了少量的初始化的（非零）元素， 整个变量还是会maintain在object 文件内部。
 	
 	> 如果object 包含了大量的部分初始化的变量， 比如FORTRAN_COMMON blocks, 能够引起冥想的disk overhead。SHT_SUNW_move section 提供了数据压缩的一种机制，能够压缩数据减少disk的大小。
+
+	> SHT_SUNW_
 - xx
 
 ### 特殊section
@@ -356,11 +358,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMz
-c4ODU4MTYzLC0xNzQzNTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3
-OTQ4MTUsLTIwNzA1NzA4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNz
-MsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3
-NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3MTMzLC00MDc0MDQzNT
-MsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4MzY1NTQ1NywtNzcx
-MjI2MjgxXX0=
+eyJoaXN0b3J5IjpbMTU2NTQyNjk4NywxNTkwOTM2ODU1LDE5ND
+A0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgz
+NzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MDg0Miw4ODgzODg1OD
+EsLTUzOTczODM3MywyMDQ1MTU0NDksLTEwODI5NDUzNTksNTcz
+MTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQzLC01MjY5ODcxMz
+MsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDExODAzNDIyMDIsNjgz
+NjU1NDU3XX0=
 -->
