@@ -275,6 +275,19 @@ typedef struct {
 3. m_poffset:相对于初始化所应用的关联符号的偏移量。
 4. m_repeat: 重复次数。
 5. m_stride: 步长计数。该值表示在执行重复初始化时应跳过的单位数量。一个单位的大小由 m_info 定义的初始化对象决定。m_stride 的值为 0 表示初始化将连续执行 m_repeat 个单位。
+
+下面数据定义如果没有压缩占用0x8000 bytes的大小。
+typedef struct {
+        int     one;
+        char    two;
+} Data
+
+Data move[0x1000] = {
+        {0, 0},       {1, '1'},     {0, 0},
+        {0xf, 'F'},   {0xf, 'F'},   {0, 0},
+        {0xe, 'E'},   {0, 0},       {0xe, 'E'}
+};
+
 ```
 
 xxx
@@ -393,11 +406,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NzAyOTUsLTIwNzM5OTYzNzEsMTU5MD
-kzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQzNTEy
-NTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4ND
-IsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgy
-OTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0My
-wtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgw
-MzQyMjAyXX0=
+eyJoaXN0b3J5IjpbLTIxMzg1MTIyODUsLTIwNzM5OTYzNzEsMT
+U5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQz
+NTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1Nz
+A4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0x
+MDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NT
+c0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwx
+MTgwMzQyMjAyXX0=
 -->
