@@ -233,7 +233,7 @@ typedef struct {
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
 - **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
 - **SHT_RELA**: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
-- **SHT_HASH**: 
+- **SHT_HASH**:  sy
 - **SHT_DYNAMIC**:
 - **SHT_NOTE**:
 - **SHT_NOBITS**:
@@ -427,11 +427,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDc3OTI2MzIsMTEzMzM1NTM5MCwtMj
-A3Mzk5NjM3MSwxNTkwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4
-NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5ND
-gxNSwtMjA3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3Mywy
-MDQ1MTU0NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0OD
-U3LC0xNDE3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1Mywx
-NTgwMzc1ODQ0XX0=
+eyJoaXN0b3J5IjpbLTE1NDk3ODQxMTAsLTE1MDc3OTI2MzIsMT
+EzMzM1NTM5MCwtMjA3Mzk5NjM3MSwxNTkwOTM2ODU1LDE5NDA0
+MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgzNz
+AxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MDg0Miw4ODgzODg1ODEs
+LTUzOTczODM3MywyMDQ1MTU0NDksLTEwODI5NDUzNTksNTczMT
+U4MzQyLDIwMjc0ODU3LC0xNDE3NTU1NzQzLC01MjY5ODcxMzMs
+LTQwNzQwNDM1M119
 -->
