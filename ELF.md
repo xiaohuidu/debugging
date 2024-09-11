@@ -233,7 +233,11 @@ typedef struct {
 - **SHT_SYMTAB** and **SHT_DYNSYM**: 标识 符号表(symbol table)。 一般的SHT_SYMTAB section 提供link-editing 的符号， 一个完整的符号表一般包含了一些不是动态linking 所必须的一些信息， SHT_DYNSYM section 提供了最小集合的动态linking 所需的符号。
 - **SHT_STRTAB**, SHT_DYNSTR**strong text**: 字符串表section。一个object file 可以有多个字符串表section。
 - **SHT_RELA**: 标识有显式家数的relocation entries。比如 类型Elf32_Rela 适用于32位的 object file。 一个object file 可以有多个SHT_RELA section。
-- SHT_HASH: 
+- **SHT_HASH**: 
+- **SHT_DYNAMIC**:
+- **SHT_NOTE**:
+- **SHT_NOBITS**:
+- **SHT_REL**:
 - **SHT_SHLIB**: 标识没有定义的预留section。包含这种section的object file 不符合ABI。
 - **SHT_SUNW_COMDAT**: 这个section 允许相同的data 的多个copy 减少的一个copy。
 	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMDAT section的relocation会被忽略， 任何的定义在被丢弃的section里的Symbol 不会被保留。
@@ -423,11 +427,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMzI3NDEwMywxMTMzMzU1MzkwLC0yMD
-czOTk2MzcxLDE1OTA5MzY4NTUsMTk0MDQxMzA5MSwtMTM3ODg1
-ODE2MywtMTc0MzUxMjU0OSwxMjMyODM3MDE2LC0yMDAyNzk0OD
-E1LC0yMDcwNTcwODQyLDg4ODM4ODU4MSwtNTM5NzM4MzczLDIw
-NDUxNTQ0OSwtMTA4Mjk0NTM1OSw1NzMxNTgzNDIsMjAyNzQ4NT
-csLTE0MTc1NTU3NDMsLTUyNjk4NzEzMywtNDA3NDA0MzUzLDE1
-ODAzNzU4NDRdfQ==
+eyJoaXN0b3J5IjpbLTE1MDc3OTI2MzIsMTEzMzM1NTM5MCwtMj
+A3Mzk5NjM3MSwxNTkwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4
+NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5ND
+gxNSwtMjA3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3Mywy
+MDQ1MTU0NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0OD
+U3LC0xNDE3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1Mywx
+NTgwMzc1ODQ0XX0=
 -->
