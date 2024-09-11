@@ -239,6 +239,7 @@ typedef struct {
 	
 	> 此外，当编译器使用 `-xF` 选项调用时，link-editor也支持用于section重新排序的节命名约定。如果这些section被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的section中。通过这种方法，`SHT_SUNW_COMDAT` section 可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的section中。
 - SHT_SUNW_move: 标识处理部分初始化的符号的data。
+	> 典型的， 在ELF 文件里， 初始化的data maintain 在object 文件内部。如果一个变量非常大，并且只是包含了yixiaobu
 - xx
 
 ### 特殊section
@@ -353,11 +354,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDM1MTI1NDksMTIzMjgzNzAxNiwtMj
-AwMjc5NDgxNSwtMjA3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTcz
-ODM3MywyMDQ1MTU0NDksLTEwODI5NDUzNTksNTczMTU4MzQyLD
-IwMjc0ODU3LC0xNDE3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQw
-NDM1MywxNTgwMzc1ODQ0LDExODAzNDIyMDIsNjgzNjU1NDU3LC
-03NzEyMjYyODEsMTc0MzgzOTgzMSwtNDQ0NTY5ODc3LDgxMjk3
-Nzc3XX0=
+eyJoaXN0b3J5IjpbMTg3NDUwNTQ3LC0xNzQzNTEyNTQ5LDEyMz
+I4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4NDIsODg4Mzg4
+NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LD
+U3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3
+MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLD
+Y4MzY1NTQ1NywtNzcxMjI2MjgxLDE3NDM4Mzk4MzEsLTQ0NDU2
+OTg3N119
 -->
