@@ -300,8 +300,7 @@ Move Section: .SUNW_move
         0x1c    0x17    1       2       8       0x46    move
         0x28    0x17    4       2       4       0xe     move
         0x2c    0x17    1       2       16      0x45    move
-从relocatable目标文件提供的段会被连接编辑器（link-editor）拼接并输出到正在创建的目标文件中。然而，以下条件会导致连接编辑器处理移动条目并将其内容扩展为传统数据项：
-
+从relocatable目标文件提供的section会被连接编辑器（link-editor）拼接并输出到正在创建的object文件中。然而，以下条件会导致连接编辑器处理move entries 并将其内容扩展为传统数据项：
 1.  输出文件是静态可执行文件。
 2.  移动条目的大小大于其数据将要扩展的符号的大小。
 3.  使用了 `-z nopartial` 选项。
@@ -423,7 +422,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjU5MDc3NywtMjA3Mzk5NjM3MSwxNT
+eyJoaXN0b3J5IjpbMTEzMzM1NTM5MCwtMjA3Mzk5NjM3MSwxNT
 kwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1
 MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MD
 g0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0NDksLTEw
