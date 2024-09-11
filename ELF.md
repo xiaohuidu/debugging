@@ -271,7 +271,7 @@ typedef struct {
 #define ELF64_M_INFO(sym, size) (((sym)<<8)+(unsigned char)(size))
 
 1. m_value: 初始化值， 将会被move到内存镜像中的值。
-2. m_info: 符号表index。
+2. m_info: 符号表index，与初始化所应用的对象有关，同时也包括被初始化的偏移量的大小（以字节为单位）。m_info的低8位定义了大小，可以是1、2、4或8字节。高字节定义符号index。
 ```
 
 xxx
@@ -390,11 +390,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzM5OTYzNzEsMTU5MDkzNjg1NSwxOT
-QwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQzNTEyNTQ5LDEyMzI4
-MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1NzA4NDIsODg4Mzg4NT
-gxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0xMDgyOTQ1MzU5LDU3
-MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NTc0MywtNTI2OTg3MT
-MzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwxMTgwMzQyMjAyLDY4
-MzY1NTQ1N119
+eyJoaXN0b3J5IjpbLTE5NzExMDE3NjIsLTIwNzM5OTYzNzEsMT
+U5MDkzNjg1NSwxOTQwNDEzMDkxLC0xMzc4ODU4MTYzLC0xNzQz
+NTEyNTQ5LDEyMzI4MzcwMTYsLTIwMDI3OTQ4MTUsLTIwNzA1Nz
+A4NDIsODg4Mzg4NTgxLC01Mzk3MzgzNzMsMjA0NTE1NDQ5LC0x
+MDgyOTQ1MzU5LDU3MzE1ODM0MiwyMDI3NDg1NywtMTQxNzU1NT
+c0MywtNTI2OTg3MTMzLC00MDc0MDQzNTMsMTU4MDM3NTg0NCwx
+MTgwMzQyMjAyXX0=
 -->
