@@ -238,7 +238,7 @@ typedef struct {
 	> Comdata section 由他们的名字(sh_name) 唯一的标识。如果link-editor遇到多个拥有相同section 名字的SHT_SUNW_COMDAT section， 第一个会被保留，其他的会被丢弃。任何的作用到被丢弃的 SHT_SUNW_COMDAT section的relocation会被忽略， 任何的定义在被丢弃的section里的Symbol 不会被保留。
 	
 	> 此外，当编译器使用 `-xF` 选项调用时，link-editor也支持用于section重新排序的节命名约定。如果这些section被放置在名称为 `.funcname%sectname` 的节中，那么最终保留的 `SHT_SUNW_COMDAT` 节将合并到由 `.sectname` 标识的section中。通过这种方法，`SHT_SUNW_COMDAT` section 可以被放置在 `.text`、`.data` 或其他任何作为其最终目的地的section中。
-- SHT_SUNW_move: 标识处理部分初始化的符号的data。
+- **SHT_SUNW_move**: 标识处理部分初始化的符号的data。
 	> 典型的， 在ELF 文件里， 初始化的data maintain 在object 文件内部。如果一个变量非常大，并且只是包含了少量的初始化的（非零）元素， 整个变量还是会maintain在object 文件内部。
 	
 	> 如果object 包含了大量的部分初始化的变量， 比如FORTRAN_COMMON blocks, 能够引起冥想的disk overhead。SHT_SUNW_move section 提供了数据压缩的一种机制，能够压缩数据减少disk的大小。
@@ -422,11 +422,11 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzM1NTM5MCwtMjA3Mzk5NjM3MSwxNT
-kwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4NTgxNjMsLTE3NDM1
-MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5NDgxNSwtMjA3MDU3MD
-g0Miw4ODgzODg1ODEsLTUzOTczODM3MywyMDQ1MTU0NDksLTEw
-ODI5NDUzNTksNTczMTU4MzQyLDIwMjc0ODU3LC0xNDE3NTU1Nz
-QzLC01MjY5ODcxMzMsLTQwNzQwNDM1MywxNTgwMzc1ODQ0LDEx
-ODAzNDIyMDJdfQ==
+eyJoaXN0b3J5IjpbLTEwNDE1NTI5NjIsMTEzMzM1NTM5MCwtMj
+A3Mzk5NjM3MSwxNTkwOTM2ODU1LDE5NDA0MTMwOTEsLTEzNzg4
+NTgxNjMsLTE3NDM1MTI1NDksMTIzMjgzNzAxNiwtMjAwMjc5ND
+gxNSwtMjA3MDU3MDg0Miw4ODgzODg1ODEsLTUzOTczODM3Mywy
+MDQ1MTU0NDksLTEwODI5NDUzNTksNTczMTU4MzQyLDIwMjc0OD
+U3LC0xNDE3NTU1NzQzLC01MjY5ODcxMzMsLTQwNzQwNDM1Mywx
+NTgwMzc1ODQ0XX0=
 -->
