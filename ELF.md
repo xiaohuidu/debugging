@@ -238,7 +238,7 @@ typedef struct {
 	
 ![enter image description here](https://github.com/xiaohuidu/debugging/blob/master/images/symbol_hash_table.png)
 
-bucket组包含 `nbucket` 个条目，链数组包含 `nchain` 个条目，索引从 0 开始。桶和链都保存符号表的索引。链表的条目与符号表平行。符号表的条目数应等于 `nchain`，因此符号表索引也用于选择链表条目。
+bucket组包含 `nbucket` 个条目，链数组包含 `nchain` 个条目，索引从 0 开始。bucket和链都保存符号表的index。链表的条目与符号表平行。符号表的条目数应等于 `nchain`，因此符号表索引也用于选择链表条目。
 
 哈希函数接受一个符号名称并返回一个值，该值可用于计算桶索引。因此，如果哈希函数对某个名称返回值 `x`，则 `bucket[x%nbucket]` 会给出符号表和链表中的索引 `y`。如果符号表中的条目不是所需的那个，`chain[y]` 会给出下一个具有相同哈希值的符号表条目。
 
@@ -439,7 +439,7 @@ STV_PROTECTED
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUzMTc0MjYsLTIwMjQ0NjM0MywtMT
+eyJoaXN0b3J5IjpbLTEzNDA0NzI3NzksLTIwMjQ0NjM0MywtMT
 UwNzc5MjYzMiwxMTMzMzU1MzkwLC0yMDczOTk2MzcxLDE1OTA5
 MzY4NTUsMTk0MDQxMzA5MSwtMTM3ODg1ODE2MywtMTc0MzUxMj
 U0OSwxMjMyODM3MDE2LC0yMDAyNzk0ODE1LC0yMDcwNTcwODQy
